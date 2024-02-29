@@ -1,0 +1,35 @@
+.home {
+    margin-top: 28vh;
+    text-align: center;
+    position: relative;
+
+    p {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        margin: 0 0 1.2rem;
+    }
+
+    div {
+        position: relative;
+
+        h1,
+        h2 {
+            position: absolute;
+            width: 100%;
+            font-size: 15rem;
+            line-height: 15rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -10px;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        h2 {
+            opacity: 0;
+        }
+    }
+}

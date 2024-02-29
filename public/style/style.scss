@@ -1,0 +1,129 @@
+// variables
+$background-color: #181717;
+$color-developer: #ff0000;
+$color-design: #ff7700;
+$color-brand: #00ffe1;
+$color-image: #0080ff;
+$color-drafting: #5500ff;
+
+/* Fonts */
+@font-face {
+    font-family: "nunitoSans";
+    src: url("/fonts/nunitoSans.ttf");  
+}
+
+/* Bases */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    // cursor: url("/img/icons/cursor-pointer.png"), auto;
+}
+
+* {
+    box-sizing: inherit;
+    outline: none;
+
+    &:before,
+    &:after {
+        box-sizing: inherit;
+        outline: none;
+    }
+}
+
+body {
+    font-family: "nunitoSans", helvetica;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: $background-color;
+    color: #fff;
+}
+
+/* Selection */
+::selection {
+    color: #181717;
+    background: #edecf1;
+}
+
+/** Global **/
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/** Utilities **/
+/* Usuals */
+.fullscreen {
+    position: relative;
+    width: 100vw;
+    width: calc(var(--vw, 1vw) * 100);
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.design-title {
+    color: $color-design;
+}
+.brand-title {
+    color: $color-brand;
+}
+.image-title {
+    color: $color-image;
+}
+.drafting-title {
+    color: $color-drafting;
+}
+
+/* Displays */
+.display-mobile {
+    display: none !important;
+}
+
+.display-pc {
+    display: block !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .display-mobile {
+        display: block !important;
+    }
+    
+    .display-pc {
+        display: none !important;
+    }
+}
+
+.hidden {
+    opacity: 0!important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+/* Containers */
+.container {
+  width: 85%;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+/** Specials **/
+@import 'specials';
+
+/** Navbar **/
+@import 'navbar';
+
+/** Home **/
+@import 'home';

@@ -28,6 +28,7 @@ body {
   line-height: 1.6;
   background-color: #181717;
   color: #fff;
+  cursor: url("../img/icons/cursor01.png"), auto;
 }
 
 /* Selection */
@@ -177,27 +178,27 @@ ul {
   /* Socials */
   /* Corner */
 }
-.header .logo {
+.header .logo-container .logo {
   position: fixed;
-  top: 3.5rem;
-  left: 4.8rem;
-  width: 6rem;
+  top: 4.2vh;
+  left: 2.2vw;
+  width: 3.5vw;
   opacity: 0.9;
 }
-.header .logo svg {
+.header .logo-container .logo svg {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
 }
-.header .logo .logo-displayed {
+.header .logo-container .logo .logo-displayed {
   display: block;
 }
 .header .navbar {
   position: fixed;
-  top: 3.5rem;
-  right: 4.8rem;
+  top: 4.2vh;
+  right: 2.2vw;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -208,56 +209,144 @@ ul {
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.7;
   letter-spacing: 1px;
   margin: 0;
-  transition: 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 .header .navbar a:hover {
-  color: aqua;
+  opacity: 0.9;
+}
+.header .navbar a::before, .header .navbar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.header .navbar a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(-200%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .navbar a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+.header .navbar a span {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .navbar a:hover span {
+  transform: translate3d(200%, 0, 0);
 }
 .header .socials {
   position: fixed;
-  bottom: 3.5rem;
-  right: 4.8rem;
+  bottom: 4.2vh;
+  right: 2.2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .header .socials a {
   font-size: 1.8rem;
+  line-height: 1.8rem;
   font-weight: 900;
   color: #fff;
   opacity: 0.9;
-  letter-spacing: 1px;
   margin: 0;
   transition: 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 .header .socials a:hover {
   color: aqua;
 }
 .header .corner {
   position: fixed;
-  bottom: 3.5rem;
-  left: 4.8rem;
+  bottom: 4.2vh;
+  left: 2.2vw;
   transform-origin: bottom left;
   transform: rotate(-90deg);
   width: 50%;
 }
-.header .corner p, .header .corner a {
-  display: none;
+.header .corner div {
   position: absolute;
+  display: none;
+  width: 100%;
+}
+.header .corner div p,
+.header .corner div a {
+  display: block;
   color: #fff;
   opacity: 0.9;
   text-transform: capitalize;
   font-size: 1.3rem;
   font-weight: 100;
 }
+.header .corner .corner-lenguages {
+  flex-direction: row;
+  gap: 2rem;
+}
+.header .corner .corner-lenguages a {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  transform: rotate(90deg);
+  line-height: 1.3rem;
+  width: 2rem;
+}
 .header .corner .corner-displayed {
-  display: block;
+  display: flex;
 }
 
+@media only screen and (max-width: 1280px) {
+  .header .navbar {
+    gap: 0;
+  }
+  .header .navbar a {
+    font-size: 1.3rem;
+  }
+  .header .socials {
+    gap: 1.2rem;
+  }
+  .header .socials a {
+    font-size: 1.5rem;
+  }
+  .header .corner .corner-lenguages {
+    gap: 1rem;
+  }
+  .header .corner .corner-lenguages a {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .logo-container .logo {
+    width: 10vw;
+    top: 3vh;
+    left: 5vw;
+  }
+  .header .navbar {
+    top: 3vh;
+    right: 5vw;
+  }
+  .header .navbar a {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .header .socials {
+    bottom: 3vh;
+    right: 5vw;
+  }
+  .header .corner {
+    bottom: 3vh;
+    left: 5vw;
+  }
+}
 /** Home **/
 .home {
   margin-top: 28vh;
@@ -265,8 +354,9 @@ ul {
   position: relative;
 }
 .home p {
-  font-size: 5.5rem;
-  line-height: 5.5rem;
+  width: 100%;
+  font-size: 3.2vw;
+  line-height: 3.2vw;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1rem;
@@ -279,8 +369,8 @@ ul {
 .home div h2 {
   position: absolute;
   width: 100%;
-  font-size: 15rem;
-  line-height: 15rem;
+  font-size: 8.7vw;
+  line-height: 8.7vw;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -10px;
@@ -289,4 +379,19 @@ ul {
 }
 .home div h2 {
   opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .home p {
+    font-size: 5vw;
+    line-height: 3.2vw;
+    letter-spacing: 0.5rem;
+    margin: 0 0 1.2rem;
+  }
+  .home div h1,
+  .home div h2 {
+    font-size: 10vw;
+    line-height: 10vw;
+    letter-spacing: -2px;
+  }
 }/*# sourceMappingURL=style.css.map */

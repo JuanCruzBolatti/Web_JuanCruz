@@ -4,8 +4,9 @@
     position: relative;
 
     p {
-        font-size: 5.5rem;
-        line-height: 5.5rem;
+        width: 100%;
+        font-size: 3.2vw;
+        line-height: 3.2vw;
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 1rem;
@@ -19,8 +20,8 @@
         h2 {
             position: absolute;
             width: 100%;
-            font-size: 15rem;
-            line-height: 15rem;
+            font-size: 8.7vw;
+            line-height: 8.7vw;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: -10px;
@@ -30,6 +31,27 @@
 
         h2 {
             opacity: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        p {
+            font-size: 5vw;
+            line-height: 3.2vw;
+            letter-spacing: 0.5rem;
+            margin: 0 0 1.2rem;
+        }
+
+        div {
+    
+            h1,
+            h2 {
+                font-size: 10vw;
+                line-height: 10vw;
+                letter-spacing: -2px;
+            }
         }
     }
 }

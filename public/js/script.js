@@ -25,15 +25,17 @@ function logoDisplay(number) {
 }
 
 // Corner Dispay
-var corners = document.querySelector('.corner').getElementsByTagName('*');
+var corners = document.querySelector('.corner').getElementsByTagName('div');
 var corners = Array.from(corners);
 
 function cornerDisplay(number) {
-  corners.forEach((corner) => {
-    corner.classList.remove("corner-displayed");
-  });
-
-  corners[number].classList.add('corner-displayed');
+  if(window.innerWidth > 768) {
+    corners.forEach((corner) => {
+      corner.classList.remove("corner-displayed");
+    });
+  
+    corners[number].classList.add('corner-displayed');
+  }
 }
 
 // Navbar Display

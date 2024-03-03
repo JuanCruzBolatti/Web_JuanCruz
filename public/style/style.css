@@ -28,7 +28,7 @@ body {
   line-height: 1.6;
   background-color: #181717;
   color: #fff;
-  cursor: url("../img/icons/cursor01.png"), auto;
+  cursor: none;
 }
 
 /* Selection */
@@ -114,6 +114,20 @@ ul {
 }
 
 /** Specials **/
+/* Cursor */
+.cursor-ball {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+.cursor-ball circle {
+  fill: #ffffff;
+}
+
 /* Background */
 .background-bubble {
   position: fixed;

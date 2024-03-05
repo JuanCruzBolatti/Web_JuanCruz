@@ -9,13 +9,24 @@ hoverable.forEach(item => {
   item.addEventListener("mouseleave", onMouseHoverOut);
 });
 
-// Hover an element
 function onMouseHover() {
   cursor.style.transform = "scale(0)";
 }
 function onMouseHoverOut() {
   cursor.style.transform = "scale(1)";
 }
+
+document.addEventListener('mousedown', event => {
+  if (event.button === 0) {
+    cursor.style.transform = "scale(0.5)";
+  }
+});
+
+document.addEventListener('mouseup', event => {
+  if (event.button === 0) { 
+    cursor.style.transform = "scale(1)";
+  }
+});
 
 // Background Bubble
 const bubble = document.querySelector('.background-bubble');

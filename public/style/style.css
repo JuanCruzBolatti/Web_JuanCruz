@@ -3,6 +3,10 @@
   font-family: "nunitoSans";
   src: url("/fonts/nunitoSans.ttf");
 }
+@font-face {
+  font-family: "spaceMonoRegular";
+  src: url("/fonts/SpaceMono-Regular.ttf");
+}
 /* Bases */
 html {
   box-sizing: border-box;
@@ -53,6 +57,15 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4vw;
+  letter-spacing: -0.3vw;
+  width: 100%;
+  opacity: 0.9;
 }
 
 /** Utilities **/
@@ -118,11 +131,11 @@ ul {
 .cursor-ball {
   pointer-events: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1vw;
+  left: 3.15vw;
   mix-blend-mode: difference;
   z-index: 1000;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .cursor-ball circle {
   fill: #ffffff;
@@ -281,12 +294,14 @@ ul {
   color: aqua;
 }
 .header .corner {
+  font-family: "spaceMonoRegular", "nunitoSans", Helvetica;
   position: fixed;
   bottom: 4.2vh;
   left: 2.2vw;
   transform-origin: bottom left;
   transform: rotate(-90deg);
   width: 50%;
+  z-index: 50;
 }
 .header .corner div {
   position: absolute;
@@ -363,9 +378,9 @@ ul {
 }
 /** Home **/
 .home {
+  height: 72vh;
   margin-top: 28vh;
   text-align: center;
-  position: relative;
 }
 .home p {
   width: 100%;
@@ -373,26 +388,33 @@ ul {
   line-height: 3.2vw;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 0.6vw;
   margin: 0 0 1.2rem;
 }
-.home div {
+.home div:first-of-type {
   position: relative;
 }
-.home div h1,
-.home div h2 {
+.home div:first-of-type h1,
+.home div:first-of-type h3 {
   position: absolute;
   width: 100%;
   font-size: 8.7vw;
   line-height: 8.7vw;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: -10px;
+  letter-spacing: -0.6vw;
   margin: 0;
   opacity: 0.9;
 }
-.home div h2 {
+.home div:first-of-type h3 {
   opacity: 0;
+}
+.home div:last-of-type {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 1.8rem);
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 768px) {
@@ -407,5 +429,102 @@ ul {
     font-size: 10vw;
     line-height: 10vw;
     letter-spacing: -2px;
+  }
+}
+/** About **/
+/** What I Do **/
+/** Work **/
+/** Contact **/
+.contact {
+  background-color: #121111;
+  padding-top: 2rem;
+  position: relative;
+}
+.contact .contact-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3rem 0 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.contact .contact-content div {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-content div a {
+  font-size: 1.55vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  opacity: 0.9;
+  position: relative;
+}
+.contact .contact-content div a::before {
+  content: "";
+  position: absolute;
+  top: 0.725vw;
+  left: -3.5rem;
+  background-color: #fff;
+  width: 2.5rem;
+  height: 0.9vw;
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.contact .contact-content div a:hover::before {
+  width: calc(100% + 3.5rem);
+  background-color: rebeccapurple;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.contact .contact-content div #anchor-ig:hover::before {
+  background-color: #ff214c;
+}
+.contact .contact-content div #anchor-tw:hover::before {
+  background-color: #1c96e8;
+}
+.contact .contact-content div #anchor-yt:hover::before {
+  background-color: #f60002;
+}
+.contact .contact-content div #anchor-fb:hover::before {
+  background-color: #336baf;
+}
+.contact .contact-content div #anchor-li:hover::before {
+  background-color: #0a63bc;
+}
+.contact .contact-content div #anchor-cp:hover::before {
+  background-color: #3a393f;
+}
+.contact .contact-content div #anchor-gh:hover::before {
+  background-color: #e84e31;
+}
+.contact .contact-content div p {
+  margin: 0;
+  color: #b8b8b8;
+  font-family: "spaceMonoRegular";
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contact-content {
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 60%;
+  }
+  .contact .contact-content div a {
+    font-size: 1.8rem;
+  }
+  .contact .contact-content div a::before {
+    top: 0.6rem;
+    left: -3rem;
+    height: 1.5rem;
+  }
+  .contact .contact-content div:last-of-type a {
+    font-size: 1.2rem;
+  }
+  .contact .contact-content div:last-of-type a::before {
+    width: 0;
   }
 }/*# sourceMappingURL=style.css.map */

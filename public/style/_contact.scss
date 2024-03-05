@@ -1,0 +1,114 @@
+.contact {
+    background-color: #121111;
+    padding-top: 2rem;
+    position: relative;
+
+    .contact-content {
+        width: 70%;
+        margin: 0 auto;
+        padding: 3rem 0 7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-size: 1.55vw;
+                font-weight: 900;
+                text-transform: uppercase;
+                transition: .3s ease-in-out;
+                opacity: 0.9;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(1.45vw / 2);
+                    left: -3.5rem;
+                    background-color: #fff;
+                    width: 2.5rem;
+                    height: .9vw;
+                    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+                    transition: .3s ease-in-out;
+                    z-index: -1;
+                }
+
+                &:hover::before {
+                    width: calc(100% + 3.5rem);
+                    background-color: rebeccapurple;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+            }
+
+            #anchor-ig:hover::before {
+                background-color: #ff214c;
+            }
+
+            #anchor-tw:hover::before {
+                background-color: #1c96e8;
+            }
+
+            #anchor-yt:hover::before {
+                background-color: #f60002;
+            }
+
+            #anchor-fb:hover::before {
+                background-color: #336baf;
+            }
+
+            #anchor-li:hover::before {
+                background-color: #0a63bc;
+            }
+
+            #anchor-cp:hover::before {
+                background-color: #3a393f;
+            }
+
+            #anchor-gh:hover::before {
+                background-color: #e84e31;
+            }
+
+            p {
+                margin: 0;
+                color: #b8b8b8;
+                font-family: 'spaceMonoRegular';
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        .contact-content {
+            flex-direction: column;
+            padding: 2rem 0;
+            width: 60%;
+
+            div{
+                a {
+                    font-size: 1.8rem;
+
+                    &::before {
+                        top: 0.6rem;
+                        left: -3rem;
+                        height: 1.5rem;
+                    }
+                }
+
+                &:last-of-type {
+                    a {
+                        font-size: 1.2rem;
+
+                        &::before {
+                            width: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

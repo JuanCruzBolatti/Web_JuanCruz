@@ -12,6 +12,11 @@ $color-drafting: #5500ff;
     src: url("/fonts/nunitoSans.ttf");  
 }
 
+@font-face {
+    font-family: "spaceMonoRegular";
+    src: url("/fonts/SpaceMono-Regular.ttf");  
+}
+
 /* Bases */
 html {
     box-sizing: border-box;
@@ -60,6 +65,16 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: -0.3vw;
+    width: 100%;
+
+    opacity: 0.9;
 }
 
 /** Utilities **/
@@ -127,3 +142,15 @@ ul {
 
 /** Home **/
 @import 'home';
+
+/** About **/
+@import 'about';
+
+/** What I Do **/
+@import 'whatido';
+
+/** Work **/
+@import 'work';
+
+/** Contact **/
+@import 'contact';

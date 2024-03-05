@@ -33,7 +33,12 @@ app.get('/', function(req, res) {
     const language = loadLanguage(lang);
 
     res.render('index', {
-        pageTitle: language.pageTitle
+        pageTitle: language.pageTitle,
+        aboutMeTitle: language.aboutMeTitle,
+        whatIDoTitle: language.whatIDoTitle,
+        workTitle: language.workTitle,
+        contactTitle: language.contactTitle,
+        knowledgeTitle: language.knowledgeTitle
     });
 });
 

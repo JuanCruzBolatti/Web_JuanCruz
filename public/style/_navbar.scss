@@ -114,12 +114,14 @@
 
     /* Corner */
     .corner {
+        font-family: "spaceMonoRegular", "nunitoSans", Helvetica;
         position: fixed;
         bottom: $navbar-border-y;
         left: $navbar-border-x;
         transform-origin: bottom left;
         transform: rotate(-90deg);
         width: 50%;
+        z-index: 50;
 
         div {
             position: absolute;

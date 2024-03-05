@@ -2,11 +2,11 @@
 .cursor-ball {
     pointer-events: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1vw;
+    left: 3.15vw;
     mix-blend-mode: difference;
     z-index: 1000;
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
 
     circle {
         fill: #ffffff;

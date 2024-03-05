@@ -2,6 +2,8 @@
 
 // Cursor
 const cursor = document.querySelector(".cursor-ball");
+const circle = document.querySelector("#circle");
+const smallHoverable = document.querySelectorAll(".navbar a, .work a, .contact a");
 const hoverable = document.querySelectorAll("a");
 
 hoverable.forEach(item => {
@@ -9,11 +11,34 @@ hoverable.forEach(item => {
   item.addEventListener("mouseleave", onMouseHoverOut);
 });
 
+smallHoverable.forEach(item => {
+  item.addEventListener("mouseenter", onMouseHoverNavbar);
+  item.addEventListener("mouseleave", onMouseHoverOutNavbar);
+});
+
 function onMouseHover() {
-  cursor.style.transform = "scale(0)";
+  cursor.style.transform = "scale(4)";
+  circle.style.fill = "none";
+  circle.style.stroke = "white";
+  circle.style.strokeWidth = ".4px";
 }
 function onMouseHoverOut() {
   cursor.style.transform = "scale(1)";
+  circle.style.fill = "#fff";
+  circle.style.stroke = "transparent";
+  circle.style.strokeWidth = "0";
+}
+function onMouseHoverNavbar() {
+  cursor.style.transform = "scale(0.8)";
+  circle.style.fill = "#fff";
+  circle.style.stroke = "transparent";
+  circle.style.strokeWidth = "0";
+}
+function onMouseHoverOutNavbar() {
+  cursor.style.transform = "scale(1)";
+  circle.style.fill = "#fff";
+  circle.style.stroke = "transparent";
+  circle.style.strokeWidth = "0";
 }
 
 document.addEventListener('mousedown', event => {

@@ -10,6 +10,7 @@
             left: $navbar-border-x;
             width: 3.5vw;
             opacity: 0.9;
+            z-index: 50;
 
             svg {
                 display: none;
@@ -35,6 +36,7 @@
         flex-direction: column;
         align-items: end;
         gap: .3rem;
+        z-index: 50;
 
         a {
             font-size: 1.6rem;
@@ -95,6 +97,7 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        z-index: 10;
 
         a {
             font-size: 1.8rem;

@@ -3,5 +3,10 @@
     "aboutMeTitle": "asdf",
     "whatIDoTitle": "Quasdfo",
     "workTitle": "Mi adfjo",
-    "contactTitle": "Casdfcto"
+    "contactTitle": "Casdfcto",
+    "contact": [
+        {
+            "share": "Compartir:"
+        }
+    ]
 }

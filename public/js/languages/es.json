@@ -4,5 +4,10 @@
     "whatIDoTitle": "Que Hago",
     "knowledgeTitle": "Conocimientos",
     "workTitle": "Mi Trabajo",
-    "contactTitle": "Contacto"
+    "contactTitle": "Contacto",
+    "contact": [
+        {
+            "share": "Compartir:"
+        }
+    ]
 }

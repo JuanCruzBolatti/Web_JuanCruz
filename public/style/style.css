@@ -49,6 +49,7 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: none !important;
 }
 
 img {
@@ -139,6 +140,7 @@ h2 {
 }
 .cursor-ball circle {
   fill: #ffffff;
+  transition: fill 0.3s ease-in-out;
 }
 
 /* Background */
@@ -211,6 +213,7 @@ h2 {
   left: 2.2vw;
   width: 3.5vw;
   opacity: 0.9;
+  z-index: 50;
 }
 .header .logo-container .logo svg {
   display: none;
@@ -230,6 +233,7 @@ h2 {
   flex-direction: column;
   align-items: end;
   gap: 0.3rem;
+  z-index: 50;
 }
 .header .navbar a {
   font-size: 1.6rem;
@@ -279,6 +283,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  z-index: 10;
 }
 .header .socials a {
   font-size: 1.8rem;
@@ -434,11 +439,160 @@ h2 {
 /** About **/
 /** What I Do **/
 /** Work **/
+.work h2 {
+  margin: 0;
+}
+.work .work-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.work .work-content .work-card-large {
+  position: relative;
+  height: 60vh;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.work .work-content .work-card-large::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+.work .work-content .work-card-large img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.work .work-content .work-card-large .work-card-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+  padding: 10rem 2rem 0rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.work .work-content .work-card-large .work-card-content h4 {
+  margin: 0;
+  font-size: 2.4vw;
+  color: #fff;
+  line-height: 2.4vw;
+  transition: 0.3s ease-in;
+}
+.work .work-content .work-card-large .work-card-content p {
+  width: 70%;
+  margin: 0;
+  color: #fff;
+}
+.work .work-content .work-card-large .work-card-content a {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 13px;
+  outline: 0px solid rgba(64, 64, 170, 0.2);
+  transition: 0.3s ease-in-out;
+  transition: outline 0.15s ease-in-out;
+  font-weight: 700;
+}
+.work .work-content .work-card-large .work-card-content a:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  outline: 3px solid rgba(64, 64, 170, 0.6);
+}
+.work .work-content .work-card-large:hover::after {
+  border: 4px solid rgba(255, 255, 255, 0.4);
+}
+.work .work-content .work-card-large:hover img {
+  height: 105%;
+}
+.work .work-content .work-card-large:hover .work-card-content {
+  opacity: 1;
+  padding: 10rem 2rem 2rem;
+}
+.work .work-content .work-card-large:hover .work-card-content h4 {
+  line-height: 4vw;
+}
+.work .work-content .work-card-small {
+  background: rgb(142, 221, 236);
+  background: linear-gradient(90deg, rgba(142, 221, 236, 0.3) 0%, rgba(64, 169, 170, 0.2) 100%);
+  border: 1px solid rgba(64, 169, 170, 0.6);
+  background-size: 200% !important;
+  background-position: 0%;
+  border-radius: 13px;
+  overflow: hidden;
+  padding: 2rem;
+  transition: 0.3s ease-in-out;
+}
+.work .work-content .work-card-small h4 {
+  margin: 0 0 1rem;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1vw;
+  transition: 0.3s ease-in;
+}
+.work .work-content .work-card-small p {
+  font-size: 0.9vw;
+  line-height: 1.1vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.work .work-content .work-card-small:hover {
+  background-position: 100% !important;
+}
+.work .work-content .work-card-small:nth-child(4) {
+  background: rgb(94, 64, 170);
+  background: linear-gradient(90deg, rgba(169, 142, 236, 0.3) 0%, rgba(94, 64, 170, 0.2) 100%);
+  border: 1px solid rgb(94, 64, 170);
+}
+.work .work-content .work-card-small:last-child {
+  background: rgb(236, 142, 166);
+  background: linear-gradient(90deg, rgba(236, 142, 166, 0.3) 0%, rgba(170, 64, 95, 0.2) 100%);
+  border: 1px solid rgba(170, 64, 95, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+  .work .work-content {
+    grid-template-columns: 1fr;
+  }
+  .work .work-content .work-card-large .work-card-content h4 {
+    font-size: 3rem;
+  }
+  .work .work-content .work-card-large:hover .work-card-content h4 {
+    line-height: 3rem;
+  }
+  .work .work-content .work-card-small h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .work .work-content .work-card-small p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
 /** Contact **/
 .contact {
   background-color: #121111;
   padding-top: 2rem;
+  margin-top: 5rem;
   position: relative;
+  z-index: 11;
 }
 .contact .contact-content {
   width: 70%;

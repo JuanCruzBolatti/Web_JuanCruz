@@ -66,6 +66,8 @@ img {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -74,7 +76,7 @@ h2 {
     font-size: 4vw;
     letter-spacing: -0.3vw;
     width: 100%;
-
+    margin: 0;
     opacity: 0.9;
 }
 
@@ -149,6 +151,9 @@ h2 {
 
 /** What I Do **/
 @import 'whatido';
+
+/** Knowledge **/
+@import 'knowledge';
 
 /** Work **/
 @import 'work';

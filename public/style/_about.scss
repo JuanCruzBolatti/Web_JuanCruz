@@ -4,7 +4,83 @@
     background: linear-gradient(129deg, rgba(231,231,231,0.1) 0%, rgba(159,159,159,0.1) 100%);
     -webkit-backdrop-filter: saturate(180%) blur(200px);
     backdrop-filter: saturate(180%) blur(200px);
-    padding-top: 2rem;
+    padding: 2rem 0 6rem;
 
+    .about-content {
+        .column {
+            .card {
+                padding: 2rem 2rem 1rem;
 
+                p {
+                    font-size: 1vw;
+                    line-height: 1.4vw;
+                    margin: 0;
+                }
+
+                .tags {
+                    display: flex;
+                    gap: .5rem;
+                    margin-top: 1rem;
+
+                    p {
+                        font-size: 0.8vw;
+                        line-height: 0.8vw;
+                        font-weight: 700;
+                        background-color: #262424;
+                        padding: 1rem 1.5rem;
+                        border-radius: 23px;
+                    }
+                }
+            }
+
+            .card-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+
+                a {
+                    font-size: 0.9vw;
+                    line-height: 0.9vw;
+                    font-weight: 900;
+                    padding: 1.5rem 2rem;
+                    margin: 1rem;
+
+                    &:nth-of-type(1),
+                    &:nth-of-type(5) {
+                        border-radius: 13px;
+                        background-color: purple;
+                    }
+                }
+            }
+
+            .about-image {
+                position: relative;
+                height: 100%;
+                border-radius: 13px;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: .3s ease-in-out;
+                }
+
+                h4 {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 4;
+                    padding: 10rem 2rem 0rem;
+                    background: rgb(0, 0, 0);
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                    opacity: 1;
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
 }

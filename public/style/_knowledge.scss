@@ -9,24 +9,11 @@
             border-radius: 13px;
             padding: 2rem 2rem 1.5rem;
 
-            background: rgb(231,231,231);
-            background: linear-gradient(129deg, rgba(231,231,231,0.1) 0%, rgba(159,159,159,0.1) 100%);
-            -webkit-backdrop-filter: saturate(180%) blur(200px);
-            backdrop-filter: saturate(180%) blur(200px);
-            border: 1px solid rgba(231, 231, 231, 0.266);
-
             &:nth-child(1) {
                 -webkit-backdrop-filter: hue-rotate(300deg);
                 backdrop-filter: hue-rotate(300deg);
             }
 
-            h4 {
-                margin: 0 0 1rem;
-                font-size: 1vw;
-                line-height: 1vw;
-                letter-spacing: 1px;
-                font-family: 'spaceMonoRegular', Helvetica;
-            }
 
             ul {
                 padding: 1rem;
@@ -95,11 +82,6 @@
             gap: 1rem;
 
             .knowledge-card {
-                h4 {
-                    font-size: 2rem;
-                    line-height: 2rem;
-                }
-
                 h5 {
                     font-weight: 200;
                     font-size: 1.8rem;

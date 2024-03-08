@@ -32,14 +32,11 @@ app.get('/', function(req, res) {
     const lang = req.query.lang || 'es';
     const language = loadLanguage(lang);
 
-    res.render('index', {
-        pageTitle: language.pageTitle,
-        aboutMeTitle: language.aboutMeTitle,
-        whatIDoTitle: language.whatIDoTitle,
-        workTitle: language.workTitle,
-        contactTitle: language.contactTitle,
-        knowledgeTitle: language.knowledgeTitle
-    });
+    res.render('index', { language });
+});
+
+app.get('/brand', function(req, res) {
+    res.render('brand');
 });
 
 // Port in Console

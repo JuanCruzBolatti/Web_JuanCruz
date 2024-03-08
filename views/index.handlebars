@@ -1,61 +1,59 @@
-<section class="container home">
+<section class="container home" id="Home">
     <p>Juan Cruz Bolatti</p>
     <div>
-        <h1>{{ pageTitle }}</h1>
-        <h3 class="design-title">Diseño</h3>
-        <h3 class="brand-title">Marca</h3>
-        <h3 class="image-title">Imagen</h3>
-        <h3 class="drafting-title">Redacción</h3>
+        <h1>{{ language.pageTitle }}</h1>
     </div>
-    <div>~</div>
+    <a href="#AboutMe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.77 434.63">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #fff;
+                    }
+                </style>
+            </defs>
+            <g id="Capa_2" data-name="Capa 2">
+                <path class="cls-1"
+                    d="M404.8,253.28l73.58,73.58,73.58-73.58L805.24,0H956.77L554.15,402.62l-.02-.02a105.576,105.576,0,0,1-151.49,0l-.02.02L0,0H151.52Z" />
+            </g>
+        </svg>
+    </a>
 </section>
 
 <section class="about" id="AboutMe">
-    <h2 class="container">{{ aboutMeTitle }}</h2>
+    <h2 class="container">{{ language.aboutMeTitle }}</h2>
 
     <div class="container grid-container about-content">
 
         <div class="column">
             <div class="card">
-                <p> Este es un texto random para ver como se ocupa el lugar: ¡Buenas! Soy un programador enfocado en la fusión creativa de diseño y funcionalidad. Me especializo
-                    en páginas web llamativas y accesibles, utilizando diversas herramientas para superar tus
-                    expectativas. Además, brindo los servicios necesarios para suplir tus necesidades digitales.</p>
+                <p> {{ language.about.main }} </p>
             </div>
 
             <div class="card card-button">
-                <a href="#Contact">Contacto</a>
-                <a href="#">LN</a>
+                <a href="#Contact">{{ language.contactTitle }}</a>
+                <a href="#">IN</a>
                 <a href="#">IG</a>
-                <a href="#">TW</a>
+                <a href="#">X</a>
                 <a href="#">CV</a>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <p>Que estudio y que cosas me gustan de la programacion y del area tech.</p>
-                <div class="tags">
-                    <p>Web</p>
-                    <p>PE</p>
-                    <p>POO</p>
-                    <p>PC</p>
-                </div>
+                <h4 class="subtitle">{{ language.about.study }}</h4>
+                <p>{{ language.about.studyText }}</p>
             </div>
 
             <div class="card">
-                <p>Cuales son mis intereses en el arte, el hecho de que gane algunos premios</p>
-                <div class="tags">
-                    <p>Poesía</p>
-                    <p>Cuento</p>
-                    <p>Relato</p>
-                    <p>Ensayo</p>
-                </div>
+                <h4 class="subtitle">{{ language.about.art }}</h4>
+                <p>{{ language.about.artText }}</p>
             </div>
         </div>
 
         <div class="column">
             <div class="about-image">
-                <h4>Juan Cruz <span>Bolatti Torcasio</span></h4>
+                <h4>Juan Cruz <br><span>Bolatti Torcasio</span></h4>
                 <img src="/img/imagen-ejemplo-01.jpg" alt="">
             </div>
         </div>
@@ -64,60 +62,55 @@
 </section>
 
 <section class="container what-i-do" id="WhatIDo">
-    <h2>{{ whatIDoTitle }}</h2>
+    <h2>{{ language.whatIDoTitle }}</h2>
 
     <div class="what-i-do-content">
 
         <div class="what-i-do-column">
             <div class="card">
-                <h4 class="subtitle">Desarrollo</h4>
-                <p>Un breve texto explicando cuales son los limites de lo que puedo hacer, es decir, puedo manejar
-                    usuarios, paginas dinamicas, todo eso.</p>
-                <h5>1. Entrevista</h5>
-                <p>Aca va el texto explicando que para poder diseñar tengo que entender que es lo que quiere el cliente,
-                    pero lindo claramente.</p>
-                <h5>2. Diseño</h5>
-                <p>Aca va el texto que explica mi proceso de diseño, que busco la coherencia, experiencia de usuario y
-                    ritmo, que el cliente puede opinar</p>
-                <h5>3. Recursos</h5>
-                <p>Aca digo que unos buenos recursos cambian todo, y que bien los puede obtener la empresa como yo.</p>
-                <h5>4. Desarrollo</h5>
-                <p>Nada, eso, el desarrollo, quizas le llamo programación, es llevar a la vida la cosa</p>
-                <h5>5. Publicación</h5>
-                <p>Aca digo que ayudo con la publicacion</p>
-                <h5>6. Publicación</h5>
-                <p>Aca explico que ofrezco el servicio de mantenimiento</p>
+                <h4 class="subtitle">{{ language.whatIDo.development }}</h4>
+                <p>{{ language.whatIDo.developmentMainText }}</p>
+                <h5>1. {{ language.whatIDo.interview }}</h5>
+                <p>{{ language.whatIDo.interviewText }}</p>
+                <h5>2. {{ language.whatIDo.desing }}</h5>
+                <p>{{ language.whatIDo.designText }}</p>
+                <h5>3. {{ language.whatIDo.resource }}</h5>
+                <p>{{ language.whatIDo.resourceText }}</p>
+                <h5>4. {{ language.whatIDo.development }}</h5>
+                <p>{{ language.whatIDo.developmentText }}</p>
+                <h5>5. {{ language.whatIDo.publication }}</h5>
+                <p>{{ language.whatIDo.publicationText }}</p>
+                <h5>6. {{ language.whatIDo.maintenance }}</h5>
+                <p>{{ language.whatIDo.maintenanceText }}</p>
             </div>
         </div>
 
         <div class="what-i-do-column">
             <div class="card">
-                <h4 class="subtitle">Diseño</h4>
-                <p>Diseño coherente, basado en el ritmo y experiencia de usuario. Abstraigo los conceptos principales de
-                    la empresa, veo donde puede destacar, y exploto las ventajas buscando un diseño profesional.</p>
+                <h4 class="subtitle">{{ language.whatIDo.desing }}</h4>
+                <p>{{ language.whatIDo.designMainText }}</p>
             </div>
 
             <div class="card">
-                <h4 class="subtitle">Marca</h4>
-                <p>No soy un especialista pero estudie bastante, con el concepto de la empresa busco un hueco en la
-                    industria para explotar las ventajas de la empresa</p>
+                <h4 class="subtitle">{{ language.whatIDo.brand }}</h4>
+                <p>{{ language.whatIDo.brandMainText }}</p>
             </div>
         </div>
 
         <div class="what-i-do-column">
             <div class="card">
-                <h4 class="subtitle">Imagen</h4>
-                <p>Puedo sacar fotos, editar fotos, editar videos simples</p>
+                <h4 class="subtitle">{{ language.whatIDo.image }}</h4>
+                <p>{{ language.whatIDo.imageMainText }}</p>
             </div>
 
             <div class="card">
-                <h4 class="subtitle">Redacción</h4>
-                <p>puedo escribir, no quiero, pero puedo</p>
+                <h4 class="subtitle">{{ language.whatIDo.drafting }}</h4>
+                <p>{{ language.whatIDo.draftingMainText }}</p>
             </div>
 
             <div class="card">
-                <h4 class="subtitle">Animación</h4>
-                <p>puedo implementar animaciones o hacer animaciones simples</p>
+                <h4 class="subtitle">{{ language.whatIDo.animation }}</h4>
+                <p>{{ language.whatIDo.animationMainText }}</p>
             </div>
         </div>
 
@@ -125,11 +118,11 @@
 </section>
 
 <section class="container knowledge">
-    <h2>{{ knowledgeTitle }}</h2>
+    <h2>{{ language.knowledgeTitle }}</h2>
 
     <div class="knowledge-content">
         <div class="card knowledge-card">
-            <h4 class="subtitle">Diseño y Producción</h4>
+            <h4 class="subtitle">{{language.whatIDo.desing}} {{language.and}} {{language.whatIDo.production}}</h4>
 
             <ul>
                 <li>
@@ -174,7 +167,7 @@
 
             </ul>
 
-            <h5>Basico</h5>
+            <h5>{{language.whatIDo.basic}}</h5>
 
             <ul>
                 <li>
@@ -203,7 +196,7 @@
                 </li>
             </ul>
 
-            <h5>Aprendiendo</h5>
+            <h5>{{language.whatIDo.learning}}</h5>
 
             <ul>
                 <li>
@@ -217,7 +210,7 @@
         </div>
 
         <div class="card knowledge-card">
-            <h4 class="subtitle">Desarrollo Web</h4>
+            <h4 class="subtitle"> {{ language.pageTitle }}</h4>
 
             <ul>
 
@@ -271,7 +264,7 @@
 
             </ul>
 
-            <h5>Basico</h5>
+            <h5>{{language.whatIDo.basic}}</h5>
 
             <ul>
                 <li>
@@ -283,7 +276,7 @@
                 </li>
             </ul>
 
-            <h5>Aprendiendo</h5>
+            <h5>{{language.whatIDo.learning}}</h5>
 
             <ul>
                 <li>
@@ -298,7 +291,7 @@
 
         <div style="display: flex; flex-direction: column; gap: 2rem;">
             <div class="card knowledge-card">
-                <h4 class="subtitle">Programación y tech</h4>
+                <h4 class="subtitle">{{language.whatIDo.programming}} {{language.and}} {{language.whatIDo.tech}}</h4>
 
                 <ul>
                     <li>
@@ -318,7 +311,7 @@
                     </li>
                 </ul>
 
-                <h5>Basico</h5>
+                <h5>{{language.whatIDo.basic}}</h5>
 
                 <ul>
                     <li>
@@ -330,7 +323,7 @@
                     </li>
                 </ul>
 
-                <h5>Aprendiendo</h5>
+                <h5>{{language.whatIDo.learning}}</h5>
 
                 <ul>
                     <li>
@@ -344,9 +337,9 @@
             </div>
 
             <div class="card knowledge-card display-pc">
-                <h4 class="subtitle">Otros</h4>
+                <h4 class="subtitle">{{language.whatIDo.others}}</h4>
 
-                <h5>Basiquisimo</h5>
+                <h5>{{language.whatIDo.basic}}</h5>
                 <ul>
                     <li>
                         <div>
@@ -371,15 +364,15 @@
 </section>
 
 <section class="container work" id="Work">
-    <h2>{{ workTitle }}</h2>
+    <h2>{{ language.workTitle }}</h2>
 
     <div class="work-content">
 
         <div class="work-card-large">
             <div class="work-card-content">
                 <h4>Moldemat</h4>
-                <p>Empresa de matricería y moldes</p>
-                <a href="#">Visitar</a>
+                <p>{{ language.work.description01 }}</p>
+                <a href="#">{{ language.work.visit }}</a>
             </div>
             <img src="/img/imagen-ejemplo-01.jpg" alt="">
         </div>
@@ -387,8 +380,8 @@
         <div class="work-card-large">
             <div class="work-card-content">
                 <h4>Grafica</h4>
-                <p>Empresa de graficas y flexibles</p>
-                <a href="#">Visitar</a>
+                <p>{{ language.work.description02 }}</p>
+                <a href="#">{{ language.work.visit }}</a>
             </div>
             <img src="/img/imagen-ejemplo-02.jpg" alt="#">
         </div>
@@ -396,36 +389,36 @@
         <div class="work-card-large">
             <div class="work-card-content">
                 <h4>Maru</h4>
-                <p>Portafolio con animaciones integradas</p>
-                <a href="#">Visitar</a>
+                <p>{{ language.work.description03 }}</p>
+                <a href="#">{{ language.work.visit }}</a>
             </div>
             <img src="/img/imagen-ejemplo-03.jpg" alt="">
         </div>
 
         <div class="work-card-small">
-            <h4>Ejemplo de Titulo</h4>
-            <p>Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente</p>
+            <h4>{{ language.work.smallCardTitle01 }}</h4>
+            <p>{{ language.work.smallCardText01 }}</p>
         </div>
 
         <div class="work-card-small">
-            <h4>Ejemplo de Titulo</h4>
-            <p>Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente</p>
+            <h4>{{ language.work.smallCardTitle02 }}</h4>
+            <p>{{ language.work.smallCardText02 }}</p>
         </div>
 
         <div class="work-card-small">
-            <h4>Ejemplo de Titulo</h4>
-            <p>Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente</p>
+            <h4>{{ language.work.smallCardTitle03 }}</h4>
+            <p>{{ language.work.smallCardText03 }}</p>
         </div>
 
     </div>
 </section>
 
 <footer class="contact" id="Contact">
-    <h2 class="container">{{ contactTitle }}</h2>
+    <h2 class="container">{{ language.contactTitle }}</h2>
     <div class="contact-content">
         <div>
             <a href="#" id="anchor-ig">Instagram</a>
-            <a href="#" id="anchor-tw">Twitter</a>
+            <a href="#" id="anchor-tw">X // Twitter</a>
             <a href="#" id="anchor-yt">Youtube</a>
             <a href="#" id="anchor-fb">Facebook</a>
         </div>
@@ -439,8 +432,6 @@
         <div>
             <p>Email:</p>
             <a href="#">juancruzbolatti.t@gmail.com</a>
-            <p class="display-pc">Compratir:</p>
-            <a class="display-pc" href="#">juancruzbolatti.com</a>
         </div>
     </div>
 </footer>

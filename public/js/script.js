@@ -48,7 +48,7 @@ document.addEventListener('mousedown', event => {
 });
 
 document.addEventListener('mouseup', event => {
-  if (event.button === 0) { 
+  if (event.button === 0) {
     cursor.style.transform = "scale(1)";
   }
 });
@@ -59,13 +59,30 @@ const bubble = document.querySelector('.background-bubble');
 document.onmousemove = event => {
   const { clientX, clientY } = event;
 
-  bubble.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 2000, fill: 'forwards' });
+  if (window.innerWidth > 768) {
+    bubble.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 2000, fill: 'forwards' });
 
-  cursor.style.left = (clientX - cursor.offsetWidth / 2) + 'px';
-  cursor.style.top = (clientY - cursor.offsetHeight / 2) + 'px';
+    cursor.style.left = (clientX - cursor.offsetWidth / 2) + 'px';
+    cursor.style.top = (clientY - cursor.offsetHeight / 2) + 'px';
+  } else {
+    bubble.animate({
+      left: "50%",
+      top: "50%"
+    }, { duration: 2000, fill: 'forwards' });
+  }
+}
+
+const bubble01 = bubble.querySelector("#bubble-01");
+const bubble02 = bubble.querySelector("#bubble-02");
+const bubble03 = bubble.querySelector("#bubble-03");
+
+function changeColorBubble(color01, color02, color03) {
+  bubble01.style.backgroundColor = `#${color01}`;
+  bubble02.style.backgroundColor = `#${color02}`;
+  bubble03.style.backgroundColor = `#${color03}`;
 }
 
 // Logo Display
@@ -99,3 +116,43 @@ function navbarDisplay(number) {
   logoDisplay(number);
   cornerDisplay(number);
 }
+
+// Scroll Displays
+const sections = document.querySelectorAll('section, footer');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      switch (entry.target.id) {
+        case 'Home':
+          navbarDisplay(0);
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+        case 'AboutMe':
+          navbarDisplay(1);
+          changeColorBubble('4a5fb0', '7352b6', 'b452a0');
+          break;
+        case 'WhatIDo':
+          navbarDisplay(2);
+          changeColorBubble('b452a0', 'b4525e', 'b66e52');
+          break;
+        case 'Work':
+          navbarDisplay(3);
+          changeColorBubble('52b48b', '52b0b4', '527ab4');
+          break;
+        case 'Contact':
+          navbarDisplay(4);
+          changeColorBubble('528eb4', '5268b4', '5f52b4');
+          break;
+        default:
+          navbarDisplay(2);
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+      }
+    }
+  });
+}, { threshold: 0.8 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});

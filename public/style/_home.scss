@@ -17,8 +17,7 @@
     div:first-of-type {
         position: relative;
 
-        h1,
-        h3 {
+        h1 {
             position: absolute;
             width: 100%;
             font-size: 8.7vw;
@@ -29,23 +28,23 @@
             margin: 0;
             opacity: 0.9;
         }
-
-        h3 {
-            opacity: 0;
-        }
     }
 
-    div:last-of-type {
+    a {
         position: absolute;
-        bottom: 0;
-        left: calc(50% - 1.8rem);
-        font-size: 6rem;
-        color: rgb(255, 255, 255);
+        bottom: 3rem;
+        left: calc(50% - 2.5rem);
+        width: 5rem;
+        height: 4rem;
+        opacity: 0.8;
+        animation: arrowAnimation 1s forwards;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .home {
+        height: 50vh;
+
         p {
             font-size: 5vw;
             line-height: 3.2vw;
@@ -62,5 +61,27 @@
                 letter-spacing: -2px;
             }
         }
+
+        a {
+            bottom: 25vh;
+        }
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        height: 5rem;
+    }
+    5% {
+        height: 5rem;
+    }
+    35% {
+        height: 3rem;
+    }
+    65% {
+        height: 5rem;
+    }
+    100% {
+        height: 4rem;
     }
 }

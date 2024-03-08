@@ -1,10 +1,10 @@
 // variables
 $background-color: #181717;
-$color-developer: #ff0000;
-$color-design: #ff7700;
-$color-brand: #00ffe1;
-$color-image: #0080ff;
-$color-drafting: #5500ff;
+$color-base: #fff;
+$color-about: #8f57ff;
+$color-whatido: #ff8457;
+$color-work: #57eeff;
+$color-contact: #576bff;
 
 /* Fonts */
 @font-face {
@@ -80,6 +80,12 @@ h2 {
     opacity: 0.9;
 }
 
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
 /** Utilities **/
 /* Usuals */
 .fullscreen {
@@ -88,22 +94,6 @@ h2 {
     width: calc(var(--vw, 1vw) * 100);
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-}
-
-.design-title {
-    color: $color-design;
-}
-
-.brand-title {
-    color: $color-brand;
-}
-
-.image-title {
-    color: $color-image;
-}
-
-.drafting-title {
-    color: $color-drafting;
 }
 
 .grid-container {

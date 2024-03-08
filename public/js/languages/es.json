@@ -1,13 +1,63 @@
 {
-    "pageTitle": "Desarrollador Web",
+    "and": "y",
     "aboutMeTitle": "Sobre Mí",
-    "whatIDoTitle": "Que Hago",
+    "whatIDoTitle": "Servicios",
     "knowledgeTitle": "Conocimientos",
-    "workTitle": "Mi Trabajo",
+    "workTitle": "Portafolio",
     "contactTitle": "Contacto",
-    "contact": [
-        {
-            "share": "Compartir:"
-        }
-    ]
+    "pageTitle": "Desarrollador Web",
+    "about": {
+        "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed feugiat metus, ut eleifend ligula. Ut tristique tincidunt ante, sit amet eleifend elit varius eu. Nulla accumsan magna elit, ut semper purus ullamcorper at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque pharetra, tellus et volutpat malesuada, turpis massa facilisis lorem, et pellentesque ipsum massa in lectus. Morbi ac ultricies magna. Etiam quis lacus vel mi sollicitudin molestie vel ac sem. Suspendisse et vulputate lorem. Sed ornare pellentesque libero vitae rutrum.",
+        "study": "Estudios",
+        "studyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed feugiat metus, ut eleifend ligula. Ut tristique tincidunt ante, sit amet eleifend elit varius eu. Nulla accumsan magna elit, ut semper purus ullamcorper at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "art": "Arte",
+        "artText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed feugiat metus, ut eleifend ligula. Ut tristique tincidunt ante, sit amet eleifend elit varius eu. Nulla accumsan magna elit, ut semper purus ullamcorper at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    "whatIDo": {
+        "development": "Desarrollo",
+        "developmentMainText": "Un breve texto explicando cuales son los limites de lo que puedo hacer, es decir, puedo manejar usuarios, paginas dinamicas, todo eso.",
+        "interview": "Entrevista",
+        "interviewText": "Aca va el texto explicando que para poder diseñar tengo que entender que es lo que quiere el cliente, pero lindo claramente.",
+        "desing": "Diseño",
+        "designText": "Aca va el texto que explica mi proceso de diseño, que busco la coherencia, experiencia de usuario y ritmo, que el cliente puede opinar",
+        "resource": "Recursos",
+        "resourceText": "Aca digo que unos buenos recursos cambian todo, y que bien los puede obtener la empresa como yo.",
+        "developmentText": "Nada, eso, el desarrollo, quizas le llamo programación, es llevar a la vida la cosa",
+        "publication": "Publicación",
+        "publicationText": "Aca digo que ayudo con la publicacion",
+        "maintenance": "Mantenimiento",
+        "maintenanceText": "Aca explico que ofrezco el servicio de mantenimiento",
+        "designMainText": "Diseño coherente, basado en el ritmo y experiencia de usuario. Abstraigo los conceptos principales de la empresa, veo donde puede destacar, y exploto las ventajas buscando un diseño profesional.",
+        "brand": "Marca",
+        "brandMainText": "No soy un especialista pero estudie bastante, con el concepto de la empresa busco un hueco en la industria para explotar las ventajas de la empresa",
+        "image": "Imagen",
+        "imageMainText": "Puedo sacar fotos, editar fotos, editar videos simples",
+        "drafting": "Redacción",
+        "draftingMainText": "puedo escribir, no quiero, pero puedo",
+        "animation": "Animación",
+        "animationMainText": "puedo implementar animaciones o hacer animaciones simples",
+        "production": "Producción",
+        "basic": "Básico",
+        "learning": "Aprendiendo",
+        "programming": "Programación",
+        "tech": "Tecnologías",
+        "others": "Otros"
+    },
+    "work": {
+        "description01": "Empresa de matricería y moldes",
+        "description02": "Empresa de graficas y flexibles",
+        "description03": "Portafolio con animaciones integradas",
+        "visit": "Visitar",
+        "smallCardTitle01": "Ejemplo de Titulo",
+        "smallCardText01": "Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente",
+        "smallCardTitle02": "Ejemplo de Titulo",
+        "smallCardText02": "Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente",
+        "smallCardTitle03": "Ejemplo de Titulo",
+        "smallCardText03": "Este es un gran ejemplo de lo que podria llegar a ser el texto que ocupe este espacio, no? claramente"
+    },
+    "corner": {
+        "visit": "Visita mi Marca",
+        "know": "Conocé mis otros Proyectos",
+        "rights": "Derechos Reservados"
+    }
 }

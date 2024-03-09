@@ -1,7 +1,13 @@
 /* Fonts */
 @font-face {
   font-family: "nunitoSans";
-  src: url("/fonts/nunitoSans.ttf");
+  src: url("/fonts/nunitoSans.woff2") format("woff2");
+  font-weight: 0 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "nunitoSansBlack";
+  src: url("/fonts/nunitoSansBlack.ttf");
 }
 @font-face {
   font-family: "spaceMonoRegular";
@@ -141,11 +147,16 @@ h2 {
   display: block !important;
 }
 
+.display-pc-flex {
+  display: flex !important;
+}
+
 @media only screen and (max-width: 768px) {
   .display-mobile {
     display: block !important;
   }
-  .display-pc {
+  .display-pc,
+  .display-pc-flex {
     display: none !important;
   }
 }
@@ -335,8 +346,14 @@ h2 {
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
 }
-.header .socials a:hover {
-  color: aqua;
+.header .socials a:nth-child(1):hover {
+  color: #3ddcff;
+}
+.header .socials a:nth-child(2):hover {
+  color: #ff538c;
+}
+.header .socials a:nth-child(3):hover {
+  color: #3ddcff;
 }
 .header .corner {
   font-family: "spaceMonoRegular", "nunitoSans", Helvetica;
@@ -451,6 +468,7 @@ h2 {
   position: relative;
 }
 .home div:first-of-type h1 {
+  font-family: "nunitoSansBlack", Helvetica;
   position: absolute;
   width: 100%;
   font-size: 8.7vw;
@@ -469,6 +487,11 @@ h2 {
   height: 4rem;
   opacity: 0.8;
   animation: arrowAnimation 1s forwards;
+  transition: 0.3s ease-in-out;
+}
+.home a:hover {
+  opacity: 1;
+  bottom: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -515,8 +538,8 @@ h2 {
   background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
   -webkit-backdrop-filter: saturate(180%) blur(200px);
   backdrop-filter: saturate(180%) blur(200px);
-  padding: 15vh 0 20vh;
-  height: 100vh;
+  padding: 12vh 0 20vh;
+  min-height: 100vh;
 }
 .about .about-content .column .card {
   padding: 2rem;
@@ -532,14 +555,13 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 1rem;
 }
 .about .about-content .column .card-button a {
   font-size: 0.9vw;
   line-height: 0.9vw;
   font-weight: 900;
   padding: 1.5rem 2rem;
-  margin: 1rem;
   border-radius: 13px;
   transition: 0.3s ease-in-out;
 }
@@ -563,7 +585,9 @@ h2 {
 }
 .about .about-content .column .about-image {
   position: relative;
+  width: 100%;
   height: 100%;
+  max-height: 50vh;
   border-radius: 13px;
   overflow: hidden;
 }
@@ -584,7 +608,8 @@ h2 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 0.3s ease-in-out;
+  -o-object-position: top;
+     object-position: top;
 }
 .about .about-content .column .about-image h4 {
   position: absolute;
@@ -614,6 +639,22 @@ h2 {
   .about .about-content .column .card p {
     font-size: 1.8rem;
     line-height: 2rem;
+  }
+  .about .about-content .column .about-image {
+    height: 50vh;
+  }
+  .about .about-content .column .about-image h4 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .about .about-content .column:nth-of-type(1) {
+    order: 2;
+  }
+  .about .about-content .column:nth-of-type(2) {
+    order: 3;
+  }
+  .about .about-content .column:nth-of-type(3) {
+    order: 1;
   }
 }
 /** What I Do **/
@@ -650,6 +691,10 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  .what-i-do {
+    margin-top: 0;
+    padding-top: 6rem;
+  }
   .what-i-do .what-i-do-content {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -676,13 +721,21 @@ h2 {
   align-items: start;
   gap: 2rem;
 }
+.knowledge .knowledge-content #knowledge-card-color-blue {
+  -webkit-backdrop-filter: hue-rotate(330deg);
+  backdrop-filter: hue-rotate(330deg);
+}
+.knowledge .knowledge-content #knowledge-card-color-green {
+  -webkit-backdrop-filter: hue-rotate(300deg);
+  backdrop-filter: hue-rotate(300deg);
+}
+.knowledge .knowledge-content #knowledge-card-color-red {
+  -webkit-backdrop-filter: hue-rotate(20deg);
+  backdrop-filter: hue-rotate(20deg);
+}
 .knowledge .knowledge-content .knowledge-card {
   border-radius: 13px;
   padding: 2rem 2rem 1.5rem;
-}
-.knowledge .knowledge-content .knowledge-card:nth-child(1) {
-  -webkit-backdrop-filter: hue-rotate(300deg);
-  backdrop-filter: hue-rotate(300deg);
 }
 .knowledge .knowledge-content .knowledge-card ul {
   padding: 1rem;
@@ -880,14 +933,23 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  .work {
+    margin-top: 0;
+    padding-top: 8rem;
+  }
   .work .work-content {
     grid-template-columns: 1fr;
   }
+  .work .work-content .work-card-large .work-card-content {
+    opacity: 1;
+    padding: 10rem 2rem 2rem;
+  }
   .work .work-content .work-card-large .work-card-content h4 {
     font-size: 3rem;
+    line-height: 4.2rem;
   }
   .work .work-content .work-card-large:hover .work-card-content h4 {
-    line-height: 3rem;
+    line-height: 4.2rem;
   }
   .work .work-content .work-card-small h4 {
     font-size: 2rem;

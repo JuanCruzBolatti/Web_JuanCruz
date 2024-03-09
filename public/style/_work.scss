@@ -150,20 +150,29 @@
 
 @media only screen and (max-width: 768px) {
     .work {
+        margin-top: 0;
+        padding-top: 8rem;
+
         .work-content {
             grid-template-columns: 1fr;
 
             .work-card-large {
+
+
                 .work-card-content {
+                    opacity: 1;
+                    padding: 10rem 2rem 2rem;
+
                     h4 {
                         font-size: 3rem;
+                        line-height: 4.2rem;
                     }
                 }
 
                 &:hover {
                     .work-card-content {
                         h4 {
-                            line-height: 3rem;
+                            line-height: 4.2rem;
                         }
                     }
                 }

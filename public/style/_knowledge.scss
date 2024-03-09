@@ -7,15 +7,24 @@
         align-items: start;
         gap: 2rem;
 
+        #knowledge-card-color-blue {
+            -webkit-backdrop-filter: hue-rotate(330deg);
+            backdrop-filter: hue-rotate(330deg);
+        }
+
+        #knowledge-card-color-green {
+            -webkit-backdrop-filter: hue-rotate(300deg);
+            backdrop-filter: hue-rotate(300deg);
+        }
+
+        #knowledge-card-color-red {
+            -webkit-backdrop-filter: hue-rotate(20deg);
+            backdrop-filter: hue-rotate(20deg);
+        }
+
         .knowledge-card {
             border-radius: 13px;
             padding: 2rem 2rem 1.5rem;
-
-            &:nth-child(1) {
-                -webkit-backdrop-filter: hue-rotate(300deg);
-                backdrop-filter: hue-rotate(300deg);
-            }
-
 
             ul {
                 padding: 1rem;

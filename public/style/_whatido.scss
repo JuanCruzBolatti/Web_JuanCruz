@@ -37,6 +37,9 @@
 
 @media only screen and (max-width: 768px) {
     .what-i-do {
+        margin-top: 0;
+        padding-top: 6rem;
+
         .what-i-do-content {
             grid-template-columns: 1fr;
             gap: 1rem;

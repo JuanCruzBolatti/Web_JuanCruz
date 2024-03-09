@@ -3,7 +3,8 @@
 // Cursor
 const cursor = document.querySelector(".cursor-ball");
 const circle = document.querySelector("#circle");
-const smallHoverable = document.querySelectorAll(".navbar a, .work a, .contact a");
+const smallHoverable = document.querySelectorAll(".navbar a, .contact a");
+const bigHoverable = document.querySelectorAll(".card");
 const hoverable = document.querySelectorAll("a");
 
 hoverable.forEach(item => {
@@ -14,6 +15,11 @@ hoverable.forEach(item => {
 smallHoverable.forEach(item => {
   item.addEventListener("mouseenter", onMouseHoverNavbar);
   item.addEventListener("mouseleave", onMouseHoverOutNavbar);
+});
+
+bigHoverable.forEach(item => {
+  item.addEventListener("mouseenter", onMouseHoverCards);
+  item.addEventListener("mouseleave", onMouseHoverOutCards);
 });
 
 function onMouseHover() {
@@ -35,6 +41,18 @@ function onMouseHoverNavbar() {
   circle.style.strokeWidth = "0";
 }
 function onMouseHoverOutNavbar() {
+  cursor.style.transform = "scale(1)";
+  circle.style.fill = "#fff";
+  circle.style.stroke = "transparent";
+  circle.style.strokeWidth = "0";
+}
+function onMouseHoverCards() {
+  cursor.style.transform = "scale(2)";
+  circle.style.fill = "#fff";
+  circle.style.stroke = "transparent";
+  circle.style.strokeWidth = "0";
+}
+function onMouseHoverOutCards() {
   cursor.style.transform = "scale(1)";
   circle.style.fill = "#fff";
   circle.style.stroke = "transparent";
@@ -120,7 +138,7 @@ function navbarDisplay(number) {
 // Scroll Displays
 const sections = document.querySelectorAll('section, footer');
 
-const observer = new IntersectionObserver((entries) => {
+const observerPc = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       switch (entry.target.id) {
@@ -134,7 +152,7 @@ const observer = new IntersectionObserver((entries) => {
           break;
         case 'WhatIDo':
           navbarDisplay(2);
-          changeColorBubble('b452a0', 'b4525e', 'b66e52');
+          changeColorBubble('8e4ab0', 'b65297', 'b4525a');
           break;
         case 'Work':
           navbarDisplay(3);
@@ -146,13 +164,45 @@ const observer = new IntersectionObserver((entries) => {
           break;
         default:
           navbarDisplay(2);
-          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          changeColorBubble('b04aaa', '6952b6', '5289b4');
           break;
       }
     }
   });
 }, { threshold: 0.8 });
 
+const observerMobile = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      switch (entry.target.id) {
+        case 'Home':
+          navbarDisplay(0);
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+        case 'AboutMe':
+          changeColorBubble('4a5fb0', '7352b6', 'b452a0');
+          break;
+        case 'WhatIDo':
+          changeColorBubble('b452a0', 'b4525e', 'b66e52');
+          break;
+        case 'Work':
+          changeColorBubble('52b48b', '52b0b4', '527ab4');
+          break;
+        case 'Contact':
+          changeColorBubble('528eb4', '5268b4', '5f52b4');
+          break;
+        default:
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+      }
+    }
+  });
+}, { threshold: 0.1 });
+
 sections.forEach(section => {
-  observer.observe(section);
+  if(window.innerWidth > 768) {
+    observerPc.observe(section);
+  } else {
+    observerMobile.observe(section);
+  }
 });

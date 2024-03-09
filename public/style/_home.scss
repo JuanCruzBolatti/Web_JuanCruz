@@ -18,6 +18,7 @@
         position: relative;
 
         h1 {
+            font-family: "nunitoSansBlack", Helvetica;
             position: absolute;
             width: 100%;
             font-size: 8.7vw;
@@ -38,6 +39,12 @@
         height: 4rem;
         opacity: 0.8;
         animation: arrowAnimation 1s forwards;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            bottom: 4rem;
+        }
     }
 }
 

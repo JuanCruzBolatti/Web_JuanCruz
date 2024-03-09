@@ -533,6 +533,7 @@ h2 {
 }
 /** About **/
 .about {
+  margin-top: 2.2vw;
   width: 100%;
   background: rgb(231, 231, 231);
   background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
@@ -659,7 +660,7 @@ h2 {
 }
 /** What I Do **/
 .what-i-do {
-  margin-top: 7vw;
+  margin-top: 7.2vw;
 }
 .what-i-do .what-i-do-content {
   display: grid;
@@ -713,7 +714,7 @@ h2 {
 }
 /** Knowledge **/
 .knowledge {
-  margin-top: 3.5vw;
+  margin-top: 7vw;
 }
 .knowledge .knowledge-content {
   display: grid;

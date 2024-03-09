@@ -1,5 +1,3 @@
-// Usuals
-
 // Cursor
 const cursor = document.querySelector(".cursor-ball");
 const circle = document.querySelector("#circle");
@@ -200,7 +198,7 @@ const observerMobile = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 sections.forEach(section => {
-  if(window.innerWidth > 768) {
+  if (window.innerWidth > 768) {
     observerPc.observe(section);
   } else {
     observerMobile.observe(section);

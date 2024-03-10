@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Set Up Handlebars View Engine
+app.set('views', path.join(__dirname, 'views'));
 const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');

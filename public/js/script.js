@@ -21,7 +21,7 @@ bigHoverable.forEach(item => {
 });
 
 function onMouseHover() {
-  cursor.style.transform = "scale(4)";
+  cursor.style.transform = "scale(5)";
   circle.style.fill = "none";
   circle.style.stroke = "white";
   circle.style.strokeWidth = ".4px";

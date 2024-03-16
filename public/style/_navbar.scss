@@ -103,19 +103,13 @@
             line-height: 1.8rem;
             font-weight: 900;
             color: #fff;
-            opacity: 0.9;
+            opacity: 0.8;
             margin: 0;
             transition: .3s ease-in-out;
             text-transform: uppercase;
 
-            &:nth-child(1):hover {
-                color: #3ddcff;
-            }
-            &:nth-child(2):hover {
-                color: #ff538c;
-            }
-            &:nth-child(3):hover {
-                color: #3ddcff;
+            &:hover {
+                opacity: 1;
             }
         }
     }

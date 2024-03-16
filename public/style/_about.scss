@@ -1,8 +1,8 @@
 .about {
     margin-top: 2.2vw;
     width: 100%;
-    background: rgb(231,231,231);
-    background: linear-gradient(129deg, rgba(231,231,231,0.1) 0%, rgba(159,159,159,0.1) 100%);
+    background: rgb(231, 231, 231);
+    background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
     -webkit-backdrop-filter: saturate(180%) blur(200px);
     backdrop-filter: saturate(180%) blur(200px);
     padding: 12vh 0 20vh;
@@ -41,21 +41,24 @@
                         background-color: rgba(44, 41, 41, 0.809);
                     }
 
-                    &:nth-of-type(2):hover {
-                        background-color: #1d80e4;
-                    }
-                    &:nth-of-type(3):hover {
-                        background-color: #ba1554;
-                    }
-                    &:nth-of-type(4):hover {
-                        background-color: #1c96e8;
-                    }
-                    &:nth-of-type(5):hover {
-                        background-color: #0e1d2d;
-                    }
-
                     &:nth-of-type(1):hover {
                         background-color: $color-contact;
+                    }
+
+                    &:nth-of-type(2):hover {
+                        background-color: #559cff;
+                    }
+
+                    &:nth-of-type(3):hover {
+                        background-color: #ff57ab;
+                    }
+
+                    &:nth-of-type(4):hover {
+                        background-color: #ff7b57;
+                    }
+
+                    &:nth-of-type(5):hover {
+                        background-color: #57b1ff;
                     }
                 }
             }
@@ -117,6 +120,7 @@
     .about {
         padding: 22vh 0 15vh;
         height: auto;
+
         .about-content {
             .column {
                 .card {
@@ -125,6 +129,7 @@
                         line-height: 2rem;
                     }
                 }
+
                 .about-image {
                     height: 50vh;
 

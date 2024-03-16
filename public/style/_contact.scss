@@ -1,6 +1,6 @@
 .contact {
     background-color: #121111;
-    padding-top: 2rem;
+    padding: 4rem 0 3rem;
     margin-top: 10vh;
     position: relative;
     z-index: 11;
@@ -40,7 +40,7 @@
                 }
 
                 &:hover::before {
-                    width: calc(100% + 3.5rem);
+                    width: calc(100% + 6.5rem);
                     background-color: rebeccapurple;
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
                 }
@@ -50,20 +50,12 @@
                 background-color: #ff214c;
             }
 
-            #anchor-tw:hover::before {
-                background-color: #1c96e8;
-            }
-
-            #anchor-yt:hover::before {
-                background-color: #f60002;
-            }
-
-            #anchor-fb:hover::before {
-                background-color: #336baf;
-            }
-
             #anchor-li:hover::before {
                 background-color: #0a63bc;
+            }
+
+            #anchor-re:hover::before {
+                background-color: #ff4500;
             }
 
             #anchor-cp:hover::before {
@@ -72,6 +64,10 @@
 
             #anchor-gh:hover::before {
                 background-color: #e84e31;
+            }
+            
+            #anchor-py:hover::before {
+                background-color: #e83180;
             }
 
             p {

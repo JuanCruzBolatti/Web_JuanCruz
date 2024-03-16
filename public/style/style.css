@@ -6,10 +6,6 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "nunitoSansBlack";
-  src: url("/fonts/nunitoSansBlack.ttf");
-}
-@font-face {
   font-family: "spaceMonoRegular";
   src: url("/fonts/SpaceMono-Regular.ttf");
 }
@@ -341,19 +337,13 @@ h2 {
   line-height: 1.8rem;
   font-weight: 900;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.8;
   margin: 0;
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
 }
-.header .socials a:nth-child(1):hover {
-  color: #3ddcff;
-}
-.header .socials a:nth-child(2):hover {
-  color: #ff538c;
-}
-.header .socials a:nth-child(3):hover {
-  color: #3ddcff;
+.header .socials a:hover {
+  opacity: 1;
 }
 .header .corner {
   font-family: "spaceMonoRegular", "nunitoSans", Helvetica;
@@ -454,6 +444,7 @@ h2 {
   height: 72vh;
   margin-top: 28vh;
   text-align: center;
+  padding: 0 3vw;
 }
 .home p {
   width: 100%;
@@ -468,15 +459,9 @@ h2 {
   position: relative;
 }
 .home div:first-of-type h1 {
-  font-family: "nunitoSansBlack", Helvetica;
   position: absolute;
   width: 100%;
-  font-size: 8.7vw;
-  line-height: 8.7vw;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.6vw;
-  margin: 0;
+  margin: 0 auto;
   opacity: 0.9;
 }
 .home a {
@@ -569,20 +554,20 @@ h2 {
 .about .about-content .column .card-button a:nth-of-type(1), .about .about-content .column .card-button a:nth-of-type(5) {
   background-color: rgba(44, 41, 41, 0.809);
 }
-.about .about-content .column .card-button a:nth-of-type(2):hover {
-  background-color: #1d80e4;
-}
-.about .about-content .column .card-button a:nth-of-type(3):hover {
-  background-color: #ba1554;
-}
-.about .about-content .column .card-button a:nth-of-type(4):hover {
-  background-color: #1c96e8;
-}
-.about .about-content .column .card-button a:nth-of-type(5):hover {
-  background-color: #0e1d2d;
-}
 .about .about-content .column .card-button a:nth-of-type(1):hover {
   background-color: #576bff;
+}
+.about .about-content .column .card-button a:nth-of-type(2):hover {
+  background-color: #559cff;
+}
+.about .about-content .column .card-button a:nth-of-type(3):hover {
+  background-color: #ff57ab;
+}
+.about .about-content .column .card-button a:nth-of-type(4):hover {
+  background-color: #ff7b57;
+}
+.about .about-content .column .card-button a:nth-of-type(5):hover {
+  background-color: #57b1ff;
 }
 .about .about-content .column .about-image {
   position: relative;
@@ -964,7 +949,7 @@ h2 {
 /** Contact **/
 .contact {
   background-color: #121111;
-  padding-top: 2rem;
+  padding: 4rem 0 3rem;
   margin-top: 10vh;
   position: relative;
   z-index: 11;
@@ -1004,7 +989,7 @@ h2 {
   z-index: -1;
 }
 .contact .contact-content div a:hover::before {
-  width: calc(100% + 3.5rem);
+  width: calc(100% + 6.5rem);
   background-color: rebeccapurple;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -1012,23 +997,20 @@ h2 {
 .contact .contact-content div #anchor-ig:hover::before {
   background-color: #ff214c;
 }
-.contact .contact-content div #anchor-tw:hover::before {
-  background-color: #1c96e8;
-}
-.contact .contact-content div #anchor-yt:hover::before {
-  background-color: #f60002;
-}
-.contact .contact-content div #anchor-fb:hover::before {
-  background-color: #336baf;
-}
 .contact .contact-content div #anchor-li:hover::before {
   background-color: #0a63bc;
+}
+.contact .contact-content div #anchor-re:hover::before {
+  background-color: #ff4500;
 }
 .contact .contact-content div #anchor-cp:hover::before {
   background-color: #3a393f;
 }
 .contact .contact-content div #anchor-gh:hover::before {
   background-color: #e84e31;
+}
+.contact .contact-content div #anchor-py:hover::before {
+  background-color: #e83180;
 }
 .contact .contact-content div p {
   margin: 0;

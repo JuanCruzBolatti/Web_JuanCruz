@@ -40,6 +40,10 @@ app.get('/brand', function(req, res) {
     res.render('brand');
 });
 
+app.get('/others', function(req, res) {
+    res.render('others');
+});
+
 // Port in Console
 app.listen(app.get('port'), () => {
     console.log('Iniciado en http://localhost:' + app.get('port'));

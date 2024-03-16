@@ -3,6 +3,7 @@
     height: calc(100vh - $margin-top);
     margin-top: $margin-top;
     text-align: center;
+    padding: 0 3vw;
 
     p {
         width: 100%;
@@ -18,15 +19,9 @@
         position: relative;
 
         h1 {
-            font-family: "nunitoSansBlack", Helvetica;
             position: absolute;
             width: 100%;
-            font-size: 8.7vw;
-            line-height: 8.7vw;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.6vw;
-            margin: 0;
+            margin: 0 auto;
             opacity: 0.9;
         }
     }

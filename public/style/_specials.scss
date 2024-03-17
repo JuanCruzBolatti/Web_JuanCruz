@@ -85,6 +85,26 @@
 
 @media only screen and (max-width: 768px) {
     .background-bubble {
-        animation-duration: 15s;
+        display: none;
+    }
+}
+
+.background-bubble-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-bubble-mobile {
+        display: block;
+        position: fixed;
+        top: calc(50% - 28rem);
+        left: calc(50% - 22.5rem);
+        z-index: -50;
+        animation: backgroundRotate 20s linear infinite;
+        width: 45rem;
+        height: 30rem;
+        background: rgb(176,74,170);
+        background: linear-gradient(129deg, rgba(176,74,170,1) 0%, rgba(105,82,182,1) 50%, rgba(82,137,180,1) 100%);
+        border-radius: 50%;
     }
 }

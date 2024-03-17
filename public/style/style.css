@@ -247,6 +247,16 @@ h2 {
     rotate: 360deg;
   }
 }
+@media only screen and (max-width: 1280px) {
+  .background-bubble {
+    animation-duration: 10s;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .background-bubble {
+    animation-duration: 15s;
+  }
+}
 /** Navbar **/
 .header {
   /* Logo */

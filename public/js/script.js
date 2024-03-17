@@ -76,18 +76,15 @@ document.onmousemove = event => {
   const { clientX, clientY } = event;
 
   if (window.innerWidth > 768) {
-    bubble.animate({
-      left: `${clientX}px`,
-      top: `${clientY}px`
-    }, { duration: 2000, fill: 'forwards' });
+    if(window.innerWidth > 1280) {
+      bubble.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+      }, { duration: 2000, fill: 'forwards' });
+    } 
 
     cursor.style.left = (clientX - cursor.offsetWidth / 2) + 'px';
     cursor.style.top = (clientY - cursor.offsetHeight / 2) + 'px';
-  } else {
-    bubble.animate({
-      left: "50%",
-      top: "50%"
-    }, { duration: 2000, fill: 'forwards' });
   }
 }
 
@@ -169,39 +166,38 @@ const observerPc = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.8 });
 
-// const observerMobile = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       switch (entry.target.id) {
-//         case 'Home':
-//           navbarDisplay(0);
-//           changeColorBubble('4a86b0', '5268b6', '7e52b4');
-//           break;
-//         case 'AboutMe':
-//           changeColorBubble('4a5fb0', '7352b6', 'b452a0');
-//           break;
-//         case 'WhatIDo':
-//           changeColorBubble('b452a0', 'b4525e', 'b66e52');
-//           break;
-//         case 'Work':
-//           changeColorBubble('52b48b', '52b0b4', '527ab4');
-//           break;
-//         case 'Contact':
-//           changeColorBubble('528eb4', '5268b4', '5f52b4');
-//           break;
-//         default:
-//           changeColorBubble('4a86b0', '5268b6', '7e52b4');
-//           break;
-//       }
-//     }
-//   });
-// }, { threshold: 0.3 });
+const observerMobile = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      switch (entry.target.id) {
+        case 'Home':
+          navbarDisplay(0);
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+        case 'AboutMe':
+          changeColorBubble('4a5fb0', '7352b6', 'b452a0');
+          break;
+        case 'WhatIDo':
+          changeColorBubble('b452a0', 'b4525e', 'b66e52');
+          break;
+        case 'Work':
+          changeColorBubble('52b48b', '52b0b4', '527ab4');
+          break;
+        case 'Contact':
+          changeColorBubble('528eb4', '5268b4', '5f52b4');
+          break;
+        default:
+          changeColorBubble('4a86b0', '5268b6', '7e52b4');
+          break;
+      }
+    }
+  });
+}, { threshold: 0.3 });
 
 sections.forEach(section => {
   if (window.innerWidth > 768) {
     observerPc.observe(section);
-  } 
-  // else {
-  //   observerMobile.observe(section);
-  // }
+  } else {
+    observerMobile.observe(section);
+  }
 });

@@ -127,8 +127,8 @@ h2 {
 .card {
   background: rgb(231, 231, 231);
   background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
-  -webkit-backdrop-filter: saturate(180%) blur(200px);
-  backdrop-filter: saturate(180%) blur(200px);
+  -webkit-backdrop-filter: saturate(180%) blur(100px);
+  backdrop-filter: saturate(180%) blur(100px);
   border: 1px solid rgba(231, 231, 231, 0.266);
   border-radius: 13px;
   width: 100%;
@@ -254,26 +254,7 @@ h2 {
 }
 @media only screen and (max-width: 768px) {
   .background-bubble {
-    display: none;
-  }
-}
-.background-bubble-mobile {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .background-bubble-mobile {
-    display: block;
-    position: fixed;
-    top: calc(50% - 28rem);
-    left: calc(50% - 22.5rem);
-    z-index: -50;
-    animation: backgroundRotate 20s linear infinite;
-    width: 45rem;
-    height: 30rem;
-    background: rgb(176, 74, 170);
-    background: linear-gradient(129deg, rgb(176, 74, 170) 0%, rgb(105, 82, 182) 50%, rgb(82, 137, 180) 100%);
-    border-radius: 50%;
+    animation-duration: 15s;
   }
 }
 /** Navbar **/
@@ -551,8 +532,6 @@ h2 {
   width: 100%;
   background: rgb(231, 231, 231);
   background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
-  -webkit-backdrop-filter: saturate(180%) blur(200px);
-  backdrop-filter: saturate(180%) blur(200px);
   padding: 12vh 0 20vh;
   min-height: 100vh;
 }

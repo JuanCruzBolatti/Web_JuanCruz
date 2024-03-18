@@ -1,10 +1,12 @@
 .about {
     margin-top: 2.2vw;
     width: 100%;
+    // background: rgb(231, 231, 231);
+    // background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
+    // -webkit-backdrop-filter: saturate(180%) blur(200px);
+    // backdrop-filter: saturate(180%) blur(200px);
     background: rgb(231, 231, 231);
     background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
-    -webkit-backdrop-filter: saturate(180%) blur(200px);
-    backdrop-filter: saturate(180%) blur(200px);
     padding: 12vh 0 20vh;
     min-height: 100vh;
 

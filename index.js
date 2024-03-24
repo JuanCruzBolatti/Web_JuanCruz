@@ -37,11 +37,14 @@ app.get('/', function(req, res) {
 });
 
 app.get('/brand', function(req, res) {
-    res.render('brand');
+    const lang = req.query.lang || 'es';
+    const language = loadLanguage(lang);
+
+    res.render('brand', { layout: 'others', language });
 });
 
-app.get('/others', function(req, res) {
-    res.render('others');
+app.get('/proyects', function(req, res) {
+    res.render('proyects', { layout: 'others' });
 });
 
 // Port in Console

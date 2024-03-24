@@ -76,12 +76,12 @@ document.onmousemove = event => {
   const { clientX, clientY } = event;
 
   if (window.innerWidth > 768) {
-    if(window.innerWidth > 1280) {
+    if (window.innerWidth > 1280 && bubble) {
       bubble.animate({
         left: `${clientX}px`,
         top: `${clientY}px`
       }, { duration: 2000, fill: 'forwards' });
-    } 
+    }
 
     cursor.style.left = (clientX - cursor.offsetWidth / 2) + 'px';
     cursor.style.top = (clientY - cursor.offsetHeight / 2) + 'px';

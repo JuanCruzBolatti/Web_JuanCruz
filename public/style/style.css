@@ -1,3 +1,4 @@
+/** Basic **/
 /* Fonts */
 @font-face {
   font-family: "nunitoSans";
@@ -961,6 +962,9 @@ h2 {
   margin-top: 10vh;
   position: relative;
   z-index: 11;
+}
+.contact h2 {
+  color: #fff;
 }
 .contact .contact-content {
   width: 70%;

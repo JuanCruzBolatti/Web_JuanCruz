@@ -8,7 +8,7 @@ const path = require('path');
 
 // Set Up Handlebars View Engine
 app.set('views', path.join(__dirname, 'views'));
-const handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+const handlebars = require('express-handlebars').create({ defaultLayout: 'main' });
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -29,22 +29,26 @@ function loadLanguage(lang) {
 }
 
 // Routing
-app.get('/', function(req, res) {
+app.get('/sitemap.xml', (req, res) => {
+    res.sendFile(path.join(__dirname, './sitemap.xml'));
+});
+
+app.get('/brand', function (req, res) {
+    const lang = req.query.lang || 'es';
+    const language = loadLanguage(lang);
+
+    res.render('brand', { layout: 'others', language, topTitle: 'Marca' });
+});
+
+app.get('/proyects', function (req, res) {
+    res.render('proyects', { layout: 'others', topTitle: 'Proyectos' });
+});
+
+app.get('/', function (req, res) {
     const lang = req.query.lang || 'es';
     const language = loadLanguage(lang);
 
     res.render('index', { language });
-});
-
-app.get('/brand', function(req, res) {
-    const lang = req.query.lang || 'es';
-    const language = loadLanguage(lang);
-
-    res.render('brand', { layout: 'others', language });
-});
-
-app.get('/proyects', function(req, res) {
-    res.render('proyects', { layout: 'others' });
 });
 
 // Port in Console

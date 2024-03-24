@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://juancruzbolatti.com/sitemap.xml
+
+Disallow: /admin
+Disallow: /private

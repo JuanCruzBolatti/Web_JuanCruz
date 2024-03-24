@@ -200,6 +200,18 @@ p {
   text-align: justify;
 }
 
+@media only screen and (max-width: 768px) {
+  h4 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  p {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    text-indent: 2rem;
+    text-align: justify;
+  }
+}
 /** Specials **/
 /* Cursor */
 .cursor-ball {
@@ -290,6 +302,7 @@ p {
   position: fixed;
   top: 0;
   left: 2rem;
+  z-index: 50;
 }
 .brand-nav a {
   position: absolute;
@@ -308,7 +321,6 @@ p {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2rem;
-  mix-blend-mode: difference;
   opacity: 0;
   transition: 0.2s ease-in-out;
 }
@@ -316,6 +328,26 @@ p {
   opacity: 1;
 }
 
+@media only screen and (max-width: 1280px) {
+  .brand-nav a::after {
+    color: #eeeeee;
+    left: 8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .brand-nav {
+    left: 0.5rem;
+    top: 0;
+  }
+  .brand-nav a {
+    transform: rotate(180deg);
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .brand-nav a:hover::after {
+    opacity: 0;
+  }
+}
 .brand-banner {
   width: 100%;
   margin: 0 auto;
@@ -342,12 +374,12 @@ p {
   transition: 0.2s ease-in-out;
 }
 .brand-banner .brand-arrow div:nth-of-type(1) {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
   left: 0;
   border-radius: 0 8px 8px 0;
 }
 .brand-banner .brand-arrow div:nth-of-type(2) {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
   right: 0;
   border-radius: 8px 0 0 8px;
 }
@@ -393,16 +425,34 @@ p {
   font-size: 1vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .brand-concept {
+    flex-direction: column;
+    align-items: start;
+  }
+  .brand-concept div:nth-of-type(1) {
+    width: 100%;
+  }
+  .brand-concept div:nth-of-type(2) {
+    width: 100%;
+  }
+  .brand-concept div:nth-of-type(2) h5 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .brand-concept div:nth-of-type(2) p {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+}
 .brand-sketch {
   margin-top: 10vw;
   width: 100%;
-  height: 80vh;
   padding: 0;
   position: relative;
 }
 .brand-sketch img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 13px;
@@ -418,17 +468,6 @@ p {
 .brand-color div:nth-of-type(1) {
   width: 50%;
 }
-.brand-color div:nth-of-type(1) h4 {
-  font-size: 4vw;
-  line-height: 4vw;
-  margin: 0;
-  font-weight: 700;
-}
-.brand-color div:nth-of-type(1) p {
-  font-size: 1.2vw;
-  text-indent: 2rem;
-  text-align: justify;
-}
 .brand-color div:nth-of-type(2) {
   width: 30%;
   display: flex;
@@ -440,15 +479,47 @@ p {
   border-radius: 13px;
   width: 100%;
   aspect-ratio: 1;
-  background-color: crimson;
+  background-image: url("../img/gradients/brand-01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease-in-out;
   position: relative;
 }
 .brand-color div:nth-of-type(2) div svg {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 31%;
+  left: 29%;
   width: 40%;
   margin: 0;
+}
+.brand-color div:nth-of-type(2) div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 13px;
+  border: solid 5px rgba(0, 0, 0, 0.2117647059);
+}
+.brand-color div:nth-of-type(2) .brand-01 {
+  background-image: url("../img/gradients/brand-01.png");
+}
+.brand-color div:nth-of-type(2) .brand-02 {
+  background-image: url("../img/gradients/brand-02.png");
+}
+.brand-color div:nth-of-type(2) .brand-03 {
+  background-image: url("../img/gradients/brand-03.png");
+}
+.brand-color div:nth-of-type(2) .brand-04 {
+  background-image: url("../img/gradients/brand-04.png");
+}
+.brand-color div:nth-of-type(2) .brand-05 {
+  background-image: url("../img/gradients/brand-05.png");
+}
+.brand-color div:nth-of-type(2) .brand-06 {
+  background-image: url("../img/gradients/brand-06.png");
 }
 .brand-color div:nth-of-type(2) .brand-color-selector {
   width: 100%;
@@ -458,15 +529,49 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  border: solid 2px red;
+  background-color: #181717;
+  border: solid 5px #424140;
 }
 .brand-color div:nth-of-type(2) .brand-color-selector li {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
-  background-color: rebeccapurple;
+  transition: 0.2s ease-in-out;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector li:hover {
+  transform: scale(1.5);
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-01 {
+  background-color: #3294a4;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-02 {
+  background-color: #58acc8;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-03 {
+  background-color: #b83d42;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-04 {
+  background-color: #f3764e;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-05 {
+  background-color: #dcbefa;
+}
+.brand-color div:nth-of-type(2) .brand-color-selector #brand-06 {
+  background-color: #e81876;
 }
 
+@media only screen and (max-width: 768px) {
+  .brand-color {
+    flex-direction: column;
+    align-items: start;
+  }
+  .brand-color div:nth-of-type(1) {
+    width: 100%;
+  }
+  .brand-color div:nth-of-type(2) {
+    width: 100%;
+  }
+}
 .brand-font {
   margin-top: 10vw;
 }
@@ -482,6 +587,10 @@ p {
 }
 .brand-font div:nth-of-type(1) {
   background-color: rgb(16, 22, 43);
+  background-image: url("../img/gradients/brand-02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20rem 10rem 5rem;
   border-radius: 13px 13px 0 0;
 }
@@ -492,16 +601,34 @@ p {
 }
 .brand-font div:nth-of-type(2) {
   background-color: #0c0c0c;
-  padding: 5rem 10rem 15rem;
+  padding: 5rem 10rem 6rem;
   font-family: "spaceMonoRegular";
   border-radius: 0 0 13px 13px;
 }
 .brand-font div:nth-of-type(2) h5 {
   font-size: 3.4vw;
+  line-height: 3.4vw;
   font-weight: 900;
   margin: 0;
+  margin-bottom: 2.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .brand-font div:nth-of-type(1) {
+    padding: 10rem 5rem 2rem;
+  }
+  .brand-font div:nth-of-type(1) h5 {
+    font-size: 4rem;
+  }
+  .brand-font div:nth-of-type(2) {
+    padding: 5rem 5rem 6rem;
+  }
+  .brand-font div:nth-of-type(2) h5 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.4rem;
+  }
+}
 .brand-applications {
   width: 100%;
   margin: 10vh auto 0;

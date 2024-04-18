@@ -40,8 +40,15 @@ app.get('/brand', function (req, res) {
     res.render('brand', { layout: 'others', language, topTitle: 'Marca' });
 });
 
-app.get('/proyects', function (req, res) {
-    res.render('proyects', { layout: 'others', topTitle: 'Proyectos' });
+app.get('/brands/nama', function (req, res) {
+    const lang = req.query.lang || 'es';
+    const language = loadLanguage(lang);
+
+    res.render('brands/nama', { layout: 'others', language, topTitle: 'Marca Nama' });
+});
+
+app.get('/projects', function (req, res) {
+    res.render('projects', { layout: 'others', topTitle: 'Proyectos' });
 });
 
 app.get('/', function (req, res) {

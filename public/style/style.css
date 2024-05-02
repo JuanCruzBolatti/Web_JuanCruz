@@ -1032,6 +1032,9 @@ h2 {
 .contact .contact-content div #anchor-py:hover::before {
   background-color: #e83180;
 }
+.contact .contact-content div #anchor-yt:hover::before {
+  background-color: #fa1c1c;
+}
 .contact .contact-content div p {
   margin: 0;
   color: #b8b8b8;

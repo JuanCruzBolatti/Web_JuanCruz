@@ -42,7 +42,9 @@
         "learning": "In Apprendimento",
         "programming": "Programmazione",
         "tech": "Tecnologie",
-        "others": "Altri"
+        "others": "Lingue",
+        "english": "Inglese",
+        "italian": "Italiano"
     },
     "work": {
         "description01": "Azienda di stampaggio e stampi",
@@ -54,7 +56,9 @@
         "smallCardTitle02": "Attività",
         "smallCardText02": "Per far conoscere i tuoi prodotti sulla concorrenza con la massima accessibilità possibile, sia per il cliente che per il proprietario.",
         "smallCardTitle03": "Personale",
-        "smallCardText03": "Per mostrare il tuo lavoro come merita, avendo un luogo accattivante e memorabile dove i tuoi clienti possono tornare."
+        "smallCardText03": "Per mostrare il tuo lavoro come merita, avendo un luogo accattivante e memorabile dove i tuoi clienti possono tornare.",
+        "workEmergencyTitle": "Pagina in aggiornamento, dal 01-01-25 al 01-07-25",
+        "workEmergencyDesc": "Questa sezione è solo in spagnolo poiché è temporanea, ci scusiamo per l'inconveniente."
     },
     "corner": {
         "visit": "Visita il mio Marchio",

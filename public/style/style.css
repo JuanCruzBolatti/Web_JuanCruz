@@ -963,6 +963,64 @@ h2 {
     line-height: 1.8rem;
   }
 }
+/* Estilos de Emergencia */
+.work .work-content-emergency {
+  width: 100%;
+  background: rgb(236, 142, 166);
+  background: linear-gradient(90deg, rgba(236, 142, 166, 0.3) 0%, rgba(170, 64, 95, 0.2) 100%);
+  border: 1px solid rgba(170, 64, 95, 0.8);
+  background-size: 200% !important;
+  background-position: 0%;
+  border-radius: 13px;
+  overflow: hidden;
+  padding: 2rem;
+  transition: 0.3s ease-in-out;
+}
+.work .work-content-emergency h4 {
+  margin: 0 0 1rem;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1vw;
+  transition: 0.3s ease-in;
+}
+.work .work-content-emergency p {
+  font-size: 0.9vw;
+  line-height: 1.1vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.work .work-content-emergency ul {
+  margin: 0;
+  padding: 0;
+}
+.work .work-content-emergency ul li {
+  margin: 1vw;
+  padding: 0;
+}
+.work .work-content-emergency ul li h5 {
+  font-size: 0.8vw;
+  margin: 0;
+}
+.work .work-content-emergency ul li span {
+  font-weight: bold;
+}
+.work .work-content-emergency:hover {
+  background-position: 100% !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .work .work-content-emergency h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .work .work-content-emergency p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .work .work-content-emergency ul li h5 {
+    font-size: 1.8rem;
+  }
+}
 /** Contact **/
 .contact {
   background-color: #121111;

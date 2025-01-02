@@ -42,7 +42,9 @@
         "learning": "Aprendiendo",
         "programming": "Programación",
         "tech": "Tecnologías",
-        "others": "Otros"
+        "others": "Idiomas",
+        "english": "Inglés",
+        "italian": "Italiano"
     },
     "work": {
         "description01": "Empresa de matricería y moldes",
@@ -54,7 +56,8 @@
         "smallCardTitle02": "Negocio",
         "smallCardText02": "Para dar a conocer tus productos sobre la competencia con la máxima accesibilidad posible, tanto para el cliente, como para el dueño.",
         "smallCardTitle03": "Personal",
-        "smallCardText03": "Para mostrar tu trabajo como se lo merece, teniendo un lugar llamativo y memorable donde tus clientes puedan volver. "
+        "smallCardText03": "Para mostrar tu trabajo como se lo merece, teniendo un lugar llamativo y memorable donde tus clientes puedan volver. ",
+        "workEmergencyTitle": "Pagina en actualización, desde el 01-01-25 hasta el 07-01-25"
     },
     "corner": {
         "visit": "Visita mi Marca",

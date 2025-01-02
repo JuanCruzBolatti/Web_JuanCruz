@@ -4,7 +4,7 @@
         <h1>
             {{{ language.title }}}
         </h1>
-    </div> 
+    </div>
     <a href="#AboutMe">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.77 434.63">
             <defs>
@@ -35,8 +35,8 @@
             <div class="card card-button display-pc-flex">
                 <a href="#Contact">{{ language.contactTitle }}</a>
                 <a href="https://www.linkedin.com/in/juan-cruz-bolatti/" target="_blank">IN</a>
-                <a href="https://github.com/JuanCruzBolatti" target="_blank">IG</a>
-                <a href="https://www.reddit.com/user/JuanC-Dev/" target="_blank">GH</a>
+                <a href="https://www.instagram.com/juanc.dev/" target="_blank">IG</a>
+                <a href="https://github.com/JuanCruzBolatti" target="_blank">GH</a>
                 <a href="/img/cv.pdf" target="_blank">CV</a>
             </div>
         </div>
@@ -180,7 +180,6 @@
                     <p>Premiere</p>
                 </li>
 
-
                 <li>
                     <div>
                         <img src="/img/icons/07.png" alt="Icono After Effects">
@@ -188,34 +187,14 @@
 
                     <p>After Effects</p>
                 </li>
-
-                <li>
-                    <div>
-                        <img src="/img/icons/08.png" alt="Icono Fusion360">
-                    </div>
-
-                    <p>Fusion360</p>
-                </li>
             </ul>
 
-            <h5>{{language.whatIDo.learning}}</h5>
-
-            <ul>
-                <li>
-                    <div>
-                        <img src="/img/icons/09.png" alt="Icono InDesign">
-                    </div>
-
-                    <p>InDesign</p>
-                </li>
-            </ul>
         </div>
 
         <div class="card knowledge-card" id="knowledge-card-color-blue">
             <h4 class="subtitle"> {{ language.pageTitle }}</h4>
 
             <ul>
-
                 <li>
                     <div>
                         <img src="/img/icons/10.png" alt="Icono Javascript">
@@ -223,7 +202,11 @@
 
                     <p>Javascript</p>
                 </li>
+            </ul>
 
+            <h5></h5>
+
+            <ul>
                 <li>
                     <div>
                         <img src="/img/icons/11.png" alt="Icono NodeJs">
@@ -247,7 +230,39 @@
 
                     <p>Handlebars</p>
                 </li>
+            </ul>
 
+            <h5></h5>
+
+            <ul>
+                <li>
+                    <div>
+                        <img src="/img/icons/26.png" alt="Icono XAJAX">
+                    </div>
+
+                    <p>Xajax</p>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="/img/icons/25.png" alt="Icono PHP">
+                    </div>
+
+                    <p>PHP</p>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="/img/icons/24.png" alt="Icono MySQL">
+                    </div>
+
+                    <p>MySQL</p>
+                </li>
+            </ul>
+
+            <h5></h5>
+
+            <ul>
                 <li>
                     <div>
                         <img src="/img/icons/14.png" alt="Icono SCSS">
@@ -263,7 +278,6 @@
 
                     <p>Lottie.js</p>
                 </li>
-
             </ul>
 
             <h5>{{language.whatIDo.basic}}</h5>
@@ -276,11 +290,7 @@
 
                     <p>MongoDB</p>
                 </li>
-            </ul>
 
-            <h5>{{language.whatIDo.learning}}</h5>
-
-            <ul>
                 <li>
                     <div>
                         <img src="/img/icons/17.png" alt="Icono React">
@@ -289,6 +299,7 @@
                     <p>React</p>
                 </li>
             </ul>
+
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 2rem;">
@@ -323,11 +334,7 @@
 
                         <p>C // C++</p>
                     </li>
-                </ul>
 
-                <h5>{{language.whatIDo.learning}}</h5>
-
-                <ul>
                     <li>
                         <div>
                             <img src="/img/icons/21.png" alt="Icono Golang">
@@ -336,27 +343,30 @@
                         <p>Golang</p>
                     </li>
                 </ul>
+
             </div>
 
             <div class="card knowledge-card display-pc" id="knowledge-card-color-red">
                 <h4 class="subtitle">{{language.whatIDo.others}}</h4>
 
-                <h5>{{language.whatIDo.basic}}</h5>
                 <ul>
                     <li>
                         <div>
                             <img src="/img/icons/22.png" alt="Haskell">
                         </div>
 
-                        <p>Haskell</p>
+                        <p>{{language.whatIDo.english}}</p>
                     </li>
+                </ul>
 
+                <h5>{{language.whatIDo.basic}}</h5>
+                <ul>
                     <li>
                         <div>
                             <img src="/img/icons/23.png" alt="Icono Prolog">
                         </div>
 
-                        <p>Prolog</p>
+                        <p>{{language.whatIDo.italian}}</p>
                     </li>
                 </ul>
             </div>
@@ -368,7 +378,68 @@
 <section class="container work" id="Work">
     <h2>{{ language.workTitle }}</h2>
 
-    <div class="work-content">
+    <div class="work-content-emergency">
+        <h4>{{ language.work.workEmergencyTitle }}</h4>
+
+        <p>{{ language.work.workEmergencyDesc }}</p>
+
+        <p>Esta en desarrollo el apartado y descripción de los proyectos en los que estuve trabajando en el ultimo año,
+            como los siguientes:</p>
+        <ul>
+            <li>
+                <h5>Web_ Acercándonos Cultura</h5>
+                <p><span>Descripción:</span> Plataforma de lectura de libros digitales, con menú de accesibilidad que permite reproducir texto y personalizar el aspecto, ademas de un menu de uso que permite guardar y subrayar fragmentos de texto, ademas de registrar notas.</p>
+                <p><span>Tecnologías:</span> Javascript, Xajax, PHP, MySQL</p>
+            </li>
+
+            <li>
+                <h5>Web_ Stokear</h5>
+                <p><span>Descripción:</span> Página coorporativa para mostrar servicios y productos de seguridad empresarial.</p>
+            </li>
+
+            <li>
+                <h5>Proyecto_ SO Golang </h5>
+                <p><span>Descripción:</span> Simulación de sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos con filesystem, manejo de memoria directa, y ejecución de instrucciones Assembler</p>
+            </li>
+
+            <li>
+                <h5>Web_ Moldemat</h5>
+                <p><span>Descripción:</span> Página coorporativa para mostrar servicios de matricería de precisión.</p>
+            </li>
+
+            <li>
+                <h5>Marca_ Nama </h5>
+                <p><span>Descripción:</span> Diseño de Logo y Marca para empresa de muebles centrados en la union de la madera y el hierro.</p>
+            </li>
+
+            <li>
+                <h5>Marca_ Ahche </h5>
+                <p><span>Descripción:</span> Diseño de Logo y Marca para editorial, centrada en la interacción del lector con la lectura. </p>
+            </li>
+
+            <li>
+                <h5>Web_ Cancionero Patrio</h5>
+                <p><span>Descripción:</span> Página de presentación del cancionero patrio nacional, con acceso a todas las canciones en diversos formatos.</p>
+            </li>
+
+            <li>
+                <h5>Web_ Maru</h5>
+                <p><span>Descripción:</span> Portafolio personalizado con animaciones y un unico flujo de interacción.</p>
+            </li>
+
+            <li>
+                <h5>Marca_ Canal de Deportes</h5>
+                <p><span>Descripción:</span> Logotipo para canal de streaming enfocado en los juegos olimpicos 2024.</p>
+            </li>
+
+            <li>
+                <h5>Otros</h5>
+                <p>Proyecto en React, Marca de Medioambiente, Portafolio de Fotografía, Página de Estudio de Arquitectura, y Mas!</p>
+            </li>
+        </ul>
+    </div>
+
+    <!--    <div class="work-content">
 
         <div class="work-card-large">
             <div class="work-card-content">
@@ -412,6 +483,5 @@
             <p>{{ language.work.smallCardText03 }}</p>
         </div>
 
-    </div>
+    </div> -->
 </section>
-

@@ -125,9 +125,17 @@ h2 {
 .subtitle {
     margin: 0 0 1rem;
     font-size: 1vw;
+    font-weight: 200;
     line-height: 1vw;
     letter-spacing: 1px;
     font-family: 'spaceMonoRegular', Helvetica;
+}
+
+@media only screen and (max-width: 1280px) {
+    .subtitle {
+        font-size: 1.2vw;
+        line-height: 2rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -138,11 +146,17 @@ h2 {
 }
 
 .card {
-    background: rgb(231, 231, 231);
-    background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
-    -webkit-backdrop-filter: saturate(180%) blur(100px);
-    backdrop-filter: saturate(180%) blur(100px);
-    border: 1px solid rgba(231, 231, 231, 0.266);
+    // background: rgb(231, 231, 231);
+    // background: linear-gradient(129deg, rgba(231, 231, 231, 0.1) 0%, rgba(159, 159, 159, 0.1) 100%);
+    // -webkit-backdrop-filter: saturate(180%) blur(100px);
+    // backdrop-filter: saturate(180%) blur(100px);
+    // border: 1px solid rgba(231, 231, 231, 0.266);
+
+    background: rgb(0, 0, 0);
+    background: rgba(47, 47, 47, 0.502);
+    -webkit-backdrop-filter: saturate(280%) blur(150px);
+    backdrop-filter: saturate(280%) blur(150px);
+    border: 1px solid rgba(231, 231, 231, 0.1);
     border-radius: 13px;
     width: 100%;
 }

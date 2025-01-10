@@ -32,7 +32,7 @@
                 <p> {{ language.about.main }} </p>
             </div>
 
-            <div class="card card-button display-pc-flex">
+            <div class="card-button display-pc-flex">
                 <a href="#Contact">{{ language.contactTitle }}</a>
                 <a href="https://www.linkedin.com/in/juan-cruz-bolatti/" target="_blank">IN</a>
                 <a href="https://www.instagram.com/juanc.dev/" target="_blank">IG</a>
@@ -63,60 +63,115 @@
     </div>
 </section>
 
-<section class="container what-i-do" id="WhatIDo">
-    <h2>{{ language.whatIDoTitle }}</h2>
+<section class="container work" id="Work">
+    <h2>{{ language.workTitle }}</h2>
 
-    <div class="what-i-do-content">
+    <div class="work-content-emergency">
+        <h4>{{ language.work.workEmergencyTitle }}</h4>
 
-        <div class="what-i-do-column">
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.development }}</h4>
-                <p>{{ language.whatIDo.developmentMainText }}</p>
-                <h5>1. {{ language.whatIDo.interview }}</h5>
-                <p>{{ language.whatIDo.interviewText }}</p>
-                <h5>2. {{ language.whatIDo.desing }}</h5>
-                <p>{{ language.whatIDo.designText }}</p>
-                <h5>3. {{ language.whatIDo.resource }}</h5>
-                <p>{{ language.whatIDo.resourceText }}</p>
-                <h5>4. {{ language.whatIDo.development }}</h5>
-                <p>{{ language.whatIDo.developmentText }}</p>
-                <h5>5. {{ language.whatIDo.publication }}</h5>
-                <p>{{ language.whatIDo.publicationText }}</p>
-                <h5>6. {{ language.whatIDo.maintenance }}</h5>
-                <p>{{ language.whatIDo.maintenanceText }}</p>
-            </div>
-        </div>
+        <p>{{ language.work.workEmergencyDesc }}</p>
 
-        <div class="what-i-do-column">
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.desing }}</h4>
-                <p>{{ language.whatIDo.designMainText }}</p>
-            </div>
+        <p>Esta en desarrollo el apartado y descripción de los proyectos en los que estuve trabajando en el ultimo año,
+            como los siguientes:</p>
+        <ul>
+            <li>
+                <h5>Web_ Acercándonos Cultura</h5>
+                <p><span>Descripción:</span> Plataforma de lectura de libros digitales, con menú de accesibilidad que permite reproducir texto y personalizar el aspecto, ademas de un menu de uso que permite guardar y subrayar fragmentos de texto, ademas de registrar notas.</p>
+                <p><span>Tecnologías:</span> Javascript, Xajax, PHP, MySQL</p>
+            </li>
 
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.brand }}</h4>
-                <p>{{ language.whatIDo.brandMainText }}</p>
-            </div>
-        </div>
+            <li>
+                <h5>Web_ Stokear</h5>
+                <p><span>Descripción:</span> Página coorporativa para mostrar servicios y productos de seguridad empresarial.</p>
+            </li>
 
-        <div class="what-i-do-column">
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.image }}</h4>
-                <p>{{ language.whatIDo.imageMainText }}</p>
-            </div>
+            <li>
+                <h5>Proyecto_ SO Golang </h5>
+                <p><span>Descripción:</span> Simulación de sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos con filesystem, manejo de memoria directa, y ejecución de instrucciones Assembler</p>
+            </li>
 
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.drafting }}</h4>
-                <p>{{ language.whatIDo.draftingMainText }}</p>
-            </div>
+            <li>
+                <h5>Web_ Moldemat</h5>
+                <p><span>Descripción:</span> Página coorporativa para mostrar servicios de matricería de precisión.</p>
+            </li>
 
-            <div class="card">
-                <h4 class="subtitle">{{ language.whatIDo.animation }}</h4>
-                <p>{{ language.whatIDo.animationMainText }}</p>
-            </div>
-        </div>
+            <li>
+                <h5>Marca_ Nama </h5>
+                <p><span>Descripción:</span> Diseño de Logo y Marca para empresa de muebles centrados en la union de la madera y el hierro.</p>
+            </li>
 
+            <li>
+                <h5>Marca_ Ahche </h5>
+                <p><span>Descripción:</span> Diseño de Logo y Marca para editorial, centrada en la interacción del lector con la lectura. </p>
+            </li>
+
+            <li>
+                <h5>Web_ Cancionero Patrio</h5>
+                <p><span>Descripción:</span> Página de presentación del cancionero patrio nacional, con acceso a todas las canciones en diversos formatos.</p>
+            </li>
+
+            <li>
+                <h5>Web_ Maru</h5>
+                <p><span>Descripción:</span> Portafolio personalizado con animaciones y un unico flujo de interacción.</p>
+            </li>
+
+            <li>
+                <h5>Marca_ Canal de Deportes</h5>
+                <p><span>Descripción:</span> Logotipo para canal de streaming enfocado en los juegos olimpicos 2024.</p>
+            </li>
+
+            <li>
+                <h5>Otros</h5>
+                <p>Proyecto en React, Marca de Medioambiente, Portafolio de Fotografía, Página de Estudio de Arquitectura, y Mas!</p>
+            </li>
+        </ul>
     </div>
+
+    <!--    <div class="work-content">
+
+        <div class="work-card-large">
+            <div class="work-card-content">
+                <h4>Moldemat</h4>
+                <p>{{ language.work.description01 }}</p>
+                <a href="https://moldemat.com">{{ language.work.visit }}</a>
+            </div>
+            <img src="/img/web01.webp" alt="Webs de Juan Bolatti">
+        </div>
+
+        <div class="work-card-large">
+            <div class="work-card-content">
+                <h4>Nama</h4>
+                <p>{{ language.work.description02 }}</p>
+                <a href="/brands/nama">{{ language.work.visit }}</a>
+            </div>
+            <img src="/img/web02.webp" alt="Webs de Juan Bolatti">
+        </div>
+
+        <div class="work-card-large">
+            <div class="work-card-content">
+                <h4>Maru</h4>
+                <p>{{ language.work.description03 }}</p>
+                <a href="https://marubolatti.com.ar">{{ language.work.visit }}</a>
+            </div>
+            <img src="/img/web03.webp" alt="Webs de Juan Bolatti">
+        </div>
+
+        <div class="work-card-small">
+            <h4>{{ language.work.smallCardTitle01 }}</h4>
+            <p>{{ language.work.smallCardText01 }}</p>
+        </div>
+
+        <div class="work-card-small">
+            <h4>{{ language.work.smallCardTitle02 }}</h4>
+            <p>{{ language.work.smallCardText02 }}</p>
+        </div>
+
+        <div class="work-card-small">
+            <h4>{{ language.work.smallCardTitle03 }}</h4>
+            <p>{{ language.work.smallCardText03 }}</p>
+        </div>
+
+    </div> -->
 </section>
 
 <section class="container knowledge">
@@ -148,7 +203,7 @@
                         <img src="/img/icons/03.png" alt="Icono Fable">
                     </div>
 
-                    <p>Fable (Animation)</p>
+                    <p>Rive (Animation)</p>
                 </li>
 
                 <li>
@@ -375,113 +430,61 @@
     </div>
 </section>
 
-<section class="container work" id="Work">
-    <h2>{{ language.workTitle }}</h2>
+<section class="container what-i-do" id="WhatIDo">
+    <h2>{{ language.whatIDoTitle }} <span>// Freelancer</span></h2>
 
-    <div class="work-content-emergency">
-        <h4>{{ language.work.workEmergencyTitle }}</h4>
+    <div class="what-i-do-content">
 
-        <p>{{ language.work.workEmergencyDesc }}</p>
+        <div class="what-i-do-column">
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.development }}</h4>
+                <p>{{ language.whatIDo.developmentMainText }}</p>
+                <h5>1. {{ language.whatIDo.interview }}</h5>
+                <p>{{ language.whatIDo.interviewText }}</p>
+                <h5>2. {{ language.whatIDo.desing }}</h5>
+                <p>{{ language.whatIDo.designText }}</p>
+                <h5>3. {{ language.whatIDo.resource }}</h5>
+                <p>{{ language.whatIDo.resourceText }}</p>
+                <h5>4. {{ language.whatIDo.development }}</h5>
+                <p>{{ language.whatIDo.developmentText }}</p>
+                <h5>5. {{ language.whatIDo.publication }}</h5>
+                <p>{{ language.whatIDo.publicationText }}</p>
+                <h5>6. {{ language.whatIDo.maintenance }}</h5>
+                <p>{{ language.whatIDo.maintenanceText }}</p>
+            </div>
+        </div>
 
-        <p>Esta en desarrollo el apartado y descripción de los proyectos en los que estuve trabajando en el ultimo año,
-            como los siguientes:</p>
-        <ul>
-            <li>
-                <h5>Web_ Acercándonos Cultura</h5>
-                <p><span>Descripción:</span> Plataforma de lectura de libros digitales, con menú de accesibilidad que permite reproducir texto y personalizar el aspecto, ademas de un menu de uso que permite guardar y subrayar fragmentos de texto, ademas de registrar notas.</p>
-                <p><span>Tecnologías:</span> Javascript, Xajax, PHP, MySQL</p>
-            </li>
+        <div class="what-i-do-column">
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.desing }}</h4>
+                <p>{{ language.whatIDo.designMainText }}</p>
+            </div>
 
-            <li>
-                <h5>Web_ Stokear</h5>
-                <p><span>Descripción:</span> Página coorporativa para mostrar servicios y productos de seguridad empresarial.</p>
-            </li>
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.brand }}</h4>
+                <p>{{ language.whatIDo.brandMainText }}</p>
+            </div>
+        </div>
 
-            <li>
-                <h5>Proyecto_ SO Golang </h5>
-                <p><span>Descripción:</span> Simulación de sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos con filesystem, manejo de memoria directa, y ejecución de instrucciones Assembler</p>
-            </li>
+        <div class="what-i-do-column">
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.image }}</h4>
+                <p>{{ language.whatIDo.imageMainText }}</p>
+            </div>
 
-            <li>
-                <h5>Web_ Moldemat</h5>
-                <p><span>Descripción:</span> Página coorporativa para mostrar servicios de matricería de precisión.</p>
-            </li>
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.drafting }}</h4>
+                <p>{{ language.whatIDo.draftingMainText }}</p>
+            </div>
 
-            <li>
-                <h5>Marca_ Nama </h5>
-                <p><span>Descripción:</span> Diseño de Logo y Marca para empresa de muebles centrados en la union de la madera y el hierro.</p>
-            </li>
+            <div class="card">
+                <h4 class="subtitle">{{ language.whatIDo.animation }}</h4>
+                <p>{{ language.whatIDo.animationMainText }}</p>
+            </div>
+        </div>
 
-            <li>
-                <h5>Marca_ Ahche </h5>
-                <p><span>Descripción:</span> Diseño de Logo y Marca para editorial, centrada en la interacción del lector con la lectura. </p>
-            </li>
-
-            <li>
-                <h5>Web_ Cancionero Patrio</h5>
-                <p><span>Descripción:</span> Página de presentación del cancionero patrio nacional, con acceso a todas las canciones en diversos formatos.</p>
-            </li>
-
-            <li>
-                <h5>Web_ Maru</h5>
-                <p><span>Descripción:</span> Portafolio personalizado con animaciones y un unico flujo de interacción.</p>
-            </li>
-
-            <li>
-                <h5>Marca_ Canal de Deportes</h5>
-                <p><span>Descripción:</span> Logotipo para canal de streaming enfocado en los juegos olimpicos 2024.</p>
-            </li>
-
-            <li>
-                <h5>Otros</h5>
-                <p>Proyecto en React, Marca de Medioambiente, Portafolio de Fotografía, Página de Estudio de Arquitectura, y Mas!</p>
-            </li>
-        </ul>
     </div>
-
-    <!--    <div class="work-content">
-
-        <div class="work-card-large">
-            <div class="work-card-content">
-                <h4>Moldemat</h4>
-                <p>{{ language.work.description01 }}</p>
-                <a href="https://moldemat.com">{{ language.work.visit }}</a>
-            </div>
-            <img src="/img/web01.webp" alt="Webs de Juan Bolatti">
-        </div>
-
-        <div class="work-card-large">
-            <div class="work-card-content">
-                <h4>Nama</h4>
-                <p>{{ language.work.description02 }}</p>
-                <a href="/brands/nama">{{ language.work.visit }}</a>
-            </div>
-            <img src="/img/web02.webp" alt="Webs de Juan Bolatti">
-        </div>
-
-        <div class="work-card-large">
-            <div class="work-card-content">
-                <h4>Maru</h4>
-                <p>{{ language.work.description03 }}</p>
-                <a href="https://marubolatti.com.ar">{{ language.work.visit }}</a>
-            </div>
-            <img src="/img/web03.webp" alt="Webs de Juan Bolatti">
-        </div>
-
-        <div class="work-card-small">
-            <h4>{{ language.work.smallCardTitle01 }}</h4>
-            <p>{{ language.work.smallCardText01 }}</p>
-        </div>
-
-        <div class="work-card-small">
-            <h4>{{ language.work.smallCardTitle02 }}</h4>
-            <p>{{ language.work.smallCardText02 }}</p>
-        </div>
-
-        <div class="work-card-small">
-            <h4>{{ language.work.smallCardTitle03 }}</h4>
-            <p>{{ language.work.smallCardText03 }}</p>
-        </div>
-
-    </div> -->
 </section>
+
+
+

@@ -1,5 +1,10 @@
 .what-i-do {
-    margin-top: 7.2vw;
+    margin-top: 6.5vw;
+
+    h2 span {
+        font-weight: 200;
+        text-transform: capitalize;
+    }
 
     .what-i-do-content {
         display: grid;
@@ -13,7 +18,7 @@
             align-items: start;
             
             div {
-                padding: 2rem;
+                padding: 2.5rem 2.8rem;
 
                 p {
                     font-size: .9vw;
@@ -24,14 +29,21 @@
                 }
 
                 h5 {
-                    font-size: 0.8vw;
-                    line-height: 0.8vw;
+                    font-size: 0.87vw;
+                    line-height: 0.87vw;
                     letter-spacing: 1px;
                     font-family: 'spaceMonoRegular', Helvetica;
                     margin: 2rem 0 1rem;
+                    font-weight: 200;
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .what-i-do .what-i-do-content .what-i-do-column div {
+        padding: 2rem 2.3rem;
     }
 }
 

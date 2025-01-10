@@ -313,166 +313,8 @@ p {
     animation-duration: 15s;
   }
 }
-.brand-nav {
-  position: fixed;
-  top: 0;
-  left: 2rem;
-  z-index: 50;
-}
-.brand-nav a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 6rem;
-  line-height: 6rem;
-  color: #181717;
-}
-.brand-nav a::after {
-  content: "Volver";
-  font-family: "spaceMonoRegular";
-  position: absolute;
-  top: 0.5rem;
-  left: 7rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 2rem;
-  opacity: 0;
-  transition: 0.2s ease-in-out;
-}
-.brand-nav a:hover::after {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 1280px) {
-  .brand-nav a::after {
-    color: #eeeeee;
-    left: 8rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .brand-nav {
-    left: 0.5rem;
-    top: 0;
-  }
-  .brand-nav a {
-    transform: rotate(180deg);
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-  .brand-nav a:hover::after {
-    opacity: 0;
-  }
-}
-.brand-banner {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  aspect-ratio: 16/9;
-  position: relative;
-}
-.brand-banner img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0 0 13px 13px;
-}
-.brand-banner .brand-arrow {
-  position: absolute;
-  bottom: 5rem;
-  left: calc(50% - 2.5rem);
-}
-.brand-banner .brand-arrow div {
-  position: absolute;
-  width: 5rem;
-  height: 1rem;
-  transition: 0.2s ease-in-out;
-}
-.brand-banner .brand-arrow div:nth-of-type(1) {
-  background-color: rgb(255, 255, 255);
-  left: 0;
-  border-radius: 0 8px 8px 0;
-}
-.brand-banner .brand-arrow div:nth-of-type(2) {
-  background-color: rgb(255, 255, 255);
-  right: 0;
-  border-radius: 8px 0 0 8px;
-}
-.brand-banner:hover .brand-arrow div {
-  width: calc(5rem + 3px);
-}
-.brand-banner:hover .brand-arrow div:nth-of-type(1) {
-  transform: rotate(-30deg);
-  border-radius: 0 8px 8px 8px;
-  left: -7px;
-}
-.brand-banner:hover .brand-arrow div:nth-of-type(2) {
-  transform: rotate(30deg);
-  right: -7px;
-  border-radius: 8px 0 8px 8px;
-}
-
-.brand-concept {
-  margin-top: 10vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.brand-concept div:nth-of-type(1) {
-  width: 60%;
-}
-.brand-concept div:nth-of-type(2) {
-  width: 30%;
-  font-family: "spaceMonoRegular";
-}
-.brand-concept div:nth-of-type(2) h5 {
-  font-size: 1vw;
-  line-height: 1vw;
-  margin: 0;
-  font-weight: 400;
-}
-.brand-concept div:nth-of-type(2) h5 span {
-  font-weight: 900;
-}
-.brand-concept div:nth-of-type(2) p {
-  text-align: start;
-  font-size: 1vw;
-}
-
-@media only screen and (max-width: 768px) {
-  .brand-concept {
-    flex-direction: column;
-    align-items: start;
-  }
-  .brand-concept div:nth-of-type(1) {
-    width: 100%;
-  }
-  .brand-concept div:nth-of-type(2) {
-    width: 100%;
-  }
-  .brand-concept div:nth-of-type(2) h5 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .brand-concept div:nth-of-type(2) p {
-    text-align: start;
-    font-size: 1.4rem;
-  }
-}
-.brand-sketch {
-  margin-top: 10vw;
-  width: 100%;
-  padding: 0;
-  position: relative;
-}
-.brand-sketch img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 13px;
-}
-
+/** Presentation: Global **/
+/** Brand **/
 .brand-color {
   margin-top: 10vw;
   display: flex;
@@ -644,21 +486,8 @@ p {
     margin-bottom: 1.4rem;
   }
 }
-.brand-applications {
-  width: 100%;
-  margin: 10vh auto 0;
-  padding: 0;
-  position: relative;
-}
-.brand-applications img {
-  margin-top: 2rem;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 13px;
-}
-
+/** Web **/
+/** Project **/
 /** Contact **/
 .contact {
   -webkit-backdrop-filter: blur(100px);
@@ -759,4 +588,4 @@ p {
   .contact .contact-content div:last-of-type a::before {
     width: 0;
   }
-}/*# sourceMappingURL=brand-style.css.map */
+}/*# sourceMappingURL=presentation.css.map */

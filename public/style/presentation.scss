@@ -40,18 +40,17 @@ p {
     }
 }
 
-/** Specials **/ 
+/** Specials **/
 @import 'specials';
 
 /** Navbar **/
 .pres-navbar {
     height: 98vh;
     width: 5.5rem;
-    background-color: rebeccapurple;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     position: fixed;
     top: 1vh;
     left: 1vh;
@@ -59,42 +58,272 @@ p {
     border-radius: 13px;
     padding: 2vh 0;
     z-index: 50;
-    overflow: hidden; 
+    overflow: hidden;
+
+    background: rgb(170, 85, 255);
+    background: linear-gradient(105deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+    border: 1px solid rgba(170, 85, 255, 1);
 
     a {
         width: 90%;
         text-align: center;
-        transition: transform 0.3s ease, opacity 0.3s ease; 
-        opacity: 1; 
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 1;
 
         &.button-hidden {
             opacity: 0;
-            transform: translateY(-100%); 
-            pointer-events: none; 
+            transform: translateY(-100%);
+            pointer-events: none;
         }
     }
 }
 
 /** Hero **/
 .hero {
-    background-color: rebeccapurple;
+    margin-left: calc(1vh + 5.5rem + 1vh);
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10vh;
+    width: auto;
+
+    .hero-image {
+        background-image: url("../img/brand_banner.webp");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 98vh;
+        width: 45%;
+        border-radius: 13px;
+        position: relative;
+
+        div {
+            position: absolute;
+            bottom: 9%;
+            right: 7%;
+            border-radius: 26px;
+            background-color: #f5f5f5;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 2rem 2.5rem;
+            transition: .2s ease-in-out;
+            outline: 5px solid transparent;
+
+            a,
+            p {
+                margin: 0;
+                padding: 0;
+                text-indent: 0;
+                font-family: 'spaceMonoRegular', Helvetica;
+            }
+
+            p {
+                font-weight: 800;
+                font-size: 1.7rem;
+                color: rebeccapurple;
+            }
+
+            a {
+                font-weight: 600;
+                color: #181717;
+                font-size: 1.7rem;
+
+                &:first-of-type {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &:hover {
+            div {
+                outline: 5px solid rgba(170, 85, 255, 1);
+            }
+        }
+    }
+
+    .hero-content {
+        margin-top: 5vw;
+        width: 40%;
+
+        h1 {
+            position: relative;
+            font-size: 6vw;
+            line-height: 6.2vw;
+            margin: 0;
+
+            &::before {
+                content: "#Presentación";
+                position: absolute;
+                top: -3.5vw;
+                left: -1rem;
+                font-family: 'spaceMonoRegular', Helvetica;
+                font-size: 1.6vw;
+            }
+        }
+
+        h3 {
+            font-family: 'spaceMonoRegular', Helvetica;
+            font-size: 1.2vw;
+            line-height: 1.2vw;
+            font-weight: 800;
+            margin: 0;
+            margin-top: 1.6vw;
+        }
+
+        p {
+            line-height: 1.3vw;
+            margin: 0.4vw 0 0;
+        }
+
+        div {
+            margin-top: 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            a {
+                height: 8vw;
+                width: 3vw;
+                text-align: center;
+                border-radius: 13px;
+
+                background: rgb(170, 85, 255);
+                background: linear-gradient(-45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+                border: 1px solid rgba(170, 85, 255, 1);
+                background-size: 200%!important;
+                background-position: 0%;
+
+                transition: .2s ease-in-out;
+
+                &:hover {
+                    background-position: 90%;
+                }
+            }
+        }
+    }
 }
 
 /** Sections **/
+.sections-container {
+    width: calc(100% - (4vh + 5.5rem));
+    margin-left: calc(2vh + 5.5rem);
+    margin-top: 1vh;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: auto;
+    gap: 1vh;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+
+        section {
+            border-radius: 13px;
+
+            h2 {
+                font-size: 3.8vw;
+                line-height: 3.8vw;
+                letter-spacing: -4px;
+            }
+        }
+    }
+}
+
+.pres-general-card {
+    background: #7e2ecc;
+    border: 1px solid rgba(170, 85, 255, 1);
+    color: #f5f5f5;
+}
+
 /* Concept */
+.concept-text {
+    padding: 2vw;
+
+    h2 {
+        background-color: #7e2ecc;
+        width: fit-content;
+        padding: 1.2rem 2rem 1rem;
+        border-radius: 13px;
+    }
+
+    p {
+        margin: 1vw 0 0;
+    }
+}
+
+.concept-list {
+    background-color: #ff9900;
+}
 
 /* Banners */
 
 /* Color */
+.color {
+    display: grid;
+    grid-template-columns: 60% calc(40% - 1vh);
+    grid-auto-rows: auto;
+    gap: 1vh;
+
+    div {
+        &:first-of-type {
+            background-color: #1de560;
+            border-radius: 13px;
+        }
+
+        &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            height: 100%;
+
+            ul {
+                background-color: #1de560;
+                border-radius: 13px;
+
+                &:first-of-type {
+                    height: 60%;
+                }
+
+                &:last-of-type {
+                    height: calc(40% - 1vh);
+                }
+            }
+        }
+
+
+        p {
+            margin: 0;
+        }
+    }
+}
 
 /* Structure */
+.structure {
+    background-color: #1279e1;
+}
 
 /* Font */
+.font {
+    background-color: #7d2fcc;
+}
 
 /* Aplication */
+.aplication {
+    background-color: #1de560;
+}
 
 /* Tech */
-
+.tech {
+    background-color: #ff9900;
+}
 
 /** Contact **/
 @import 'contact';

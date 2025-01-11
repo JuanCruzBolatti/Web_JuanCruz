@@ -98,7 +98,7 @@ const navButtons = document.querySelector('.pres-navbar');
 var sectionCount = 0;
 
 function navbarButtonDisplay(id) {
-  const button = navButtons.querySelector(`#${id}`);
+  const button = navButtons.querySelector(`#${id}Button`);
   button.classList.remove("button-hidden");
 }
 
@@ -108,7 +108,7 @@ const observerPc = new IntersectionObserver((entries) => {
       navbarButtonDisplay(entry.target.id);
       sectionCount++;
       if (sectionCount == 3) {
-        navbarButtonDisplay('buttonToTop');
+        navbarButtonDisplay('toTop');
       }
     }
   });

@@ -37,7 +37,7 @@ app.get('/brand/prueba', function (req, res) {
     const lang = req.query.lang || 'es';
     const language = loadLanguage(lang);
 
-    res.render('brand', { layout: 'presentation', language, topTitle: 'Presentación Prueba' });
+    res.render('presentation', { layout: 'presentation', language, topTitle: 'Presentación Prueba' });
 });
 
 app.get('/projects', function (req, res) {

@@ -43,17 +43,58 @@ p {
 /** Specials **/ 
 @import 'specials';
 
-/** Presentation: Global **/
+/** Navbar **/
+.pres-navbar {
+    height: 98vh;
+    width: 5.5rem;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    margin: 0;
+    border-radius: 13px;
+    padding: 2vh 0;
+    z-index: 50;
+    overflow: hidden; 
 
+    a {
+        width: 90%;
+        text-align: center;
+        transition: transform 0.3s ease, opacity 0.3s ease; 
+        opacity: 1; 
 
-/** Brand **/
-@import 'brand';
+        &.button-hidden {
+            opacity: 0;
+            transform: translateY(-100%); 
+            pointer-events: none; 
+        }
+    }
+}
 
-/** Web **/
-@import 'web';
+/** Hero **/
+.hero {
+    background-color: rebeccapurple;
+}
 
-/** Project **/
-@import 'project';
+/** Sections **/
+/* Concept */
+
+/* Banners */
+
+/* Color */
+
+/* Structure */
+
+/* Font */
+
+/* Aplication */
+
+/* Tech */
+
 
 /** Contact **/
 @import 'contact';

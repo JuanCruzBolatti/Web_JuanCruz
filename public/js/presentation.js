@@ -80,13 +80,52 @@ document.onmousemove = event => {
 
 // Color Selector
 window.addEventListener('load', () => {
-    const colorSelector = document.querySelectorAll(".color-selector");
+  const colorSelector = document.querySelectorAll(".color-selector");
 
-    colorSelector.forEach( selector => {
-        selector.addEventListener('click', function() {
-            const selected = this.id;
-            console.log(selected);
-            document.querySelector("#brand-palette-background").className = selected;
-        });
+  colorSelector.forEach(selector => {
+    selector.addEventListener('click', function () {
+      const selected = this.id;
+      console.log(selected);
+      document.querySelector("#brand-palette-background").className = selected;
     });
+  });
+});
+
+
+// Scroll Displays
+const sections = document.querySelectorAll('section');
+const navButtons = document.querySelector('.pres-navbar');
+var sectionCount = 0;
+
+function navbarButtonDisplay(id) {
+  const button = navButtons.querySelector(`#${id}`);
+  button.classList.remove("button-hidden");
+}
+
+const observerPc = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navbarButtonDisplay(entry.target.id);
+      sectionCount++;
+      if (sectionCount == 3) {
+        navbarButtonDisplay('buttonToTop');
+      }
+    }
+  });
+}, { threshold: 0.8 });
+
+const observerMobile = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navbarButtonDisplay(entry.target.id);
+    }
+  });
+}, { threshold: 0.3 });
+
+sections.forEach(section => {
+  if (window.innerWidth > 768) {
+    observerPc.observe(section);
+  } else {
+    observerMobile.observe(section);
+  }
 });

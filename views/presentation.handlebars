@@ -10,7 +10,9 @@
         <h3>{{ content.hero.subtitle }}</h3>
         <p> {{ content.hero.text }} </p>
         <div>
-            <a href="#concept">V</a>
+            <a href="#concept">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.945 212.969"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:9px;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polyline class="cls-1" points="4.5 0 4.5 202.105 39.763 166.842"/></g></g></svg>
+            </a>
         </div>
     </div>
 </section>
@@ -84,23 +86,22 @@
 <section class="sections-container structure" id="structure">
 
     <div class="structure-image">
-        titulin
+        <p>{{ content.structure.title }}</p>
     </div>
 
     <div class="structure-content">
         <h3>Estructura</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quod eligendi consectetur sint ut
-            perferendis quis. Eveniet nemo rerum, nam autem nesciunt veniam. Cum sunt voluptate nulla et cumque.</p>
+        <p>{{ content.structure.text }}</p>
     </div>
 
     <div class="structure-info">
         <div>
-            <p>Data 1</p>
+            <p>{{ content.structure.info1 }}</p>
             <div></div>
         </div>
 
         <div>
-            <p>Data 2</p>
+            <p>{{ content.structure.info2 }}</p>
             <div></div>
         </div>
     </div>
@@ -110,15 +111,11 @@
 <section class="sections-container font" id="font">
 
     <div>
-        <h3>Nunito</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto eum aspernatur accusamus
-            tenetur expedita quo, sapiente animi sit deserunt?</p>
+        {{{ content.font.title1 }}} + {{{ content.font.description1 }}}
     </div>
 
     <div>
-        <h3>Space Mono</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto euetur expedita quo, sapiente
-            animi sit deserunt?
+        {{{ content.font.title2 }}} + {{{ content.font.description2 }}}
     </div>
 
 </section>

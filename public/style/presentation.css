@@ -188,14 +188,6 @@ h2 {
   margin: 0 auto;
 }
 
-:root {
-  --color-main: #663399;
-  --color-gradient-01: 170, 85, 255;
-  --color-gradient-02: 73, 1, 144;
-  --banner-image: url("../img/brand_banner.webp");
-  --corner-image: url("../img/brand_banner.webp");
-}
-
 body {
   background-color: #f3f3f3;
   color: #272727;
@@ -369,15 +361,18 @@ p {
 .hero::before {
   content: "";
   position: absolute;
-  background-image: var(--banner-image);
+  background-image: var(--corner-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   top: -1vh;
   right: 0;
-  width: 50rem;
+  width: 30rem;
   aspect-ratio: 1;
   z-index: -1;
 }
 .hero .hero-image {
-  background-image: var(--corner-image);
+  background-image: var(--banner-image);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -411,7 +406,7 @@ p {
 .hero .hero-image div p {
   font-weight: 800;
   font-size: 1.7rem;
-  color: var(--color-main);
+  color: rgb(var(--color-main));
 }
 .hero .hero-image div a {
   font-weight: 600;
@@ -466,6 +461,7 @@ p {
   width: 3vw;
   text-align: center;
   border-radius: 13px;
+  padding: 2rem;
   background: rgb(var(--color-gradient-01));
   background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
   border: 1px solid rgba(var(--color-gradient-01), 1);
@@ -475,6 +471,9 @@ p {
 }
 .hero .hero-content div a:hover {
   background-position: 90%;
+}
+.hero .hero-content div a svg {
+  height: 100%;
 }
 
 /** Sections **/

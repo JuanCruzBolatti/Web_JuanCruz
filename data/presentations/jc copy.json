@@ -1,16 +1,16 @@
 {
   "general": {
-    "colorGradient1": "19, 132, 179",
-    "colorGradient2": "42, 74, 106",
-    "mainColor": "19, 132, 179"
+    "colorGradient1": "FALTA JS",
+    "colorGradient2": "FALTA JS",
+    "mainColor": "FALTA JS"
   },
   "hero": {
-    "heroImage": "../img/presentations/jc/hero.webp",
+    "heroImage": "FALTA JS",
     "contacts": "<p>Sitio Web</p> <a href='/' target='_blank'>// Juancruzbolatti.com</a> <p>Instagram</p> <a href='https://www.instagram.com/juanc.dev/' target='_blank'>@ JuanC.Dev</a>",
-    "cornerImage": "../img/presentations/jc/corner.webp",
-    "title": "Juan Cruz Bolatti",
-    "subtitle": "Diseño de Marca e Identidad Visual",
-    "text": "Desarrollador y Diseñador de Aplicaciones y Páginas Web, enfocado en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo."
+    "cornerImage": "FALTA JS",
+    "title": "JSON VACIO",
+    "subtitle": "JSON VACIO",
+    "text": "JSON VACIO"
   },
   "concept": {
     "year": "JSON VACIO",

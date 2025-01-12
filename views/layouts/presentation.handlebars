@@ -24,6 +24,16 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="/style/presentation.css">
 
+    <style>
+        :root {
+            --color-main: {{ content.general.mainColor }};
+            --color-gradient-01: {{ content.general.colorGradient1 }};
+            --color-gradient-02: {{ content.general.colorGradient2 }};
+            --banner-image: url("{{ content.hero.heroImage }}");
+            --corner-image: url("{{ content.hero.cornerImage }}");
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,4 +48,4 @@
 
     {{{ body }}}
 
-{{> pres-footer }}
+    {{> pres-footer }}

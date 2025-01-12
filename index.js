@@ -44,23 +44,12 @@ app.get('/sitemap.xml', (req, res) => {
     res.sendFile(path.join(__dirname, './sitemap.xml'));
 });
 
-app.get('/brand/prueba', function (req, res) {
-    const lang = req.query.lang || 'es';
-    const language = loadLanguage(lang);
-
-    res.render('presentation', { layout: 'presentation', language, topTitle: 'Presentación Prueba' });
-});
-
 app.get('/presentation/:id', function (req, res) {
     const language = loadLanguage('es');
     const presentationId = req.params.id;
     const content = loadPresentation(presentationId);
 
     res.render('presentation', { layout: 'presentation', language, content, topTitle: `Presentación ${presentationId}` });
-});
-
-app.get('/projects', function (req, res) {
-    res.render('projects', { layout: 'others', topTitle: 'Proyectos' });
 });
 
 app.get('/', function (req, res) {

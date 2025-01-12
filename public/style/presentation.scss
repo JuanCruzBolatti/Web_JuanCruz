@@ -3,14 +3,6 @@
 
 $background-color: #f3f3f3;
 
-:root {
-    --color-main: #663399;
-    --color-gradient-01: 170, 85, 255;
-    --color-gradient-02: 73, 1, 144;
-    --banner-image: url("../img/brand_banner.webp");
-    --corner-image: url("../img/brand_banner.webp");
-}
-
 body {
     background-color: $background-color;
     color: #272727;
@@ -101,16 +93,19 @@ p {
     &::before {
         content: "";
         position: absolute;
-        background-image: var(--banner-image);
+        background-image: var(--corner-image);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         top: -1vh;
         right: 0;
-        width: 50rem;
+        width: 30rem;
         aspect-ratio: 1;
         z-index: -1;
     }
 
     .hero-image {
-        background-image: var(--corner-image);
+        background-image: var(--banner-image); 
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -145,7 +140,7 @@ p {
             p {
                 font-weight: 800;
                 font-size: 1.7rem;
-                color: var(--color-main);
+                color: rgb(var(--color-main));
             }
 
             a {
@@ -212,6 +207,7 @@ p {
                 width: 3vw;
                 text-align: center;
                 border-radius: 13px;
+                padding: 2rem;
 
                 background: rgb(var(--color-gradient-01));
                 background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
@@ -223,6 +219,10 @@ p {
 
                 &:hover {
                     background-position: 90%;
+                }
+
+                svg {
+                    height: 100%;
                 }
             }
         }

@@ -78,20 +78,6 @@ document.onmousemove = event => {
   }
 }
 
-// Color Selector
-window.addEventListener('load', () => {
-  const colorSelector = document.querySelectorAll(".color-selector");
-
-  colorSelector.forEach(selector => {
-    selector.addEventListener('click', function () {
-      const selected = this.id;
-      console.log(selected);
-      document.querySelector("#brand-palette-background").className = selected;
-    });
-  });
-});
-
-
 // Scroll Displays
 const sections = document.querySelectorAll('section');
 const navButtons = document.querySelector('.pres-navbar');

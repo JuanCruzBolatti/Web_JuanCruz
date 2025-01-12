@@ -1,7 +1,7 @@
 /** Basic **/
 @import 'basic';
 
-$background-color: #f5f5f5;
+$background-color: #f3f3f3;
 
 body {
     background-color: $background-color;
@@ -88,6 +88,18 @@ p {
     justify-content: flex-start;
     gap: 10vh;
     width: auto;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/banner_sketch.webp");
+        top: -1vh;
+        right: 0;
+        width: 50rem;
+        aspect-ratio: 1;
+        z-index: -1;
+    }
 
     .hero-image {
         background-image: url("../img/brand_banner.webp");
@@ -104,7 +116,7 @@ p {
             bottom: 9%;
             right: 7%;
             border-radius: 26px;
-            background-color: #f5f5f5;
+            background-color: #ffffff;
             width: 40%;
             display: flex;
             flex-direction: column;
@@ -211,103 +223,211 @@ p {
 
 /** Sections **/
 .sections-container {
-    width: calc(100% - (4vh + 5.5rem));
+    width: calc(100% - (3vh + 5.5rem));
     margin-left: calc(2vh + 5.5rem);
     margin-top: 1vh;
+}
 
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-auto-rows: auto;
+
+/* Concept */
+.concept {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 1vh;
+    height: 35vh;
 
     div {
+        height: 100%;
+    }
+
+    .concept-info {
         display: flex;
         flex-direction: column;
         gap: 1vh;
+        width: 20%;
 
-        section {
+        &>div:first-of-type {
+            height: 70%;
             border-radius: 13px;
+            background-color: #ffffff;
+        }
 
-            h2 {
-                font-size: 3.8vw;
-                line-height: 3.8vw;
-                letter-spacing: -4px;
+        &>div:last-of-type {
+            height: 30%;
+            border-radius: 13px;
+            background: rgb(170, 85, 255);
+            background: linear-gradient(105deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+            border: 1px solid rgba(170, 85, 255, 1);
+            
+            p {
+                font-size: 1.5rem;
+                color: #f3f3f3;
+                font-family: 'spaceMonoRegular', Helvetica;
             }
         }
     }
-}
 
-.pres-general-card {
-    background: #7e2ecc;
-    border: 1px solid rgba(170, 85, 255, 1);
-    color: #f5f5f5;
-}
-
-/* Concept */
-.concept-text {
-    padding: 2vw;
-
-    h2 {
-        background-color: #7e2ecc;
-        width: fit-content;
-        padding: 1.2rem 2rem 1rem;
+    .concept-title {
+        width: 60%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        justify-content: space-between;
+        padding: 0 1vh;
+        align-items: center;
         border-radius: 13px;
+
+        // &>div:first-of-type {
+        // }
+
+        &>div:last-of-type {
+            width: 6vw;
+            height: calc(100% - 1.9vh);
+            border-radius: 13px;
+            background: rgb(170, 85, 255);
+            background: linear-gradient(180deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+            border: 1px solid rgba(170, 85, 255, 1);
+        }
     }
 
-    p {
-        margin: 1vw 0 0;
-    }
-}
+    .concept-content {
+        width: 30%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 13px;
 
-.concept-list {
-    background-color: #ff9900;
+        p {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 90%;
+                height: 3px;
+                background: rgb(170, 85, 255);
+                background: linear-gradient(90deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
 }
 
 /* Banners */
+.pres-divider {
+    height: 5.5rem;
+    border-radius: 13px;
+    background: rgb(170, 85, 255);
+    background: linear-gradient(75deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+    border: 1px solid rgba(170, 85, 255, 1);
+}
 
 /* Color */
 .color {
-    display: grid;
-    grid-template-columns: 60% calc(40% - 1vh);
-    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 1vh;
+    height: 45vh;
 
     div {
-        &:first-of-type {
-            background-color: #1de560;
+        height: 100%;
+    }
+
+    .color-content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        
+        &>div:first-of-type {
+            background-color: #ffffff;
+            height: 70%;
             border-radius: 13px;
         }
 
-        &:last-of-type {
+        &>div:last-of-type {
+            height: 30%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 1vh;
-            height: 100%;
 
-            ul {
-                background-color: #1de560;
+            div {
+                width: 30%;
+                background-color: #ff8c00;
                 border-radius: 13px;
+            }
 
-                &:first-of-type {
-                    height: 60%;
-                }
+            div:first-of-type {
+                width: 20%;
+                background-color: #ff0090;
+                border-radius: 13px;
+            }
 
-                &:last-of-type {
-                    height: calc(40% - 1vh);
-                }
+            div:last-of-type {
+                width: 50%;
+                background-color: #00bbff;
+                border-radius: 13px;
             }
         }
+    }
 
-
-        p {
-            margin: 0;
-        }
+    .color-texture {
+        width: 30%;
+        border-radius: 13px;
+        background: rgb(170, 85, 255);
+        background: linear-gradient(-45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+        border: 1px solid rgba(170, 85, 255, 1);
     }
 }
 
 /* Structure */
 .structure {
-    background-color: #1279e1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1vh;
+    height: 35vh;
+
+    div {
+        height: 100%;
+        border-radius: 13px;
+    }
+
+    .structure-image {
+        width: 40%;
+        background: rgb(170, 85, 255);
+        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+        border: 1px solid rgba(170, 85, 255, 1);
+    }
+
+    .structure-content {
+        width: 40%;
+        background-color: #ffffff;
+    }
+
+    .structure-info {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        
+        &>div:first-of-type {
+            background-color: #ffffff;
+
+        }
+
+        &>div:last-of-type {
+            background-color: #ffffff;
+
+        }
+    }
 }
 
 /* Font */

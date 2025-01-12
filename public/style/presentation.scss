@@ -75,6 +75,38 @@ p {
             transform: translateY(-100%);
             pointer-events: none;
         }
+
+        svg {
+            fill: #fff;
+            width: 60%;
+        }
+
+        &#toBackButton svg {
+            width: 40%;
+            transform: rotate(-90deg);
+        }
+
+        &#conceptButton svg {
+            width: 60%;
+        }
+
+        &#colorButton svg {
+            width: 65%;
+        }
+
+        &#fontButton svg {
+            width: 54%;
+        }
+
+        &#techButton svg {
+            width: 50%;
+        }
+
+        &#toTopButton svg {
+            width: 40%;
+        }
+
+
     }
 }
 

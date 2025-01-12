@@ -13,15 +13,15 @@
     "text": "Desarrollador y Diseñador de Aplicaciones y Páginas Web, enfocado en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo."
   },
   "concept": {
-    "year": "JSON VACIO",
-    "focuses": "JSON VACIO",
-    "text": "JSON VACIO",
+    "year": "2023",
+    "focuses": "<li>Moderno</li><li>Profesional</li><li>Llamativo</li>",
+    "text": "Tras años de estudio en una industria monótona, nace Juan Cruza Bolatti como una marca de desarrollo web única, enfocada en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo. Por eso se buscó desarrollar una marca personal que se pueda adaptar fácilmente a todos los medios digitales teniendo en cuenta el rumbo que esta tomando el diseño moderno.",
     "image": "FALTA CSS & FALTA JS",
-    "briefDescription": "JSON VACIO",
-    "applications": "<li>JSON VACIO</li>"
+    "briefDescription": "Desarrollador web centrado en el diseño y en la experiencia del usuario",
+    "applications": "<li><span>Digitales:</span> tales como redes sociales, usos en web e incrustaciones en imágenes y videos.</li><li><span>Físicos:</span> como tarjetas de presentación o facturas.</li><li><span>Firmas:</span> tanto para páginas como para mails.</li>"
   },
   "color": {
-    "isPresent": false,
+    "isPresent": true,
     "text": "JSON VACIO",
     "mainColor": "FALTA CSS & FALTA JS",
     "mainDescription": "<li>JSON VACIO</li>",
@@ -35,7 +35,7 @@
     "fourthDescription": "<li>JSON VACIO</li>"
   },
   "structure": {
-    "isPresent": false,
+    "isPresent": true,
     "image": "FALTA CSS & FALTA JS",
     "title": "JSON VACIO",
     "text": "JSON VACIO",
@@ -45,21 +45,21 @@
     "image2": "FALTA CSS & FALTA JS"
   },
   "font": {
-    "isPresent": false,
+    "isPresent": true,
     "title1": "SVG",
     "description1": "SVG",
     "title2": "SVG",
     "description2": "SVG"
   },
   "applications": {
-    "isPresent": false,
+    "isPresent": true,
     "largeImage": "FALTA CSS & FALTA JS",
     "image2": "FALTA CSS & FALTA JS",
     "image3": "FALTA CSS & FALTA JS",
     "image4": "FALTA CSS & FALTA JS"
   },
   "tech": {
-    "isPresent": false,
+    "isPresent": true,
     "array1": [],
     "array2": [],
     "array3": []

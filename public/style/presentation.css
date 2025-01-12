@@ -345,6 +345,29 @@ p {
   transform: translateY(-100%);
   pointer-events: none;
 }
+.pres-navbar a svg {
+  fill: #fff;
+  width: 60%;
+}
+.pres-navbar a#toBackButton svg {
+  width: 40%;
+  transform: rotate(-90deg);
+}
+.pres-navbar a#conceptButton svg {
+  width: 60%;
+}
+.pres-navbar a#colorButton svg {
+  width: 65%;
+}
+.pres-navbar a#fontButton svg {
+  width: 54%;
+}
+.pres-navbar a#techButton svg {
+  width: 50%;
+}
+.pres-navbar a#toTopButton svg {
+  width: 40%;
+}
 
 /** Hero **/
 .hero {

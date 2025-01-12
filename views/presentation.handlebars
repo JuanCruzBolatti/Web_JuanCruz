@@ -11,7 +11,23 @@
         <p> {{ content.hero.text }} </p>
         <div>
             <a href="#concept">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.945 212.969"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:9px;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polyline class="cls-1" points="4.5 0 4.5 202.105 39.763 166.842"/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.945 212.969">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #fff;
+                                stroke-miterlimit: 10;
+                                stroke-width: 9px;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Capa_1-2" data-name="Capa 1">
+                            <polyline class="cls-1" points="4.5 0 4.5 202.105 39.763 166.842" />
+                        </g>
+                    </g>
+                </svg>
             </a>
         </div>
     </div>
@@ -21,7 +37,10 @@
 
     <div class="concept-info">
         <div>
-            <div>{{ content.concept.focuses }}</div>
+            <p>Enfoques</p>
+            <ul>
+                {{{ content.concept.focuses }}}
+            </ul>
         </div>
 
         <div>
@@ -46,6 +65,7 @@
 
 </section>
 
+{{#if content.color.isPresent}}
 <section class="sections-container color" id="color">
 
     <div class="color-content">
@@ -82,7 +102,9 @@
     </div>
 
 </section>
+{{/if}}
 
+{{#if content.structure.isPresent}}
 <section class="sections-container structure" id="structure">
 
     <div class="structure-image">
@@ -107,7 +129,9 @@
     </div>
 
 </section>
+{{/if}}
 
+{{#if content.font.isPresent}}
 <section class="sections-container font" id="font">
 
     <div>
@@ -119,7 +143,9 @@
     </div>
 
 </section>
+{{/if}}
 
+{{#if content.applications.isPresent}}
 <section class="sections-container aplication" id="aplication">
 
     <div class="aplication-banner"></div>
@@ -131,9 +157,11 @@
     </div>
 
 </section>
+{{/if}}
 
 <div class="sections-container pres-divider"></div>
 
+{{#if content.tech.isPresent}}
 <section class="sections-container tech" id="tech">
     <ul>
         <li>A</li>
@@ -153,3 +181,4 @@
         <li>A</li>
     </ul>
 </section>
+{{/if}}

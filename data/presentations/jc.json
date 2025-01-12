@@ -1,13 +1,13 @@
 {
     "general": {
-      "colorGradient1": "JSON VACIO",
-      "colorGradient2": "JSON VACIO",
-      "mainColor": "JSON VACIO"
+      "colorGradient1": "FALTA JS",
+      "colorGradient2": "FALTA JS",
+      "mainColor": "FALTA JS"
     },
     "hero": {
-      "heroImage": "JSON VACIO",
-      "contacts": "JSON VACIO",
-      "cornerImage": "JSON VACIO",
+      "heroImage": "FALTA JS",
+      "contacts": "<p>Sitio Web</p> <a href='/' target='_blank'>// Juancruzbolatti.com</a> <p>Instagram</p> <a href='https://www.instagram.com/juanc.dev/' target='_blank'>@ JuanC.Dev</a>",
+      "cornerImage": "FALTA JS",
       "title": "JSON VACIO",
       "subtitle": "JSON VACIO",
       "text": "JSON VACIO"
@@ -16,22 +16,23 @@
       "year": "JSON VACIO",
       "focuses": "JSON VACIO",
       "text": "JSON VACIO",
+      "image": "FALTA CSS & FALTA JS",
       "briefDescription": "JSON VACIO",
-      "applications": ""
+      "applications": "<li>JSON VACIO</li>"
     },
     "color": {
       "isPresent": false,
       "text": "JSON VACIO",
-      "mainColor": "JSON VACIO",
-      "mainDescription": "JSON VACIO",
-      "secondaryColor": "JSON VACIO",
-      "secondaryDescription": "JSON VACIO",
+      "mainColor": "FALTA CSS & FALTA JS",
+      "mainDescription": "<li>JSON VACIO</li>",
+      "secondaryColor": "FALTA CSS & FALTA JS",
+      "secondaryDescription": "<li>JSON VACIO</li>",
       "hasThird": false,
-      "thirdColor": "JSON VACIO",
-      "thirdDescription": "JSON VACIO",
+      "thirdColor": "FALTA CSS & FALTA JS",
+      "thirdDescription": "<li>JSON VACIO</li>",
       "hasFourth": false,
-      "fourthColor": "JSON VACIO",
-      "fourthDescription": "JSON VACIO"
+      "fourthColor": "FALTA CSS & FALTA JS",
+      "fourthDescription": "<li>JSON VACIO</li>"
     },
     "structure": {
       "isPresent": false,

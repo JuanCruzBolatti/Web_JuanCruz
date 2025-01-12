@@ -188,6 +188,14 @@ h2 {
   margin: 0 auto;
 }
 
+:root {
+  --color-main: #663399;
+  --color-gradient-01: 170, 85, 255;
+  --color-gradient-02: 73, 1, 144;
+  --banner-image: url("../img/brand_banner.webp");
+  --corner-image: url("../img/brand_banner.webp");
+}
+
 body {
   background-color: #f3f3f3;
   color: #272727;
@@ -330,9 +338,9 @@ p {
   padding: 2vh 0;
   z-index: 50;
   overflow: hidden;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(105deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(105deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 .pres-navbar a {
   width: 90%;
@@ -361,7 +369,7 @@ p {
 .hero::before {
   content: "";
   position: absolute;
-  background-image: url("../img/banner_sketch.webp");
+  background-image: var(--banner-image);
   top: -1vh;
   right: 0;
   width: 50rem;
@@ -369,7 +377,7 @@ p {
   z-index: -1;
 }
 .hero .hero-image {
-  background-image: url("../img/brand_banner.webp");
+  background-image: var(--corner-image);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -403,7 +411,7 @@ p {
 .hero .hero-image div p {
   font-weight: 800;
   font-size: 1.7rem;
-  color: rebeccapurple;
+  color: var(--color-main);
 }
 .hero .hero-image div a {
   font-weight: 600;
@@ -414,7 +422,7 @@ p {
   margin-bottom: 1rem;
 }
 .hero .hero-image:hover div {
-  outline: 5px solid rgb(170, 85, 255);
+  outline: 5px solid rgba(var(--color-gradient-01), 1);
 }
 .hero .hero-content {
   margin-top: 5vw;
@@ -458,9 +466,9 @@ p {
   width: 3vw;
   text-align: center;
   border-radius: 13px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(-45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
   background-size: 200% !important;
   background-position: 0%;
   transition: 0.2s ease-in-out;
@@ -502,9 +510,9 @@ p {
 .concept .concept-info > div:last-of-type {
   height: 30%;
   border-radius: 13px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(105deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(105deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 .concept .concept-info > div:last-of-type p {
   font-size: 1.5rem;
@@ -526,9 +534,9 @@ p {
   width: 6vw;
   height: calc(100% - 1.9vh);
   border-radius: 13px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(180deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(180deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 .concept .concept-content {
   width: 30%;
@@ -544,8 +552,8 @@ p {
   content: "";
   width: 90%;
   height: 3px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(90deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(90deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -555,9 +563,9 @@ p {
 .pres-divider {
   height: 5.5rem;
   border-radius: 13px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(75deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(75deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 
 /* Color */
@@ -607,9 +615,9 @@ p {
 .color .color-texture {
   width: 30%;
   border-radius: 13px;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(-45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 
 /* Structure */
@@ -627,9 +635,9 @@ p {
 }
 .structure .structure-image {
   width: 40%;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 .structure .structure-content {
   width: 40%;
@@ -654,9 +662,9 @@ p {
 .structure .structure-info > div div {
   width: calc(100% - 2vh);
   height: 6vh;
-  background: rgb(170, 85, 255);
-  background: linear-gradient(45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
   margin-bottom: 1vh;
 }
 
@@ -672,9 +680,9 @@ p {
   border-radius: 13px;
 }
 .font > div:first-of-type {
-  background: rgb(170, 85, 255);
-  background: linear-gradient(45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
   width: 60%;
 }
 .font > div:last-of-type {
@@ -690,9 +698,9 @@ p {
   gap: 1vh;
 }
 .aplication .aplication-banner {
-  background: rgb(170, 85, 255);
-  background: linear-gradient(45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
   border-radius: 13px;
   height: 40vh;
   width: 100%;
@@ -704,9 +712,9 @@ p {
   height: 25vh;
 }
 .aplication .aplication-images div {
-  background: rgb(170, 85, 255);
-  background: linear-gradient(45deg, rgb(170, 85, 255) 0%, rgb(73, 1, 144) 100%);
-  border: 1px solid rgb(170, 85, 255);
+  background: rgb(var(--color-gradient-01));
+  background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  border: 1px solid rgba(var(--color-gradient-01), 1);
   border-radius: 13px;
 }
 .aplication .aplication-images > div:nth-of-type(1) {

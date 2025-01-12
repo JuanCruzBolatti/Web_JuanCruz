@@ -1,20 +1,14 @@
 <section class="hero">
     <div class="hero-image">
         <div>
-            <p>Sitio Web</p>
-            <a href="#" target="_blank">// ateneo.com.ar</a>
-            <p>Instagram</p>
-            <a href="#" target="_blank">@ Ateneo</a>
+            {{{ content.hero.contacts }}}
         </div>
     </div>
 
     <div class="hero-content">
-        <h1>Ateneo</h1>
-        <h3>Diseño y Desarrollo de Página Web</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, libero reprehenderit perspiciatis illum
-            odit illo assumenda nulla autem laborum nobis quibusdam fuga vel, eveniet, repellendus qui natus commodi
-            magnam quo tempore. Vel repellendus blanditiis quaerat. Magni veritatis quod ex. Ducimus cupiditate
-            consectetur in itaque ea amet at facilis sequi veniam.</p>
+        <h1>{{ content.hero.title }}</h1>
+        <h3>{{ content.hero.subtitle }}</h3>
+        <p> {{ content.hero.text }} </p>
         <div>
             <a href="#concept">V</a>
         </div>
@@ -25,28 +19,26 @@
 
     <div class="concept-info">
         <div>
-            <div>Moderno // Profesional // Llamativo</div>
+            <div>{{ content.concept.focuses }}</div>
         </div>
 
         <div>
-            <p>2025</p>
+            <p> {{ content.concept.year }} </p>
         </div>
     </div>
 
     <div class="concept-title">
         <div>
             <h3>Concepto</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolores nostrum reprehenderit natus minus deserunt officiis culpa alias beatae dolor deleniti eos odit, illo impedit adipisci nam ullam sed? Nemo.</p>
+            <p>{{ content.concept.text }}</p>
         </div>
         <div></div>
     </div>
 
     <div class="concept-content">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p>{{ content.concept.briefDescription }}</p>
         <ul>
-            <li>Digitales Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-            <li>Fisicos Lorem, ipsum dolor.</li>
-            <li>Lorem ipsum dolor sit.</li>
+            {{{ content.concept.applications }}}
         </ul>
     </div>
 
@@ -57,25 +49,35 @@
     <div class="color-content">
         <div>
             <h3>Paleta de Color</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo officiis adipisci odit cum consequuntur ducimus ipsam, expedita, eaque eos, repudiandae quibusdam fugiat neque culpa tenetur necessitatibus soluta dolorem reiciendis rerum!</p>
+            <p>{{ content.color.text }}</p>
         </div>
 
         <div>
             <div>
-                <p>buenas</p>
+                <ul>
+                    {{{ content.color.secondaryDescription }}}
+                </ul>
             </div>
 
             <div>
-                <p>buenas</p>
+                <ul>
+                    {{{ content.color.thirdDescription }}}
+                </ul>
             </div>
 
             <div>
-                <p>buenas</p>
+                <ul>
+                    {{{ content.color.fourthDescription }}}
+                </ul>
             </div>
         </div>
     </div>
 
-    <div class="color-texture"></div>
+    <div class="color-texture">
+        <ul>
+            {{{ content.color.mainDescription }}}
+        </ul>
+    </div>
 
 </section>
 
@@ -87,7 +89,8 @@
 
     <div class="structure-content">
         <h3>Estructura</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quod eligendi consectetur sint ut perferendis quis. Eveniet nemo rerum, nam autem nesciunt veniam. Cum sunt voluptate nulla et cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quod eligendi consectetur sint ut
+            perferendis quis. Eveniet nemo rerum, nam autem nesciunt veniam. Cum sunt voluptate nulla et cumque.</p>
     </div>
 
     <div class="structure-info">
@@ -108,12 +111,14 @@
 
     <div>
         <h3>Nunito</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto eum aspernatur accusamus tenetur expedita quo, sapiente animi sit deserunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto eum aspernatur accusamus
+            tenetur expedita quo, sapiente animi sit deserunt?</p>
     </div>
 
     <div>
         <h3>Space Mono</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto euetur expedita quo, sapiente animi sit deserunt?
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis architecto euetur expedita quo, sapiente
+            animi sit deserunt?
     </div>
 
 </section>
@@ -127,7 +132,7 @@
         <div></div>
         <div></div>
     </div>
-    
+
 </section>
 
 <div class="sections-container pres-divider"></div>
@@ -140,15 +145,14 @@
         <li>A</li>
     </ul>
 
-    <ul >
+    <ul>
         <li>A</li>
         <li>A</li>
     </ul>
 
-    <ul >
+    <ul>
         <li>A</li>
         <li>A</li>
         <li>A</li>
     </ul>
 </section>
-

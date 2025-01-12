@@ -3,6 +3,14 @@
 
 $background-color: #f3f3f3;
 
+:root {
+    --color-main: #663399;
+    --color-gradient-01: 170, 85, 255;
+    --color-gradient-02: 73, 1, 144;
+    --banner-image: url("../img/brand_banner.webp");
+    --corner-image: url("../img/brand_banner.webp");
+}
+
 body {
     background-color: $background-color;
     color: #272727;
@@ -60,9 +68,9 @@ p {
     z-index: 50;
     overflow: hidden;
 
-    background: rgb(170, 85, 255);
-    background: linear-gradient(105deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-    border: 1px solid rgba(170, 85, 255, 1);
+    background: rgb(var(--color-gradient-01));
+    background: linear-gradient(105deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+    border: 1px solid rgba(var(--color-gradient-01), 1);
 
     a {
         width: 90%;
@@ -93,7 +101,7 @@ p {
     &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/banner_sketch.webp");
+        background-image: var(--banner-image);
         top: -1vh;
         right: 0;
         width: 50rem;
@@ -102,7 +110,7 @@ p {
     }
 
     .hero-image {
-        background-image: url("../img/brand_banner.webp");
+        background-image: var(--corner-image);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -137,7 +145,7 @@ p {
             p {
                 font-weight: 800;
                 font-size: 1.7rem;
-                color: rebeccapurple;
+                color: var(--color-main);
             }
 
             a {
@@ -153,7 +161,7 @@ p {
 
         &:hover {
             div {
-                outline: 5px solid rgba(170, 85, 255, 1);
+                outline: 5px solid rgba(var(--color-gradient-01), 1);
             }
         }
     }
@@ -205,9 +213,9 @@ p {
                 text-align: center;
                 border-radius: 13px;
 
-                background: rgb(170, 85, 255);
-                background: linear-gradient(-45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-                border: 1px solid rgba(170, 85, 255, 1);
+                background: rgb(var(--color-gradient-01));
+                background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+                border: 1px solid rgba(var(--color-gradient-01), 1);
                 background-size: 200%!important;
                 background-position: 0%;
 
@@ -257,9 +265,9 @@ p {
         &>div:last-of-type {
             height: 30%;
             border-radius: 13px;
-            background: rgb(170, 85, 255);
-            background: linear-gradient(105deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-            border: 1px solid rgba(170, 85, 255, 1);
+            background: rgb(var(--color-gradient-01));
+            background: linear-gradient(105deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+            border: 1px solid rgba(var(--color-gradient-01), 1);
             
             p {
                 font-size: 1.5rem;
@@ -287,9 +295,9 @@ p {
             width: 6vw;
             height: calc(100% - 1.9vh);
             border-radius: 13px;
-            background: rgb(170, 85, 255);
-            background: linear-gradient(180deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-            border: 1px solid rgba(170, 85, 255, 1);
+            background: rgb(var(--color-gradient-01));
+            background: linear-gradient(180deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+            border: 1px solid rgba(var(--color-gradient-01), 1);
         }
     }
 
@@ -307,8 +315,8 @@ p {
                 content: "";
                 width: 90%;
                 height: 3px;
-                background: rgb(170, 85, 255);
-                background: linear-gradient(90deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+                background: rgb(var(--color-gradient-01));
+                background: linear-gradient(90deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -321,9 +329,9 @@ p {
 .pres-divider {
     height: 5.5rem;
     border-radius: 13px;
-    background: rgb(170, 85, 255);
-    background: linear-gradient(75deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-    border: 1px solid rgba(170, 85, 255, 1);
+    background: rgb(var(--color-gradient-01));
+    background: linear-gradient(75deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+    border: 1px solid rgba(var(--color-gradient-01), 1);
 }
 
 /* Color */
@@ -380,9 +388,9 @@ p {
     .color-texture {
         width: 30%;
         border-radius: 13px;
-        background: rgb(170, 85, 255);
-        background: linear-gradient(-45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-        border: 1px solid rgba(170, 85, 255, 1);
+        background: rgb(var(--color-gradient-01));
+        background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+        border: 1px solid rgba(var(--color-gradient-01), 1);
     }
 }
 
@@ -402,9 +410,9 @@ p {
 
     .structure-image {
         width: 40%;
-        background: rgb(170, 85, 255);
-        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-        border: 1px solid rgba(170, 85, 255, 1);
+        background: rgb(var(--color-gradient-01));
+        background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+        border: 1px solid rgba(var(--color-gradient-01), 1);
     }
 
     .structure-content {
@@ -432,9 +440,9 @@ p {
             div {
                 width: calc(100% - 2vh);
                 height: 6vh;
-                background: rgb(170, 85, 255);
-                background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-                border: 1px solid rgba(170, 85, 255, 1);
+                background: rgb(var(--color-gradient-01));
+                background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+                border: 1px solid rgba(var(--color-gradient-01), 1);
                 margin-bottom: 1vh;
             }
         }
@@ -454,9 +462,9 @@ p {
     } 
 
     &>div:first-of-type {
-        background: rgb(170, 85, 255);
-        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-        border: 1px solid rgba(170, 85, 255, 1);
+        background: rgb(var(--color-gradient-01));
+        background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+        border: 1px solid rgba(var(--color-gradient-01), 1);
         width: 60%;
     }
 
@@ -474,9 +482,9 @@ p {
     gap: 1vh;
 
     .aplication-banner {
-        background: rgb(170, 85, 255);
-        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-        border: 1px solid rgba(170, 85, 255, 1);
+        background: rgb(var(--color-gradient-01));
+        background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+        border: 1px solid rgba(var(--color-gradient-01), 1);
         border-radius: 13px;
         height: 40vh;
         width: 100%;
@@ -489,9 +497,9 @@ p {
         height: 25vh;
 
         div {
-            background: rgb(170, 85, 255);
-            background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
-            border: 1px solid rgba(170, 85, 255, 1);
+            background: rgb(var(--color-gradient-01));
+            background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+            border: 1px solid rgba(var(--color-gradient-01), 1);
             border-radius: 13px;
         }
 

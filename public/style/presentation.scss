@@ -417,32 +417,118 @@ p {
         display: flex;
         flex-direction: column;
         gap: 1vh;
-        
-        &>div:first-of-type {
+
+        &>div {
             background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
 
-        }
+            p {
+                width: 100%;
+            }
 
-        &>div:last-of-type {
-            background-color: #ffffff;
-
+            div {
+                width: calc(100% - 2vh);
+                height: 6vh;
+                background: rgb(170, 85, 255);
+                background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+                border: 1px solid rgba(170, 85, 255, 1);
+                margin-bottom: 1vh;
+            }
         }
     }
 }
 
 /* Font */
 .font {
-    background-color: #7d2fcc;
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    gap: 1vh;
+
+    div {
+        height: 100%;
+        border-radius: 13px;
+    } 
+
+    &>div:first-of-type {
+        background: rgb(170, 85, 255);
+        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+        border: 1px solid rgba(170, 85, 255, 1);
+        width: 60%;
+    }
+
+    &>div:last-of-type {
+        background-color: #00bbff;
+        color: #fff;
+        width: 40%;
+    }
 }
 
 /* Aplication */
 .aplication {
-    background-color: #1de560;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    .aplication-banner {
+        background: rgb(170, 85, 255);
+        background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+        border: 1px solid rgba(170, 85, 255, 1);
+        border-radius: 13px;
+        height: 40vh;
+        width: 100%;
+    }
+
+    .aplication-images {
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+        height: 25vh;
+
+        div {
+            background: rgb(170, 85, 255);
+            background: linear-gradient(45deg, rgba(170, 85, 255, 1) 0%, rgba(73, 1, 144, 1) 100%);
+            border: 1px solid rgba(170, 85, 255, 1);
+            border-radius: 13px;
+        }
+
+        &>div:nth-of-type(1) {
+            width: 25%;
+        }
+
+        &>div:nth-of-type(2) {
+            width: 35%;
+        }
+
+        &>div:nth-of-type(3) {
+            width: 40%;
+        }
+    }
 }
 
 /* Tech */
 .tech {
-    background-color: #ff9900;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    height: 20vh;
+    justify-content: space-between;
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+        background-color: #fff;
+        justify-content: space-between;
+
+        li {
+            height: 100%;
+        }
+    }
 }
 
 /** Contact **/

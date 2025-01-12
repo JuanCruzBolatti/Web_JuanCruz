@@ -1,0 +1,69 @@
+{
+    "general": {
+      "colorGradient1": "JSON VACIO",
+      "colorGradient2": "JSON VACIO",
+      "mainColor": "JSON VACIO"
+    },
+    "hero": {
+      "heroImage": "JSON VACIO",
+      "contacts": "JSON VACIO",
+      "cornerImage": "JSON VACIO",
+      "title": "JSON VACIO",
+      "subtitle": "JSON VACIO",
+      "text": "JSON VACIO"
+    },
+    "concept": {
+      "year": "JSON VACIO",
+      "focuses": "JSON VACIO",
+      "text": "JSON VACIO",
+      "briefDescription": "JSON VACIO",
+      "applications": ""
+    },
+    "color": {
+      "isPresent": false,
+      "text": "JSON VACIO",
+      "mainColor": "JSON VACIO",
+      "mainDescription": "JSON VACIO",
+      "secondaryColor": "JSON VACIO",
+      "secondaryDescription": "JSON VACIO",
+      "hasThird": false,
+      "thirdColor": "JSON VACIO",
+      "thirdDescription": "JSON VACIO",
+      "hasFourth": false,
+      "fourthColor": "JSON VACIO",
+      "fourthDescription": "JSON VACIO"
+    },
+    "structure": {
+      "isPresent": false,
+      "image": "JSON VACIO",
+      "title": "JSON VACIO",
+      "text": "JSON VACIO",
+      "info1": "JSON VACIO",
+      "image1": "JSON VACIO",
+      "info2": "JSON VACIO",
+      "image2": "JSON VACIO"
+    },
+    "font": {
+      "isPresent": false,
+      "title1": "JSON VACIO",
+      "description1": "JSON VACIO",
+      "font1": "JSON VACIO",
+      "title2": "JSON VACIO",
+      "description2": "JSON VACIO",
+      "font2": "JSON VACIO"
+    },
+    "applications": {
+      "isPresent": false,
+      "largeImage": "JSON VACIO",
+      "image2": "JSON VACIO",
+      "image3": "JSON VACIO",
+      "image4": "JSON VACIO"
+    },
+    "tech": {
+      "isPresent": false,
+      "array1": [],
+      "array2": [],
+      "array3": []
+    }
+  }
+  

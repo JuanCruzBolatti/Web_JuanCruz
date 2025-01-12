@@ -16,7 +16,7 @@ app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 8080);
 app.use(express.static(__dirname + '/public'));
 
-// Language
+// load Jsons
 function loadLanguage(lang) {
     const filePath = path.join(__dirname, './data/languages', `${lang}.json`);
     try {
@@ -24,6 +24,17 @@ function loadLanguage(lang) {
         return JSON.parse(data);
     } catch (err) {
         console.error(`Error al utilizar el idioma ${lang}:`, err);
+        return {};
+    }
+}
+
+function loadPresentation(id) {
+    const filePath = path.join(__dirname, './data/presentations', `${id}.json`);
+    try {
+        const data = fs.readFileSync(filePath);
+        return JSON.parse(data);
+    } catch (err) {
+        console.error(`Error al buscar la presentacion ${id}:`, err);
         return {};
     }
 }
@@ -38,6 +49,14 @@ app.get('/brand/prueba', function (req, res) {
     const language = loadLanguage(lang);
 
     res.render('presentation', { layout: 'presentation', language, topTitle: 'Presentación Prueba' });
+});
+
+app.get('/presentation/:id', function (req, res) {
+    const language = loadLanguage('es');
+    const presentationId = req.params.id;
+    const content = loadPresentation(presentationId);
+
+    res.render('presentation', { layout: 'presentation', language, content, topTitle: `Presentación ${presentationId}` });
 });
 
 app.get('/projects', function (req, res) {

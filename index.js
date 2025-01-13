@@ -49,7 +49,7 @@ app.get('/presentation/:id', function (req, res) {
     const presentationId = req.params.id;
     const content = loadPresentation(presentationId);
 
-    res.render('presentation', { layout: 'presentation', language, content, topTitle: `Presentación ${presentationId}` });
+    res.render('presentation', { layout: 'presentation', language, content, id: presentationId });
 });
 
 app.get('/', function (req, res) {

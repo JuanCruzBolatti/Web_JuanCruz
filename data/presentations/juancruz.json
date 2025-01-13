@@ -5,9 +5,7 @@
     "mainColor": "19, 132, 179"
   },
   "hero": {
-    "heroImage": "../img/presentations/jc/hero.webp",
     "contacts": "<p>Sitio Web</p> <a href='/' target='_blank'>// Juancruzbolatti.com</a> <p>Instagram</p> <a href='https://www.instagram.com/juanc.dev/' target='_blank'>@ JuanC.Dev</a>",
-    "cornerImage": "../img/presentations/jc/corner.webp",
     "title": "Juan Cruz Bolatti",
     "subtitle": "Diseño de Marca e Identidad Visual",
     "text": "Desarrollador y Diseñador de Aplicaciones y Páginas Web, enfocado en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo."
@@ -16,7 +14,6 @@
     "year": "2023",
     "focuses": "<li>Moderno</li><li>Profesional</li><li>Llamativo</li>",
     "text": "Tras años de estudio en una industria monótona, nace Juan Cruza Bolatti como una marca de desarrollo web única, enfocada en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo. Por eso se buscó desarrollar una marca personal que se pueda adaptar fácilmente a todos los medios digitales teniendo en cuenta el rumbo que esta tomando el diseño moderno.",
-    "image": "FALTA CSS & FALTA JS",
     "briefDescription": "Desarrollador web centrado en el diseño y en la experiencia del usuario",
     "applications": "<li><span>Digitales:</span> tales como redes sociales, usos en web e incrustaciones en imágenes y videos.</li><li><span>Físicos:</span> como tarjetas de presentación o facturas.</li><li><span>Firmas:</span> tanto para páginas como para mails.</li>"
   },
@@ -36,13 +33,10 @@
   },
   "structure": {
     "isPresent": true,
-    "image": "FALTA CSS & FALTA JS",
     "title": "JSON VACIO",
     "text": "JSON VACIO",
     "info1": "JSON VACIO",
-    "image1": "FALTA CSS & FALTA JS",
-    "info2": "JSON VACIO",
-    "image2": "FALTA CSS & FALTA JS"
+    "info2": "JSON VACIO"
   },
   "font": {
     "isPresent": true,
@@ -52,11 +46,7 @@
     "description2": "SVG"
   },
   "applications": {
-    "isPresent": true,
-    "largeImage": "FALTA CSS & FALTA JS",
-    "image2": "FALTA CSS & FALTA JS",
-    "image3": "FALTA CSS & FALTA JS",
-    "image4": "FALTA CSS & FALTA JS"
+    "isPresent": true
   },
   "tech": {
     "isPresent": true,

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ topTitle }} - Juan Cruz Bolatti</title>
+    <title>Presentación {{ id }} - Juan Cruz Bolatti</title>
     <meta name="description"
         content="Desarrollador Web enfocado en el diseño para brindar experiencias de usuario únicas, útiles y llamativas.">
     <meta name="keywords"
@@ -12,8 +12,8 @@
     <meta name="robots" content="noindex, follow">
 
     <!-- Meta for Share -->
-    <meta property="og:title" content="{{ topTitle }} - Juan Cruz Bolatti">
-    <meta name="twitter:title" content="{{ topTitle }} - Juan Cruz Bolatti">
+    <meta property="og:title" content="Presentación {{ id }} - Juan Cruz Bolatti">
+    <meta name="twitter:title" content="Presentación {{ id }} - Juan Cruz Bolatti">
 
     <!-- Preload -->
     <link rel="preload" href="/fonts/nunitoSans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -29,8 +29,9 @@
             --color-main: {{ content.general.mainColor }};
             --color-gradient-01: {{ content.general.colorGradient1 }};
             --color-gradient-02: {{ content.general.colorGradient2 }};
-            --banner-image: url("{{ content.hero.heroImage }}");
-            --corner-image: url("{{ content.hero.cornerImage }}");
+            --banner-image: url("../img/presentations/{{ id }}/hero.webp");
+            --corner-image: url("../img/presentations/{{ id }}/corner.webp");
+            --concept-image: url("../img/presentations/{{ id }}/concept-banner.webp");
         }
     </style>
 

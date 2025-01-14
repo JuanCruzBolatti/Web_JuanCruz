@@ -75,30 +75,32 @@
         </div>
 
         <div>
-            <div>
-                <ul>
-                    {{{ content.color.secondaryDescription }}}
-                </ul>
-            </div>
 
-            <div>
+            <div
+                style="background: {{ content.color.thirdColor }}; background-position: center center; background-repeat: no-repeat; background-size: cover;">
                 <ul>
                     {{{ content.color.thirdDescription }}}
                 </ul>
             </div>
 
-            <div>
+            <div
+                style="background: {{ content.color.secondaryColor }}; background-position: center center; background-repeat: no-repeat; background-size: cover;">
                 <ul>
-                    {{{ content.color.fourthDescription }}}
+                    {{{ content.color.secondaryDescription }}}
                 </ul>
             </div>
+
+            <div
+                style="background: {{ content.color.mainColor }}; background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                <ul>
+                    {{{ content.color.mainDescription }}}
+                </ul>
+            </div>
+
         </div>
     </div>
 
     <div class="color-texture">
-        <ul>
-            {{{ content.color.mainDescription }}}
-        </ul>
     </div>
 
 </section>
@@ -135,11 +137,13 @@
 <section class="sections-container font" id="font">
 
     <div>
-        {{{ content.font.title1 }}} + {{{ content.font.description1 }}}
+        <img src="../img/presentations/{{ id }}/font-title01.png" alt="">
+        <img src="../img/presentations/{{ id }}/font-text01.png" alt="">
     </div>
 
     <div>
-        {{{ content.font.title2 }}} + {{{ content.font.description2 }}}
+        <img src="../img/presentations/{{ id }}/font-title02.png" alt="">
+        <img src="../img/presentations/{{ id }}/font-text02.png" alt="">
     </div>
 
 </section>

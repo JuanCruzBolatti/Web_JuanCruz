@@ -13,37 +13,29 @@
   "concept": {
     "year": "2023",
     "focuses": "<li>Moderno</li><li>Profesional</li><li>Llamativo</li>",
-    "text": "Tras años de estudio en una industria monótona, nace Juan Cruza Bolatti como una marca de desarrollo web única, enfocada en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo. Por eso se buscó desarrollar una marca personal que se pueda adaptar fácilmente a todos los medios digitales teniendo en cuenta el rumbo que esta tomando el diseño moderno.",
+    "text": "Tras años de estudio en una industria monótona, nace Juan Cruz Bolatti como una marca de desarrollo web única, enfocada en soluciones que se adaptan al comportamiento natural del usuario, manteniendo coherencia visual y un flujo interactivo llamativo. Por eso se buscó desarrollar una marca personal que se pueda adaptar fácilmente a todos los medios digitales teniendo en cuenta el rumbo que esta tomando el diseño moderno.",
     "briefDescription": "Desarrollador web centrado en el diseño y en la experiencia del usuario",
-    "applications": "<li><span>Digitales:</span> tales como redes sociales, usos en web e incrustaciones en imágenes y videos.</li><li><span>Físicos:</span> como tarjetas de presentación o facturas.</li><li><span>Firmas:</span> tanto para páginas como para mails.</li>"
+    "applications": "<li>Digitales: tales como redes sociales, usos en web e incrustaciones en imágenes y videos.</li><li>Físicos: como tarjetas de presentación o facturas.</li><li>Firmas: tanto para páginas como para mails.</li>"
   },
   "color": {
     "isPresent": true,
-    "text": "JSON VACIO",
-    "mainColor": "FALTA CSS & FALTA JS",
-    "mainDescription": "<li>JSON VACIO</li>",
-    "secondaryColor": "FALTA CSS & FALTA JS",
-    "secondaryDescription": "<li>JSON VACIO</li>",
-    "hasThird": false,
-    "thirdColor": "FALTA CSS & FALTA JS",
-    "thirdDescription": "<li>JSON VACIO</li>",
-    "hasFourth": false,
-    "fourthColor": "FALTA CSS & FALTA JS",
-    "fourthDescription": "<li>JSON VACIO</li>"
+    "text": "La versatilidad es uno de los pilares fundamentales de la marca, es por eso que no podía encasillarse en una paleta de colores. Se desarrollaron diversos colores complementarios en formato de gradientes pero pueden utilizarse colores planos, o el mismo logo puede utilizar estos degrades.",
+    "mainColor": "url('../img/presentations/juancruz/color02.webp')",
+    "mainDescription": "",
+    "secondaryColor": "url('../img/presentations/juancruz/color03.webp')",
+    "secondaryDescription": "",
+    "thirdColor": "url('../img/presentations/juancruz/color04.webp')",
+    "thirdDescription": ""
   },
   "structure": {
-    "isPresent": true,
-    "title": "JSON VACIO",
-    "text": "JSON VACIO",
-    "info1": "JSON VACIO",
-    "info2": "JSON VACIO"
+    "isPresent": false,
+    "title": "Esto no debería verse en la página",
+    "text": "Si estas viendo esto es porque Juan no hizo bien su trabajo",
+    "info1": "Eso es raro",
+    "info2": "Pero puede pasar"
   },
   "font": {
-    "isPresent": true,
-    "title1": "SVG",
-    "description1": "SVG",
-    "title2": "SVG",
-    "description2": "SVG"
+    "isPresent": true
   },
   "applications": {
     "isPresent": true

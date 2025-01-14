@@ -126,7 +126,7 @@ p {
     }
 
     .hero-image {
-        background-image: var(--banner-image); 
+        background-image: var(--banner-image);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -233,7 +233,7 @@ p {
                 background: rgb(var(--color-gradient-01));
                 background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
                 border: 1px solid rgba(var(--color-gradient-01), 1);
-                background-size: 200%!important;
+                background-size: 200% !important;
                 background-position: 0%;
 
                 transition: .2s ease-in-out;
@@ -313,12 +313,12 @@ p {
                     background-color: #f3f3f3;
                     padding-left: 5%;
                     font-size: 1.8rem;
-                    display: flex; 
-                    align-items: center; 
+                    display: flex;
+                    align-items: center;
                     border-radius: 13px;
-                    min-height: 0; 
+                    min-height: 0;
                 }
-            } 
+            }
         }
 
         &>div:last-of-type {
@@ -328,9 +328,9 @@ p {
             background: linear-gradient(105deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
             border: 1px solid rgba(var(--color-gradient-01), 1);
 
-            overflow: hidden; 
+            overflow: hidden;
             position: relative;
-            
+
             p {
                 margin: 0;
                 text-indent: 0;
@@ -432,10 +432,10 @@ p {
                 background-color: #f3f3f3;
                 padding-left: 5%;
                 font-size: 1.8rem;
-                display: flex; 
-                align-items: center; 
+                display: flex;
+                align-items: center;
                 border-radius: 13px;
-                min-height: 0; 
+                min-height: 0;
             }
         }
     }
@@ -459,7 +459,7 @@ p {
         display: flex;
         flex-direction: column;
         gap: 1vh;
-        
+
         &>div:first-of-type {
             background-color: #ffffff;
             height: 70%;
@@ -488,7 +488,7 @@ p {
                 width: 30%;
                 border-radius: 13px;
 
-                ul {    
+                ul {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
@@ -636,7 +636,7 @@ p {
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-    } 
+    }
 
     &>div:first-of-type {
         background: rgb(var(--color-gradient-01));
@@ -662,6 +662,10 @@ p {
         background: rgb(var(--color-gradient-01));
         background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
         border: 1px solid rgba(var(--color-gradient-01), 1);
+        background-image: var(--application-image-01);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 13px;
         height: 40vh;
         width: 100%;
@@ -682,14 +686,26 @@ p {
 
         &>div:nth-of-type(1) {
             width: 25%;
+            background-image: var(--application-image-02);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         &>div:nth-of-type(2) {
             width: 35%;
+            background-image: var(--application-image-03);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         &>div:nth-of-type(3) {
             width: 40%;
+            background-image: var(--application-image-04);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
@@ -704,14 +720,27 @@ p {
 
     ul {
         height: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 1vh;
         background-color: #fff;
-        justify-content: space-between;
+        border-radius: 13px;
+
+        margin: 0;
+        flex: 1; 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        gap: 1vh; 
+        
 
         li {
             height: 100%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+
+            img {
+                border-radius: 13px;
+            }
         }
     }
 }

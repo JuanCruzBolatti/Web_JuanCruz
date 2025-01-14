@@ -42,8 +42,8 @@
   },
   "tech": {
     "isPresent": true,
-    "array1": [],
-    "array2": [],
-    "array3": []
+    "function": "<li><img src='../img/icons/01.png'></li><li><img src='../img/icons/05.png'></li><li><img src='../img/icons/06.png'></li>",
+    "style": "<li><img src='../img/icons/12.png'></li><li><img src='../img/icons/15.png'></li>",
+    "other": "<li><img src='../img/icons/02.png'></li><li><img src='../img/icons/03.png'></li><li><img src='../img/icons/24.png'></li><li><img src='../img/icons/01.png'></li>"
   }
 }

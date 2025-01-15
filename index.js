@@ -28,17 +28,6 @@ function loadLanguage(lang) {
     }
 }
 
-function loadPresentation(id) {
-    const filePath = path.join(__dirname, './data/presentations', `${id}.json`);
-    try {
-        const data = fs.readFileSync(filePath);
-        return JSON.parse(data);
-    } catch (err) {
-        console.error(`Error al buscar la presentacion ${id}:`, err);
-        return {};
-    }
-}
-
 // Routing
 app.get('/sitemap.xml', (req, res) => {
     res.sendFile(path.join(__dirname, './sitemap.xml'));
@@ -47,9 +36,26 @@ app.get('/sitemap.xml', (req, res) => {
 app.get('/presentation/:id', function (req, res) {
     const language = loadLanguage('es');
     const presentationId = req.params.id;
-    const content = loadPresentation(presentationId);
+    const filePath = path.join(__dirname, './data/presentations', `${presentationId}.json`);
+    
+    try {
+        if (!fs.existsSync(filePath)) {
+            throw new Error(`Presentation with ID ${presentationId} not found`);
+        }
 
-    res.render('presentation', { layout: 'presentation', language, content, id: presentationId });
+        const data = fs.readFileSync(filePath, 'utf-8');
+        const content = JSON.parse(data);
+
+        res.render('presentation', {
+            layout: 'presentation',
+            language,
+            content,
+            id: presentationId
+        });
+    } catch (err) {
+        console.error(`Error al buscar la presentación ${presentationId}:`, err);
+        res.status(404).render('404', { layout: 'main', language });
+    }
 });
 
 app.get('/', function (req, res) {

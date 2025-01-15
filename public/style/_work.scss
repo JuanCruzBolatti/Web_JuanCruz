@@ -103,11 +103,11 @@
         }
 
         .work-card-small {
-            background: rgb(142,221,236);
-            background: linear-gradient(90deg, rgba(142,221,236,0.3) 0%, rgba(64,169,170,0.2) 100%);
-            border: 1px solid rgba(64,169,170,0.6);
+            background: rgb(142, 221, 236);
+            background: linear-gradient(90deg, rgba(142, 221, 236, 0.3) 0%, rgba(64, 169, 170, 0.2) 100%);
+            border: 1px solid rgba(64, 169, 170, 0.6);
 
-            background-size: 200%!important; 
+            background-size: 200% !important;
             background-position: 0%;
             border-radius: 13px;
             overflow: hidden;
@@ -130,19 +130,25 @@
             }
 
             &:hover {
-                background-position: 100%!important;
+                background-position: 100% !important;
             }
 
             &:nth-child(4) {
-                background: rgb(94,64,170);
-                background: linear-gradient(90deg, rgba(169,142,236,0.3) 0%, rgba(94,64,170,0.2) 100%);
+                background: rgb(94, 64, 170);
+                background: linear-gradient(90deg, rgba(169, 142, 236, 0.3) 0%, rgba(94, 64, 170, 0.2) 100%);
                 border: 1px solid rgba(94, 64, 170, 1);
             }
 
             &:last-child {
-                background: rgb(236,142,166);
-                background: linear-gradient(90deg, rgba(236,142,166,0.3) 0%, rgba(170,64,95,0.2) 100%);
-                border: 1px solid rgba(170,64,95,0.8);
+                background: rgb(236, 142, 166);
+                background: linear-gradient(90deg, rgba(236, 142, 166, 0.3) 0%, rgba(170, 64, 95, 0.2) 100%);
+                border: 1px solid rgba(170, 64, 95, 0.8);
+            }
+
+            &.warning {
+                background: rgb(236, 195, 142);
+                background: linear-gradient(90deg, rgba(236, 195, 142, 0.3) 0%, rgba(170, 139, 64, 0.2) 100%);
+                border: 1px solid rgba(236, 195, 142, 0.6);
             }
         }
     }
@@ -198,11 +204,11 @@
 .work {
     .work-content-emergency {
         width: 100%;
-        background: rgb(236,142,166);
-        background: linear-gradient(90deg, rgba(236,142,166,0.3) 0%, rgba(170,64,95,0.2) 100%);
-        border: 1px solid rgba(170,64,95,0.8);
+        background: rgb(236, 142, 166);
+        background: linear-gradient(90deg, rgba(236, 142, 166, 0.3) 0%, rgba(170, 64, 95, 0.2) 100%);
+        border: 1px solid rgba(170, 64, 95, 0.8);
 
-        background-size: 200%!important;
+        background-size: 200% !important;
         background-position: 0%;
         border-radius: 13px;
         overflow: hidden;
@@ -223,7 +229,7 @@
             margin: 0;
             color: rgba(255, 255, 255, 0.8);
         }
-        
+
         ul {
             margin: 0;
             padding: 0;
@@ -244,7 +250,7 @@
         }
 
         &:hover {
-            background-position: 100%!important;
+            background-position: 100% !important;
         }
     }
 }
@@ -252,7 +258,7 @@
 @media only screen and (max-width: 768px) {
     .work {
         .work-content-emergency {
-           
+
             h4 {
                 font-size: 2rem;
                 line-height: 2rem;

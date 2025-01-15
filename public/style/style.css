@@ -1002,6 +1002,11 @@ h2 {
   background: linear-gradient(90deg, rgba(236, 142, 166, 0.3) 0%, rgba(170, 64, 95, 0.2) 100%);
   border: 1px solid rgba(170, 64, 95, 0.8);
 }
+.work .work-content .work-card-small.warning {
+  background: rgb(236, 195, 142);
+  background: linear-gradient(90deg, rgba(236, 195, 142, 0.3) 0%, rgba(170, 139, 64, 0.2) 100%);
+  border: 1px solid rgba(236, 195, 142, 0.6);
+}
 
 @media only screen and (max-width: 768px) {
   .work {

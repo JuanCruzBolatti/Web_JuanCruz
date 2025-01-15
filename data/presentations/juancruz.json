@@ -18,7 +18,7 @@
     "applications": "<li>Digitales: tales como redes sociales, usos en web e incrustaciones en imágenes y videos.</li><li>Físicos: como tarjetas de presentación o facturas.</li><li>Firmas: tanto para páginas como para mails.</li>"
   },
   "color": {
-    "isPresent": false,
+    "isPresent": true,
     "text": "La versatilidad es uno de los pilares fundamentales de la marca, es por eso que no podía encasillarse en una paleta de colores. Se desarrollaron diversos colores complementarios en formato de gradientes pero pueden utilizarse colores planos, o el mismo logo puede utilizar estos degrades.",
     "mainColor": "url('../img/presentations/juancruz/color02.webp')",
     "mainDescription": "",
@@ -35,10 +35,10 @@
     "info2": "Pero puede pasar"
   },
   "font": {
-    "isPresent": false
+    "isPresent": true
   },
   "applications": {
-    "isPresent": false
+    "isPresent": true
   },
   "tech": {
     "isPresent": false,

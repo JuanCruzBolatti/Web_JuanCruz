@@ -521,7 +521,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .hero {
-    margin: 0.8rem auto;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -538,8 +538,9 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     height: 55vh;
-    width: calc(100% - 1.6rem);
+    width: 100%;
     margin: 0 auto;
+    border-radius: 0 0 13px 13px;
   }
   .hero .hero-image div {
     bottom: 4%;
@@ -553,7 +554,7 @@ p {
   }
   .hero .hero-content h1 {
     font-size: 6rem;
-    line-height: 6.2rem;
+    line-height: 5.5rem;
   }
   .hero .hero-content h1::before {
     top: -4rem;
@@ -561,42 +562,22 @@ p {
     font-size: 2rem;
   }
   .hero .hero-content h3 {
-    font-family: "spaceMonoRegular", Helvetica;
-    font-size: 1.2vw;
-    line-height: 1.2vw;
-    font-weight: 800;
-    margin: 0;
-    margin-top: 1.6vw;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-top: 2rem;
   }
   .hero .hero-content p {
-    line-height: 1.3vw;
-    margin: 0.4vw 0 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin: 0.4rem 0 0;
   }
   .hero .hero-content div {
-    margin-top: 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    margin-top: 3rem;
   }
   .hero .hero-content div a {
-    height: 8vw;
-    width: 3vw;
-    text-align: center;
-    border-radius: 13px;
+    height: 15vh;
+    width: 6vh;
     padding: 2rem;
-    background: rgb(var(--color-gradient-01));
-    background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
-    border: 1px solid rgba(var(--color-gradient-01), 1);
-    background-size: 200% !important;
-    background-position: 0%;
-    transition: 0.2s ease-in-out;
-  }
-  .hero .hero-content div a:hover {
-    background-position: 90%;
-  }
-  .hero .hero-content div a svg {
-    height: 100%;
   }
 }
 /** Sections **/
@@ -606,6 +587,13 @@ p {
   margin-top: 1vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .sections-container {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+}
 /* Banners */
 .pres-divider {
   height: 5.5rem;
@@ -791,6 +779,72 @@ p {
     padding-right: 5%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .concept {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    height: auto;
+  }
+  .concept .concept-info {
+    order: 1;
+    gap: 1rem;
+    width: 100%;
+  }
+  .concept .concept-info > div:first-of-type {
+    height: auto;
+    padding: 2rem;
+  }
+  .concept .concept-info > div:first-of-type ul {
+    row-gap: 0.5rem;
+  }
+  .concept .concept-info > div:first-of-type ul li {
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+  .concept .concept-info > div:last-of-type {
+    height: 10rem;
+  }
+  .concept .concept-info > div:last-of-type p {
+    font-size: 14rem;
+    line-height: 14rem;
+    color: #fff;
+  }
+  .concept .concept-title {
+    order: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .concept .concept-title > div:first-of-type {
+    padding: 0;
+    width: 100%;
+  }
+  .concept .concept-title > div:first-of-type p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .concept .concept-title > div:last-of-type {
+    width: 100%;
+    height: 2rem;
+    background: rgb(var(--color-gradient-01));
+    background: linear-gradient(-45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
+  }
+  .concept .concept-content {
+    order: 2;
+    width: 100%;
+    padding: 2rem;
+  }
+  .concept .concept-content ul {
+    row-gap: 0.5rem;
+  }
+  .concept .concept-content ul li {
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
 /* Color */
 .color {
   display: flex;
@@ -875,6 +929,34 @@ p {
   .color .color-content > div:first-of-type p {
     font-size: 1.7rem;
     line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .color {
+    gap: 1rem;
+    height: 50vh;
+  }
+  .color .color-content {
+    gap: 1rem;
+  }
+  .color .color-content > div:first-of-type {
+    height: 70%;
+    padding: 2rem;
+  }
+  .color .color-content > div:first-of-type h3 {
+    line-height: 4rem;
+  }
+  .color .color-content > div:first-of-type p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .color .color-content > div:last-of-type {
+    height: 30%;
+    gap: 1rem;
+  }
+  .color .color-content > div:last-of-type div ul {
+    gap: 1rem;
+    padding: 0 0 0.5rem 1rem;
   }
 }
 /* Structure */
@@ -962,6 +1044,25 @@ p {
     line-height: 2rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .structure {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+  .structure .structure-image {
+    width: 100%;
+    height: 30vh;
+  }
+  .structure .structure-content {
+    width: 100%;
+    padding: 2.3rem;
+  }
+  .structure .structure-info {
+    width: 100%;
+    gap: 1rem;
+  }
+}
 /* Font */
 .font {
   display: flex;
@@ -996,6 +1097,36 @@ p {
   }
   .font > div:last-of-type > img:first-of-type {
     max-width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .font {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+  .font div {
+    height: 100%;
+    border-radius: 13px;
+    padding: 2.5vh 2.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .font > div:first-of-type {
+    width: 100%;
+    height: auto;
+  }
+  .font > div:first-of-type > img:first-of-type {
+    max-width: 90%;
+  }
+  .font > div:last-of-type {
+    height: auto;
+    width: 100%;
+  }
+  .font > div:last-of-type > img:first-of-type {
+    max-width: 70%;
   }
 }
 /* Aplication */
@@ -1084,6 +1215,16 @@ p {
   .tech ul li img {
     width: 65%;
     border-radius: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tech {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+  .tech ul {
+    padding: 2rem;
   }
 }
 /** Contact **/

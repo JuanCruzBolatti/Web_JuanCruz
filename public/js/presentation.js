@@ -100,18 +100,8 @@ const observerPc = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.8 });
 
-const observerMobile = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navbarButtonDisplay(entry.target.id);
-    }
-  });
-}, { threshold: 0.3 });
-
 sections.forEach(section => {
   if (window.innerWidth > 768) {
     observerPc.observe(section);
-  } else {
-    observerMobile.observe(section);
-  }
+  } 
 });

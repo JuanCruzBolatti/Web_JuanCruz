@@ -38,7 +38,7 @@
     "isPresent": true
   },
   "applications": {
-    "isPresent": true
+    "isPresent": false
   },
   "tech": {
     "isPresent": false,

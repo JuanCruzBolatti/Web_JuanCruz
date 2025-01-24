@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "229, 165, 93",
+        "colorGradient2": "21, 21, 19",
+        "mainColor": "229, 165, 93"
+    },
+    "hero": {
+        "contacts": "<p>Muebles de Hierro y Madera</p><a href='#'>FALTA LINK</a>",
+        "title": "Nama",
+        "subtitle": "Diseño de Marca e Identidad",
+        "text": ""
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Hierro</li><li>Madera</li><li>Técnico</li>",
+        "text": "Se especializan en la fabricación de muebles que combinan hierro y madera, creando piezas únicas que equilibran durabilidad y diseño. Su propuesta fusiona la resistencia del hierro con la calidez de la madera, ofreciendo productos funcionales y elegantes que se adaptan a cualquier espacio. Inspirada en el equilibrio entre lo artesanal y lo contemporáneo, la marca presenta un contraste de elementos para reflejar el estilo y personalidad de la empresa.",
+        "briefDescription": "Muebles de diseño",
+        "applications": "<li>Diseñados para todos los espacios de tu hogar</li><li>Combinando estilo y funcionalidad</li><li>Contraste entre naturaleza y lo artificial</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "Para resaltar la calidez de la madera y la robustez del metal, se seleccionaron colores creando un equilibrio visual que refleja profesionalidad y diseño. Los tonos cálidos y neutros evocan confort, mientras que los matices sobrios aportan elegancia y modernidad.",
+        "mainColor": "rgb(229, 165, 92)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(57, 74, 84)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(21, 21, 19)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": false,
+        "title": "",
+        "text": "",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": true
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

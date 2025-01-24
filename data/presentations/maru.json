@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "255, 99, 100",
+        "colorGradient2": "0, 115, 192",
+        "mainColor": "130, 90, 180"
+    },
+    "hero": {
+        "contacts": "<p>Página Web</p><a href='https://maru.com'>// Maru.com</a>",
+        "title": "Maru",
+        "subtitle": "Diseño y Desarrollo de Página Web",
+        "text": ""
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Movimiento</li><li>Dualidad</li><li>Profesionalidad</li>",
+        "text": "Portafolio profesional diseñado para destacar la trayectoria y los proyectos de Maru, una destacada productora y directora nacional. Con un diseño moderno y funcional, la plataforma presenta su experiencia, logros y visión creativa, permitiendo a los visitantes explorar su trabajo a través de imágenes, videos y descripciones detalladas. El objetivo es ofrecer un espacio que refleje su talento y compromiso con la industria audiovisual y cultural, sirviendo tanto como carta de presentación como fuente de inspiración.",
+        "briefDescription": "Producción y Dirección",
+        "applications": "<li>Representación de ambos mundos</li><li>Animaciones e interaciones</li><li>Flujo creativo</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "Los colores de la página fueron elegidos para representar cada área de trabajo como productora y directora. Su combinación simboliza la unión y el equilibrio entre ambas disciplinas, destacando su versatilidad y creatividad.",
+        "mainColor": "rgb(255, 99, 100)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(0, 115, 192)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(130, 90, 180)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "La página presenta un flujo creativo que guía al usuario de forma dinámica a través del contenido. Con animaciones sutiles e interactivas, y un diseño que refleja modernidad y profesionalismo, el sitio combina estética y funcionalidad para destacar los trabajos de Maru.",
+        "info1": "Triangulos",
+        "info2": "Animaciones"
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": true
+    },
+    "tech": {
+        "isPresent": true,
+        "function": "<li><img src='../img/icons/10.png'></li><li><img src='../img/icons/11.png'></li><li><img src='../img/icons/12.png'></li><li><img src='../img/icons/13.png'></li>",
+        "style": "<li><img src='../img/icons/14.png'></li><li><img src='../img/icons/15.png'></li>",
+        "other": "<li><img src='../img/icons/02.png'></li><li><img src='../img/icons/03.png'></li>"
+    }
+}

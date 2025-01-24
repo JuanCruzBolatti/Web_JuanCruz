@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "105, 77, 117",
+        "colorGradient2": "51, 24, 50",
+        "mainColor": "105, 77, 117"
+    },
+    "hero": {
+        "contacts": "",
+        "title": "Rido",
+        "subtitle": "",
+        "text": ""
+    },
+    "concept": {
+        "year": "",
+        "focuses": "",
+        "text": "",
+        "briefDescription": "",
+        "applications": ""
+    },
+    "color": {
+        "isPresent": false,
+        "text": "",
+        "mainColor": "",
+        "mainDescription": "",
+        "secondaryColor": "",
+        "secondaryDescription": "",
+        "thirdColor": "",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": false,
+        "title": "",
+        "text": "",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

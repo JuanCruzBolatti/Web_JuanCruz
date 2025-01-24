@@ -399,7 +399,7 @@ p {
   right: 7%;
   border-radius: 26px;
   background-color: #ffffff;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -419,11 +419,15 @@ p {
   font-weight: 800;
   font-size: 1.7rem;
   color: rgb(var(--color-main));
+  word-wrap: break-word;
+  text-align: start;
 }
 .hero .hero-image div a {
+  width: 100%;
   font-weight: 600;
   color: #181717;
   font-size: 1.7rem;
+  word-wrap: break-word;
 }
 .hero .hero-image div a:first-of-type {
   margin-bottom: 1rem;
@@ -553,8 +557,9 @@ p {
     width: 80%;
   }
   .hero .hero-content h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
+    width: 100%;
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
   .hero .hero-content h1::before {
     top: -4rem;
@@ -689,6 +694,8 @@ p {
 .concept .concept-title > div:first-of-type {
   padding: 1.3vh;
   width: calc(100% - 4vw - 1vh);
+  display: flex;
+  flex-direction: column;
 }
 .concept .concept-title > div:first-of-type h3 {
   margin: 0;
@@ -698,6 +705,10 @@ p {
 }
 .concept .concept-title > div:first-of-type p {
   margin: 0;
+  overflow-y: auto;
+  white-space: normal;
+  box-sizing: border-box;
+  padding-right: 15px;
 }
 .concept .concept-title > div:last-of-type {
   width: 4vw;
@@ -825,6 +836,8 @@ p {
   .concept .concept-title > div:first-of-type p {
     font-size: 1.8rem;
     margin: 0;
+    overflow-y: visible;
+    height: auto;
   }
   .concept .concept-title > div:last-of-type {
     width: 100%;
@@ -852,10 +865,12 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1vh;
-  height: 45vh;
+  height: 40vh;
 }
 .color div {
   height: 100%;
+  overflow-y: auto;
+  white-space: normal;
 }
 .color .color-content {
   width: 70%;
@@ -949,6 +964,8 @@ p {
   .color .color-content > div:first-of-type p {
     font-size: 1.8rem;
     margin: 0;
+    overflow-y: visible;
+    height: auto;
   }
   .color .color-content > div:last-of-type {
     height: 30%;
@@ -994,6 +1011,8 @@ p {
 }
 .structure .structure-content p {
   margin: 0;
+  overflow-y: auto;
+  white-space: normal;
 }
 .structure .structure-info {
   width: 20%;
@@ -1010,13 +1029,15 @@ p {
 }
 .structure .structure-info > div p {
   width: 100%;
+  margin-bottom: 0;
+  margin-top: 1.2vh;
 }
 .structure .structure-info > div div {
   width: calc(100% - 2vh);
-  height: 6vh;
+  height: 60%;
   background: rgb(var(--color-gradient-01));
   background: linear-gradient(45deg, rgba(var(--color-gradient-01), 1) 0%, rgba(var(--color-gradient-02), 1) 100%);
-  border: 1px solid rgba(var(--color-gradient-01), 1);
+  border: 1px solid rgba(var(--structure-image-01), 1);
   margin-bottom: 1vh;
 }
 .structure .structure-info > div:first-of-type div {
@@ -1057,6 +1078,10 @@ p {
   .structure .structure-content {
     width: 100%;
     padding: 2.3rem;
+  }
+  .structure .structure-content p {
+    overflow-y: visible;
+    height: auto;
   }
   .structure .structure-info {
     width: 100%;

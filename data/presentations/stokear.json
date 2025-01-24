@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "55, 162, 255",
+        "colorGradient2": "8, 115, 186",
+        "mainColor": "55, 162, 255"
+    },
+    "hero": {
+        "contacts": "<p>Página Web</p><a href='https://stokear.com.ar'>// stokear.com.ar</a>",
+        "title": "Stokear",
+        "subtitle": "Diseño y Desarrollo de Página Web",
+        "text": ""
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Seguridad</li><li>Profesionalidad</li><li>Confianza</li>",
+        "text": "Al ser una empresa que ofrece soluciones integrales en seguridad industrial, diseñamos una plataforma intuitiva que presenta una amplia gama de productos, representando en su estructura la confianza y seguridad de los mismos.",
+        "briefDescription": "Diseño, desarrollo y fabricación de elementos de protección para el sector industrial",
+        "applications": "<li>Protección de Mano, Indumentaria de Trabajo, Calzado y Protección</li><li>Protección Respiratoria y Auditiva, Protección Craneana, Protección Visual</li><li>Protección Facial, Señalización y Más</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "La paleta de colores se basa en los azules originales de la marca con un refuerzo vibrante, combinados con tonos amarillos característicos de la industria de la seguridad. Esta mezcla busca mantener la identidad visual de la marca, al mismo tiempo que aporta dinamismo",
+        "mainColor": "rgb(0, 146, 255)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(255, 216, 99)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(230, 230, 230)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "Para dar estructura a la página, se han abstraído las cintas amarillas de seguridad, integrándolas de manera sutil en el diseño. Se emplean bordes rectos y diagonales que refuerzan la idea de seguridad y orden, creando una sensación de dinamismo y solidez en toda la interfaz",
+        "info1": "Separadores",
+        "info2": "Diagonalización"
+    },
+    "font": {
+        "isPresent": true
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "<li><img src='../img/icons/01.png'></li>",
+        "style": "<li><img src='../img/icons/14.png'></li>",
+        "other": "<li><img src='../img/icons/01.png'></li><li><img src='../img/icons/02.png'></li>"
+    }
+}

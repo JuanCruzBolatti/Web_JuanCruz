@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "225, 44, 77",
+        "colorGradient2": "148, 29, 50",
+        "mainColor": "225, 44, 77"
+    },
+    "hero": {
+        "contacts": "",
+        "title": "Ahche",
+        "subtitle": "Editorial",
+        "text": "Diseño de Marca e Identidad Visual"
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Adaptabilidad</li><li>Creatividad</li><li>Llamativo</li>",
+        "text": "Editorial enfocada en acercar la lectura a las personas mediante experiencias interactivas que combinan medios tradicionales y digitales. Con un fuerte énfasis en el diseño, la lectura se considera una experiencia integral, donde el contenido y la forma se complementan. Para su identidad visual, utilicé elementos sencillos y versátiles, adaptables tanto a lo impreso como a lo digital, con un enfoque minimalista que resalta la claridad y la accesibilidad.",
+        "briefDescription": "Fomentar la lectura con los nuevos medios",
+        "applications": "<li>Creatividad y libertad</li><li>Enfoque en diseño</li><li>Gamificación del medio</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "La paleta de colores de la marca es variable y adaptable, permitiendo que se ajuste a diferentes contextos y medios. Sin embargo, como elemento principal se utiliza un tono poco común en la industria editorial, lo que ayuda a captar la atención y a transmitir un mensaje de creatividad y frescura. Este color distintivo no solo destaca visualmente, sino que también refuerza el enfoque innovador de la marca, diferenciándola de otras en el sector.",
+        "mainColor": "rgb(225, 44, 77)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(148, 29, 50)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(29, 30, 28)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": false,
+        "title": "",
+        "text": "",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": true
+    },
+    "applications": {
+        "isPresent": true
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

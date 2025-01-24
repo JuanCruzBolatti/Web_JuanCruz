@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "182, 186, 43",
+        "colorGradient2": "247, 212, 119",
+        "mainColor": "182, 186, 43"
+    },
+    "hero": {
+        "contacts": "<p>Plataforma de Libros Digitales</p> <a href='https://libros.acercandonoscultura.com.ar'>// libros.acercandonoscultura.com.ar</a>",
+        "title": "Acercándonos Cultura",
+        "subtitle": "Actualización y Desarrollo de Plataforma de Lectura de Libros Digitales",
+        "text": ""
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Modernidad</li><li>Sencillez</li><li>Accesibilidad</li>",
+        "text": "Plataforma de lectura digital que combina accesibilidad, comodidad y diseño moderno. Cuenta con herramientas como la lectura en voz alta, opciones de personalización del texto (tamaño, tipo de letra, colores) y la posibilidad de tomar notas o guardar fragmentos de texto. Estas funcionalidades buscan hacer la experiencia de lectura más cómoda y fomentar el hábito lector, todo dentro de una estética actualizada para adaptarse a los estándares modernos, mientras se implementan sistemas de inclusión que brindan una experiencia de lectura personalizada para personas con diversas necesidades.",
+        "briefDescription": "Libros de Acercándonos Ediciones y Otras Editoriales",
+        "applications": "<li>Variedad en métodos de pago</li><li>Amplio catálogo digital</li><li>Sistema de usuarios</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "Se actualizó la paleta de colores para hacerla más amigable con los medios digitales, mejorando la legibilidad y la comodidad visual, pero manteniendo la identidad de la marca que tanto la caracteriza.",
+        "mainColor": "rgb(155, 44, 44)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(198, 60, 60)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(247, 212, 119)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "La estructura de la plataforma se diseñó con un enfoque en la simplicidad y la accesibilidad. Se utilizaron marcos rectos con leves sombreados para los elementos que organizan o muestran contenido, y marcos levemente curvos con toques de color para los elementos interactivos o de notificación, garantizando una experiencia intuitiva y agradable para el usuario.",
+        "info1": "Elementos de Contenido",
+        "info2": "Elementos de Uso"
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": true,
+        "function": "<li><img src='../img/icons/25.png'></li><li><img src='../img/icons/26.png'></li><li><img src='../img/icons/24.png'></li>",
+        "style": "<li><img src='../img/icons/14.png'></li>",
+        "other": "<li><img src='../img/icons/01.png'></li><li><img src='../img/icons/02.png'></li>"
+    }
+}

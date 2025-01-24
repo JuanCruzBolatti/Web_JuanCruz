@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "0, 167, 208",
+        "colorGradient2": "4, 106, 149",
+        "mainColor": "0, 167, 208"
+    },
+    "hero": {
+        "contacts": "<p>Github</p><a href='#'>// FALTA EL LINK</a><p>Desarrolladores<p><a href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a href='#'>// FALTA LINK Juan Cruz Naimo</a>",
+        "title": "Proyecto Golang",
+        "subtitle": "Desarrollo de Simulación de Sistema Operativo",
+        "text": "Sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos, manejo de memoria directa, y ejecución de instrucciones"
+    },
+    "concept": {
+        "year": "2024",
+        "focuses": "<li>Lenguaje Go</li><li>Manejo de Sincronización e Hilos</li><li>Planificación de Procesos</li>",
+        "text": "Esta simulación de un sistema operativo en Go incluye un kernel, manejo de archivos, gestión de memoria directa y ejecución de instrucciones. Se aplican conceptos de sincronización, uso de hilos, algoritmos de planificación y teoría de sistemas operativos, optimizando el manejo de recursos y procesos concurrentes.",
+        "briefDescription": "Desarrollo en Modulos",
+        "applications": "<li>Kernel</li><li>CPU</li><li>Memoria</li><li>FileSystem</li>"
+    },
+    "color": {
+        "isPresent": false,
+        "text": "",
+        "mainColor": "",
+        "mainDescription": "",
+        "secondaryColor": "",
+        "secondaryDescription": "",
+        "thirdColor": "",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "El programa al estar dividido en módulos, se comunican entre sí gracias al protocolo HTTP mediante el uso de APIs. Gracias a su arquitectura modular y optimización, el sistema maneja operaciones concurrentes sin perder rendimiento, permitiendo recibir y procesar listas de instrucciones complejas de manera eficiente.",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": true
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

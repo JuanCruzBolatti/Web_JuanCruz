@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "114, 177, 226",
+        "colorGradient2": "39, 45, 83",
+        "mainColor": "230, 185, 118"
+    },
+    "hero": {
+        "contacts": "<p>Página Web</p><a href='https://elcancioneropatrio.com'>// elcancioneropatrio.com</a>",
+        "title": "Cancionero Patrio",
+        "subtitle": "Desarrollo de Página Web",
+        "text": ""
+    },
+    "concept": {
+        "year": "2023",
+        "focuses": "<li>Accesibilidad</li><li>Representación</li><li>Conectividad</li>",
+        "text": "Espacio dedicado a la difusión y preservación del patrimonio musical argentino, ofreciendo una colección de las canciones nacionales interpretadas por los elencos estables nacionales. A través de esta plataforma, los usuarios pueden acceder a una rica selección de composiciones que reflejan la identidad y la historia cultural de Argentina. La página busca promover el conocimiento y el disfrute de la música patriótica, así como fomentar el orgullo y la memoria colectiva de los argentinos.",
+        "briefDescription": "Proyecto Cultural",
+        "applications": "<li>Disposición de todos los argentinos y para las escuelas de todo el país</li><li>Resultado técnico y artístico con más de 500 artistas</li><li>Consideraciones oficiales en cuanto a tonalidades y partituras de referencia</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "Los colores provienen del diseño oficial de la presentación del 'Cancionero Patrio', pero teniendo un enfoque en las sombras para buscar reflejar la sonoridad de la música nacional. Esta paleta fue seleccionada para evocar la profundidad emocional y la riqueza cultural de las canciones patrióticas, creando una atmósfera visual que complementa la tradición musical argentina.",
+        "mainColor": "rgb(45, 46, 78)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(114, 177, 226)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(230, 185, 118)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "La estructura se inspira en el logo de la Dirección Nacional de Elencos Estables, incorporando elementos que representan movimiento y musicalidad. Este diseño busca reflejar la dinámica y la fluidez de la música, transmitiendo la idea de una interpretación viva y en constante transformación.",
+        "info1": "Movimiento",
+        "info2": "Simplicidad"
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "14, 100, 170",
+        "colorGradient2": "65, 162, 215",
+        "mainColor": "14, 100, 170"
+    },
+    "hero": {
+        "contacts": "<p>Sitio Web</p><a href='https://moldemat.com'>// moldemat.com</a>",
+        "title": "Moldemat",
+        "subtitle": "Diseño y Desarrollo de Página Web",
+        "text": "Matriceria de Precisión Fabricación de Matrices y Moldes"
+    },
+    "concept": {
+        "year": "2023",
+        "focuses": "<li>Industrial</li><li>Corporativo</li><li>Funcional</li>",
+        "text": "Se presentan los servicios especializados en matricería de precisión, así como la fabricación de matrices y moldes. Se ofrecen soluciones innovadoras, personalizadas y de alta calidad, diseñadas para satisfacer las necesidades específicas de diversas industrias que requieren herramientas precisas y eficientes.",
+        "briefDescription": "Servicios",
+        "applications": "<li>Asesoramientos</li><li>Matricería</li><li>Servicios de Mecanizado</li>"
+    },
+    "color": {
+        "isPresent": true,
+        "text": "Seleccionada para reflejar el profesionalismo y la excelencia de la empresa. Los tonos están inspirados en los colores comúnmente asociados al diseño industrial, que transmiten modernidad, precisión y confianza. Esta elección refuerza la identidad visual de la marca y conecta con el entorno técnico y especializado de la actividad.",
+        "mainColor": "rgb(65, 162, 215)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(249, 145, 55)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(53, 53, 53)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": false,
+        "title": "",
+        "text": "",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": true
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "<li><img src='../img/icons/01.png'></li>",
+        "style": "",
+        "other": ""
+    }
+}

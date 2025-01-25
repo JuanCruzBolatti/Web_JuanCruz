@@ -5,10 +5,10 @@
         "mainColor": "0, 167, 208"
     },
     "hero": {
-        "contacts": "<p>Github</p><a href='#'>// FALTA EL LINK</a><p>Desarrolladores<p><a href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a href='#'>// FALTA LINK Juan Cruz Naimo</a>",
+        "contacts": "<p>Github</p><a href='#'>// FALTA EL LINK</a><p>Desarrolladores<p><a target='_BLANK' href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a target='_BLANK' href='https://github.com/JuanNaimo'>// Juan Cruz Naimo</a>",
         "title": "Proyecto Golang",
         "subtitle": "Desarrollo de Simulación de Sistema Operativo",
-        "text": "Sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos, manejo de memoria directa, y ejecución de instrucciones"
+        "text": "Sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos, manejo de memoria directa, y ejecución de instrucciones."
     },
     "concept": {
         "year": "2024",
@@ -31,8 +31,8 @@
         "isPresent": true,
         "title": "",
         "text": "El programa al estar dividido en módulos, se comunican entre sí gracias al protocolo HTTP mediante el uso de APIs. Gracias a su arquitectura modular y optimización, el sistema maneja operaciones concurrentes sin perder rendimiento, permitiendo recibir y procesar listas de instrucciones complejas de manera eficiente.",
-        "info1": "",
-        "info2": ""
+        "info1": "FALTA TEXTO E IMAGEN",
+        "info2": "FALTA TEXTO E IMAGEN"
     },
     "font": {
         "isPresent": false

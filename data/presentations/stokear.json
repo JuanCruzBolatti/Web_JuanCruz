@@ -20,7 +20,7 @@
     "color": {
         "isPresent": true,
         "text": "La paleta de colores se basa en los azules originales de la marca con un refuerzo vibrante, combinados con tonos amarillos característicos de la industria de la seguridad. Esta mezcla busca mantener la identidad visual de la marca, al mismo tiempo que aporta dinamismo",
-        "mainColor": "rgb(0, 146, 255)",
+        "mainColor": "rgb(0, 116, 184)",
         "mainDescription": "",
         "secondaryColor": "rgb(255, 216, 99)",
         "secondaryDescription": "",
@@ -35,7 +35,7 @@
         "info2": "Diagonalización"
     },
     "font": {
-        "isPresent": true
+        "isPresent": false
     },
     "applications": {
         "isPresent": false

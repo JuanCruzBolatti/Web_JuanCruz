@@ -5,7 +5,7 @@
         "mainColor": "0, 167, 208"
     },
     "hero": {
-        "contacts": "<p>Github</p><a href='#'>// FALTA EL LINK</a><p>Desarrolladores<p><a target='_BLANK' href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a target='_BLANK' href='https://github.com/JuanNaimo'>// Juan Cruz Naimo</a>",
+        "contacts": "<p>Github</p><a target='_BLANK' href='https://github.com/JuanNaimo/so-golang'>// so-golang</a><p>Desarrolladores<p><a target='_BLANK' href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a target='_BLANK' href='https://github.com/JuanNaimo'>// Juan Cruz Naimo</a>",
         "title": "Proyecto Golang",
         "subtitle": "Desarrollo de Simulación de Sistema Operativo",
         "text": "Sistema operativo programado en lenguaje Go, que cuenta con sistema kernel, manejo de archivos, manejo de memoria directa, y ejecución de instrucciones."

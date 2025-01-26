@@ -1204,6 +1204,28 @@ h2 {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
+  .work .work-content .work-column .work-card-proyect .work-card-content {
+    opacity: 1;
+    padding: 10rem 2rem 2rem;
+  }
+  .work .work-content .work-column .work-card-proyect .work-card-content h4 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    width: 70%;
+  }
+  .work .work-content .work-column .work-card-proyect:hover .work-card-content h4 {
+    line-height: 4.2rem;
+  }
+  .work .work-content .work-column .work-card-brand img {
+    width: 30%;
+  }
+  .work .work-content .work-column .work-card-brand div h4 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+  .work .work-content .work-column .work-card-brand div a {
+    font-size: 1.5rem;
+  }
 }
 /** Contact **/
 .contact {

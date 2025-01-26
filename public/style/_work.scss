@@ -360,10 +360,7 @@
             grid-template-columns: 1fr;
 
             .work-column {
-
                 .work-card-large {
-
-
                     .work-card-content {
                         opacity: 1;
                         padding: 10rem 2rem 2rem;
@@ -385,7 +382,6 @@
                 }
 
                 .work-card-small {
-
                     h4 {
                         font-size: 2rem;
                         line-height: 2rem;
@@ -394,6 +390,44 @@
                     p {
                         font-size: 1.8rem;
                         line-height: 1.8rem;
+                    }
+                }
+
+                .work-card-proyect {
+                    .work-card-content {
+                        opacity: 1;
+                        padding: 10rem 2rem 2rem;
+
+                        h4 {
+                            font-size: 3rem;
+                            line-height: 4.2rem;
+                            width: 70%;
+                        }
+                    }
+
+                    &:hover {
+                        .work-card-content {
+                            h4 {
+                                line-height: 4.2rem;
+                            }
+                        }
+                    }
+                }
+
+                .work-card-brand {
+                    img {
+                        width: 30%;
+                    }
+
+                    div { 
+                        h4 {
+                            font-size: 2.6rem;
+                            line-height: 2.6rem;
+                        }
+    
+                        a {
+                            font-size: 1.5rem;
+                        }
                     }
                 }
             }

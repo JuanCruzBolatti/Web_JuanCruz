@@ -47,17 +47,22 @@
         "italian": "Italiano"
     },
     "work": {
-        "description01": "Empresa de matricería y moldes",
-        "description02": "Marca de Muebles",
-        "description03": "Portafolio con animaciones integradas",
         "visit": "Visitar",
-        "smallCardTitle01": "Empresa",
-        "smallCardText01": "Hoy en día para competir en la industria es necesario tener una pagina web que le de seguridad al consumidor y que coloque al nombre de la empresa en el mapa digital.",
-        "smallCardTitle02": "Negocio",
-        "smallCardText02": "Para dar a conocer tus productos sobre la competencia con la máxima accesibilidad posible, tanto para el cliente, como para el dueño.",
-        "smallCardTitle03": "Personal",
-        "smallCardText03": "Para mostrar tu trabajo como se lo merece, teniendo un lugar llamativo y memorable donde tus clientes puedan volver. ",
-        "workEmergencyTitle": "Pagina en actualización - Contenido en proceso de carga"
+        "card": {
+            "advanceTitle": "Plataforma con Funcionalidades Avanzadas",
+            "advanceDesc": "Desarrollo plataformas con funcionalidades avanzadas, diseñadas para cubrir todos tus requerimientos y ofrecer soluciones completas y personalizadas para tu empresa.",
+            "portfolioTitle": "Página Portafolio",
+            "portfolioDesc": "Diseño un portafolio personalizado que resalte tu trabajo de manera creativa y única, captando la atención de quienes lo vean y reflejando tu estilo profesional.",
+            "incTitle": "Página Corporativa",
+            "incDesc": "Diseño la página web que tu empresa necesita para destacar en línea, promocionar tus servicios y productos, y llegar de manera efectiva a tu público objetivo.",
+            "brandTitle": "Diseño de Marca",
+            "brandDesc": "Diseño la marca y la identidad visual de tu empresa, creando una imagen única y coherente que te represente."
+        },
+        "description": {
+            "acercandonos": "Plataforma de Lectura de Libros Digitales con Menú de Accesibilidad",
+            "golang": "Modelo de Sistema Operativo desarrollado integramente con Go",
+            "ridoButton": "Actualmente"
+        }
     },
     "corner": {
         "visit": "Visita mi Marca",

@@ -47,19 +47,22 @@
         "italian": "Italian"
     },
     "work": {
-        "description01": "Tooling and Molds Company",
-        "description02": "Furniture Brand",
-        "description03": "Portfolio with Integrated Animations",
         "visit": "Visit",
-        "smallCardTitle01": "Company",
-        "smallCardText01": "Today, to compete in the industry, it's necessary to have a website that instills confidence in consumers and puts the company name on the digital map.",
-        "smallCardTitle02": "Business",
-        "smallCardText02": "To showcase your products above the competition with maximum accessibility for both customers and owners, ensuring your business stands out.",
-        "smallCardTitle03": "Personal",
-        "smallCardText03": "To present your work as it deserves, creating a striking and memorable space where your clients can return again and again, finding inspiration and solutions. ",
-        "workEmergencyTitle": "Page in update - Content loading",
-        "workEmergencyDesc": "This section is only in Spanish as it is temporary, sorry for the inconvenience."
-    
+        "card": {
+            "advanceTitle": "Platform with Advanced Features",
+            "advanceDesc": "I develop platforms with advanced features, designed to meet all your requirements and provide complete and customized solutions for your business.",
+            "portfolioTitle": "Portfolio Web Site",
+            "portfolioDesc": "A personalized portfolio that highlights your work in a creative and unique way, capturing the attention of viewers and reflecting your professional style.",
+            "incTitle": "Corporate Page",
+            "incDesc": "I develop the website your company needs to stand out online, promote your services and products, and effectively reach your target audience.",
+            "brandTitle": "Brand Design",
+            "brandDesc": "I design the brand and visual identity of your company, creating a unique and coherent image that represents you."
+        },
+        "description": {
+            "acercandonos": "Digital Book Reading Platform with Accessibility Menu",
+            "golang": "Operating System Model entirely developed with Go",
+            "ridoButton": "Currently"
+        }
     },
     "corner": {
         "visit": "Visit my Brand",

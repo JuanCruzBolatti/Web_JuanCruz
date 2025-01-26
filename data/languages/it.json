@@ -47,18 +47,22 @@
         "italian": "Italiano"
     },
     "work": {
-        "description01": "Azienda di stampaggio e stampi",
-        "description02": "Marchio di mobili",
-        "description03": "Portfolio con animazioni integrate",
         "visit": "Visita",
-        "smallCardTitle01": "Azienda",
-        "smallCardText01": "Oggi, per competere nell'industria, è necessario avere un sito web che dia sicurezza al consumatore e posizioni il nome dell'azienda sulla mappa digitale.",
-        "smallCardTitle02": "Attività",
-        "smallCardText02": "Per far conoscere i tuoi prodotti sulla concorrenza con la massima accessibilità possibile, sia per il cliente che per il proprietario.",
-        "smallCardTitle03": "Personale",
-        "smallCardText03": "Per mostrare il tuo lavoro come merita, avendo un luogo accattivante e memorabile dove i tuoi clienti possono tornare.",
-        "workEmergencyTitle": "Pagina in aggiornamento - Caricamento dei contenuti",
-        "workEmergencyDesc": "Questa sezione è solo in spagnolo poiché è temporanea, ci scusiamo per l'inconveniente."
+        "card": {
+            "advanceTitle": "Piattaforma con Funzionalità Avanzate",
+            "advanceDesc": "Sviluppo piattaforme con funzionalità avanzate, progettate per soddisfare tutte le tue esigenze e offrire soluzioni complete e personalizzate per la tua azienda.",
+            "portfolioTitle": "Pagina Portfolio",
+            "portfolioDesc": "Progetto un portfolio personalizzato che metta in risalto il tuo lavoro in modo creativo e unico, catturando l'attenzione di chi lo guarda e riflettendo il tuo stile professionale.",
+            "incTitle": "Pagina Aziendale",
+            "incDesc": "Progetto il sito web di cui la tua azienda ha bisogno per distinguersi online, promuovere i tuoi servizi e prodotti, e raggiungere efficacemente il tuo pubblico target.",
+            "brandTitle": "Design del Brand",
+            "brandDesc": "Progetto il marchio e l'identità visiva della tua azienda, creando un'immagine unica e coerente che ti rappresenti."
+        },
+        "description": {
+            "acercandonos": "Piattaforma per la Lettura di Libri Digitali con Menu di Accessibilità",
+            "golang": "Modello di Sistema Operativo sviluppato interamente con Go",
+            "ridoButton": "Attualmente"
+        }
     },
     "corner": {
         "visit": "Visita il mio Marchio",

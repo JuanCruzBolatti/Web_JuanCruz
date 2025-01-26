@@ -35,7 +35,7 @@
         "info2": ""
     },
     "font": {
-        "isPresent": true
+        "isPresent": false
     },
     "applications": {
         "isPresent": false

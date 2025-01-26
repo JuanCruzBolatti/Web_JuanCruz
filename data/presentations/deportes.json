@@ -1,18 +1,18 @@
 {
     "general": {
-        "colorGradient1": "255, 35, 31",
-        "colorGradient2": "178, 24, 21",
-        "mainColor": "13, 164, 71"
+        "colorGradient1": "139, 78, 237",
+        "colorGradient2": "57, 28, 104",
+        "mainColor": "139, 78, 237"
     },
     "hero": {
-        "contacts": "",
+        "contacts": "<p>Uso Temporal</p>",
         "title": "Canal de Deportes",
         "subtitle": "Diseño de Marca",
-        "text": ""
+        "text": "Canal de Streaming de Deportes enfocado en los Juegos Olímpicos 2024 y otros usos."
     },
     "concept": {
         "year": "2024",
-        "focuses": "<li>Juegos Olímpicos</li><li>Movimiento</li><li>Nuevos Medios</li>",
+        "focuses": "<li>Cultura Deportiva</li><li>Movimiento</li><li>Avance</li>",
         "text": "Es una plataforma de streaming dedicada a los Juegos Olímpicos, que ofrece transmisiones en vivo, repeticiones y contenido exclusivo para conectar a los fanáticos con la emoción y los valores del evento deportivo más grande del mundo.",
         "briefDescription": "Deportes en los nuevos medios",
         "applications": "<li>Streaming</li><li>Integración con distintos formatos</li><li>Identidad de juegos olímpicos</li>"
@@ -20,25 +20,25 @@
     "color": {
         "isPresent": true,
         "text": "Diseñada a partir de elementos deportivos, mantiene versatilidad al poder adaptarse fácilmente a diferentes deportes y contextos, manteniendo siempre una identidad dinámica y cohesionada.",
-        "mainColor": "",
+        "mainColor": "url(../img/presentations/deportes/color02.webp)",
         "mainDescription": "",
-        "secondaryColor": "",
+        "secondaryColor": "url(../img/presentations/deportes/color03.webp)",
         "secondaryDescription": "",
-        "thirdColor": "",
+        "thirdColor": "url(../img/presentations/deportes/color04.webp)",
         "thirdDescription": ""
     },
     "structure": {
         "isPresent": true,
         "title": "",
         "text": "El diseño del logo se inspira en las formas de diversas pelotas deportivas, unidas de manera dinámica para reflejar movimiento y conexión. En el centro, se forma una flecha que simboliza progreso y dirección, y que funciona como un elemento versátil y recurrente dentro de la identidad visual.",
-        "info1": "Elementos",
-        "info2": "Movimiento"
+        "info1": "",
+        "info2": ""
     },
     "font": {
         "isPresent": false
     },
     "applications": {
-        "isPresent": true
+        "isPresent": false
     },
     "tech": {
         "isPresent": false,

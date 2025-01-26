@@ -5,7 +5,7 @@
         "mainColor": "229, 165, 93"
     },
     "hero": {
-        "contacts": "<p>Muebles de Hierro y Madera</p><a href='#'>FALTA LINK</a>",
+        "contacts": "<p>Muebles de Hierro y Madera</p>",
         "title": "Nama",
         "subtitle": "Diseño de Marca e Identidad",
         "text": ""
@@ -38,7 +38,7 @@
         "isPresent": false
     },
     "applications": {
-        "isPresent": true
+        "isPresent": false
     },
     "tech": {
         "isPresent": false,

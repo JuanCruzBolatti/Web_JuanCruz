@@ -31,8 +31,8 @@
         "isPresent": true,
         "title": "",
         "text": "El programa al estar dividido en módulos, se comunican entre sí gracias al protocolo HTTP mediante el uso de APIs. Gracias a su arquitectura modular y optimización, el sistema maneja operaciones concurrentes sin perder rendimiento, permitiendo recibir y procesar listas de instrucciones complejas de manera eficiente.",
-        "info1": "FALTA TEXTO E IMAGEN",
-        "info2": "FALTA TEXTO E IMAGEN"
+        "info1": "",
+        "info2": ""
     },
     "font": {
         "isPresent": false

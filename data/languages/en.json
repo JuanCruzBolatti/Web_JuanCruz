@@ -8,11 +8,11 @@
     "contactTitle": "Contact",
     "pageTitle": "Web Developer",
     "about": {
-        "main": "Hi there! I'm an Argentine programmer who's passionate about design and the latest technologies. I strongly believe that systems should adapt to our needs, not the other way around, that's why I focus on solutions that align with user behavior, prioritizing functionality, simplicity, coherence, and flow.",
+        "main": "Hello! I am an Argentine programmer with a passion for design and new technologies. <br> &nbsp; I've always enjoyed solving problems, and I like to do it with the creative touch that defines me. <br> &nbsp; I believe that systems should adapt to people, not the other way around. That's why I focus on creating intuitive, functional, and simple solutions that align with the user's natural behavior while maintaining coherence and flow.",
         "study": "Education",
-        "studyText": "Knowledge is key to expanding our horizons, and I've always strived for maximum freedom. That's why I've developed skills across various domains that synergize in crafting comprehensive systems. Currently, I'm pursuing a degree in Information Systems Engineering at the Universidad Tecnologica Nacional of Buenos Aires.",
-        "art": "Art",
-        "artText": "Art is a reflection of human behavior and can be a powerful tool in developing effective solutions. It's also a significant part of my life: Writing and drawing have always been my outlets, and they bring a unique perspective to crafting engaging systems."
+        "studyText": "I believe knowledge expands the limits of what's possible, and I've always sought to learn in order to gain freedom in my creations. This is why I’ve developed skills in different areas that complement each other in the design of comprehensive systems. <br> &nbsp; I am currently studying Information Systems Engineering at the Universidad Tecnológica Nacional (UTN) in Buenos Aires.",
+        "art": "Design and Creativity",
+        "artText": "The way we interact with technology matters. I come from a creative background and have always valued design as a key tool for connecting with people. <br> &nbsp; I believe in solutions that not only work well but also make a visual impact and convey intent. My experience with art, writing, and drawing allows me to bring an aesthetic and human perspective to system development, creating experiences that blend functionality with identity."
     },
     "whatIDo": {
         "development": "Development",
@@ -69,5 +69,6 @@
         "visit": "Visit my Brand",
         "know": "Discover my other Projects",
         "rights": "All Rights Reserved"
-    }
+    },
+    "linkedIn": "https://www.linkedin.com/in/juan-cruz-bolatti/?locale=en_US"
 }

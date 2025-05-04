@@ -8,11 +8,11 @@
     "contactTitle": "Contatto",
     "pageTitle": "Sviluppatore Web",
     "about": {
-        "main": "Ciao! Sono un programmatore argentino appassionato di design e nuove tecnologie. Fin da quando ho memoria, mi piace risolvere problemi, sempre con la distintiva creatività che mi contraddistingue. Credo che i sistemi debbano adattarsi alle nostre esigenze e non il contrario, ecco perché mi concentro su soluzioni che si adattano al comportamento naturale dell'utente, partendo dalla funzionalità e dalla semplicità, mantenendo al contempo coerenza e flusso.",
-        "study": "Studi",
-        "studyText": "La conoscenza amplia i limiti di ciò che possiamo fare, e il mio obiettivo è sempre stato avere la massima libertà possibile, ecco perché ho competenze in diverse aree che si integrano nel design di sistemi completi. Attualmente sto frequentando l'Ingegneria dell'Informazione presso la Universidad Tecnológica Nacional de Buenos Aires.",
-        "art": "Arte",
-        "artText": "L'arte è una rappresentazione del comportamento umano che possiamo usare a nostro vantaggio per sviluppare le soluzioni appropriate. È anche una parte molto importante della mia vita, non ho mai smesso di scrivere e disegnare, e questo è il contributo unico che posso offrire per il design di sistemi accattivanti."
+        "main": "Ciao! Sono un programmatore argentino appassionato di design e nuove tecnologie. <br> &nbsp; Da sempre mi piace risolvere problemi, e lo faccio con il tocco creativo che mi distingue. <br> &nbsp; Credo che i sistemi debbano adattarsi alle persone, non il contrario, per questo mi concentro sulla creazione di soluzioni intuitive, funzionali e semplici che accompagnano il comportamento naturale dell'utente senza perdere coerenza e flusso.",
+        "study": "Formazione",
+        "studyText": "Credo che la conoscenza ampli i limiti di ciò che è possibile, e ho sempre cercato di imparare per guadagnare libertà nella creazione. Per questo motivo ho sviluppato competenze in diverse aree che si completano a vicenda nel design di sistemi completi. <br> &nbsp; Attualmente sto studiando Ingegneria dei Sistemi Informativi presso l'Universidad Tecnológica Nacional (UTN) di Buenos Aires.",
+        "art": "Design e Creatività",
+        "artText": "Il modo in cui interagiamo con la tecnologia è importante. Vengo da un background creativo e ho sempre valorizzato il design come uno strumento fondamentale per connettersi con le persone. <br> &nbsp; Credo in soluzioni che non solo funzionano bene, ma che abbiano anche un impatto visivo e trasmettano un'intenzione. La mia esperienza con l'arte, la scrittura e il disegno mi consente di portare una prospettiva estetica e umana nello sviluppo dei sistemi, creando esperienze che combinano funzionalità e identità."
     },
     "whatIDo": {
         "development": "Sviluppo",
@@ -69,5 +69,6 @@
         "visit": "Visita il mio Marchio",
         "know": "Scopri i miei altri Progetti",
         "rights": "Diritti Riservati"
-    }
+    },
+    "linkedIn": "https://www.linkedin.com/in/juan-cruz-bolatti/?locale=it_IT"
 }

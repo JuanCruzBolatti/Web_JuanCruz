@@ -29,14 +29,13 @@
                 align-items: center;
 
                 a {
-                    font-size: 1vw;
+                    font-size: 1.2vw;
                     line-height: 1vw;
                     font-weight: 200;
                     padding: 1.8rem 2rem;
                     border-radius: 13px;
                     transition: .3s ease-in-out;
                     font-family: 'spaceMonoRegular', Helvetica;
-                    text-transform: lowercase;
 
                     -webkit-backdrop-filter: saturate(280%) blur(150px);
                     backdrop-filter: saturate(280%) blur(150px);

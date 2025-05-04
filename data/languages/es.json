@@ -8,11 +8,11 @@
     "contactTitle": "Contacto",
     "pageTitle": "Desarrollador Web",
     "about": {
-        "main": "Buenas! Soy un programador argentino apasionado por el diseño y las nuevas tecnologías. Desde que tengo memoria disfruto solucionando problemas, siempre con el distintivo creativo que me caracteriza. Creo que los sistemas se tienen que adaptar a nuestras necesidades y no al revés, es por eso que me enfoco en soluciones que se adaptan al comportamiento natural del usuario, partiendo de la funcionalidad y simplicidad, mientras se mantiene la coherencia y el flujo.",
+        "main": "¡Hola! Soy un programador argentino con pasión por el diseño y las nuevas tecnologías. <br> &nbsp; Desde siempre disfruto resolver problemas, y me gusta hacerlo con el toque creativo que me caracteriza. <br> &nbsp; Creo que los sistemas deben adaptarse a las personas, no al revés, es por eso que me enfoco en crear soluciones intuitivas, funcionales y simples, que acompañen el comportamiento natural del usuario sin perder coherencia ni fluidez.",
         "study": "Estudios",
-        "studyText": "El conocimiento amplia los limites de lo que podemos hacer, y mi objetivo siempre fue contar con la mayor libertad posible, es por eso que cuento con habilidades en distintas áreas que se complementan en el diseño de sistemas íntegros. Actualmente estoy cursando Ingeniería en Sistemas de Información en la Universidad Tecnología Nacional de Buenos Aires. ",
-        "art": "Arte",
-        "artText": "El arte es una representación del comportamiento humano que se puede usar a nuestro favor para desarrollar las soluciones indicadas. También es una parte muy importante de mi vida, nunca deje de escribir y dibujar, y ese es el aporte único que puedo brindar para el diseño de sistemas llamativos."
+        "studyText": "Creo que el conocimiento expande los límites de lo posible, y siempre busqué aprender para ganar libertad al crear. Por eso desarrollé habilidades en distintas áreas que se complementan en el diseño de sistemas íntegros. <br> &nbsp; Actualmente estudio Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN) de Buenos Aires.",
+        "art": "Diseño y Creatividad",
+        "artText": "La forma en que interactuamos con la tecnología importa. Vengo de una formación creativa y siempre valoré el diseño como una herramienta clave para conectar con las personas. <br> &nbsp; Creo en soluciones que no solo funcionen bien, sino que también impacten visualmente y transmitan intención. Mi experiencia con el arte, la escritura y el dibujo me permite aportar una mirada estética y humana al desarrollo de sistemas, creando experiencias que combinan funcionalidad con identidad."
     },
     "whatIDo": {
         "development": "Desarrollo",
@@ -69,5 +69,6 @@
         "visit": "Visita mi Marca",
         "know": "Conocé mis otros Proyectos",
         "rights": "Derechos Reservados"
-    }
+    },
+    "linkedIn": "https://www.linkedin.com/in/juan-cruz-bolatti/"
 }

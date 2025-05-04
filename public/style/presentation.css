@@ -114,10 +114,10 @@ h2 {
 }
 .subtitle {
   margin: 0 0 1rem;
-  font-size: 1vw;
-  font-weight: 200;
+  font-size: 1.2vw;
   line-height: 1vw;
   letter-spacing: 1px;
+  font-weight: bold;
   font-family: "spaceMonoRegular", Helvetica;
 }
 

@@ -150,6 +150,11 @@ const observerPc = new IntersectionObserver((entries) => {
           changeColorBubble('8e4ab0', 'b65297', 'b4525a');
           break;
         case 'Work':
+          console.log('Work');
+          navbarDisplay(3);
+          changeColorBubble('52b48b', '52b0b4', '527ab4');
+          break;
+        case 'Knowledge':
           navbarDisplay(3);
           changeColorBubble('52b48b', '52b0b4', '527ab4');
           break;
@@ -164,7 +169,7 @@ const observerPc = new IntersectionObserver((entries) => {
       }
     }
   });
-}, { threshold: 0.8 });
+}, { threshold: 0.2 });
 
 const observerMobile = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -181,6 +186,9 @@ const observerMobile = new IntersectionObserver((entries) => {
           changeColorBubble('b452a0', 'b4525e', 'b66e52');
           break;
         case 'Work':
+          changeColorBubble('52b48b', '52b0b4', '527ab4');
+          break;
+        case 'Knowledge':
           changeColorBubble('52b48b', '52b0b4', '527ab4');
           break;
         case 'Contact':

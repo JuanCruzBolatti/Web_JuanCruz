@@ -239,16 +239,22 @@
                     border: 1px solid rgba(229, 165, 93, 0.8);
                 }
                 
-                &.ahche {
+                &.ahche { 
                     background: rgb(222, 78, 104);
                     background: linear-gradient(90deg, rgba(222, 78, 104, 0.3) 0%, rgba(148, 29, 50, 0.2) 100%);
                     border: 1px solid rgba(222, 78, 104, 0.8);
                 }
 
+                &.rido {
+                    background: rgb(150, 78, 222);
+                    background: linear-gradient(90deg, rgba(150, 78, 222, 0.3) 0%, rgba(126, 29, 148, 0.2) 100%);
+                    border: 1px solid rgba(150, 78, 222, 0.8);
+                }
+
                 &.deportes {
-                    background: rgb(139, 78, 237);
-                    background: linear-gradient(90deg, rgba(139, 78, 237, 0.3) 0%, rgba(57, 28, 104, 0.2) 100%);
-                    border: 1px solid rgba(139, 78, 237, 0.8);
+                    background: rgb(78, 107, 237);
+                    background: linear-gradient(90deg, rgba(78, 107, 237, 0.3) 0%, rgba(57, 28, 104, 0.2) 100%);
+                    border: 1px solid rgba(78, 107, 237, 0.8);
                 }
             }
 

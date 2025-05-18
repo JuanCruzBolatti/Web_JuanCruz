@@ -62,7 +62,8 @@
         "description": {
             "acercandonos": "Digital Book Reading Platform with Accessibility Menu",
             "golang": "Operating System Model entirely developed with Go",
-            "ridoButton": "Currently"
+            "alummia": "Educational Platform",
+            "currently": "Currently"
         }
     },
     "corner": {

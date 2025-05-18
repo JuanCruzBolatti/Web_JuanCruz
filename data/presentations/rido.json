@@ -5,26 +5,26 @@
         "mainColor": "105, 77, 117"
     },
     "hero": {
-        "contacts": "",
+        "contacts": "<p>Plataforma de gestión para PYMES</p>",
         "title": "Rido",
-        "subtitle": "",
-        "text": ""
+        "subtitle": "Identidad Visual y Branding",
+        "text": "Una herramienta de gestión pensada para pequeñas y medianas empresas. Rido combina simplicidad, accesibilidad y diseño para facilitar la administración diaria."
     },
     "concept": {
-        "year": "",
-        "focuses": "",
-        "text": "",
-        "briefDescription": "",
-        "applications": ""
+        "year": "2025",
+        "focuses": "<li>Simplicidad</li><li>Accesibilidad</li><li>Gestión empresarial</li>",
+        "text": "Rido es una plataforma de gestión diseñada especialmente para PYMES. Su concepto nace del compromiso de simplificar tareas administrativas mediante una interfaz intuitiva. Inspirado en la frase 'I Do', su nombre transmite acción y control. La identidad visual busca destacar en el entorno digital y facilitar la adopción gracias a su curva de aprendizaje rápida.",
+        "briefDescription": "Plataforma de gestión accesible",
+        "applications": "<li>Gestión de tareas y procesos</li><li>Interfaz intuitiva</li><li>Diseñada para pequeñas y medianas empresas</li>"
     },
     "color": {
-        "isPresent": false,
-        "text": "",
-        "mainColor": "",
+        "isPresent": true,
+        "text": "Los tonos violetas fueron seleccionados para generar una identidad distintiva y contemporánea. El alto contraste y la claridad visual refuerzan la accesibilidad y funcionalidad del sistema, posicionando a Rido como una marca moderna y confiable.",
+        "mainColor": "rgb(143, 99, 159)",
         "mainDescription": "",
-        "secondaryColor": "",
+        "secondaryColor": "rgb(26, 26, 26)",
         "secondaryDescription": "",
-        "thirdColor": "",
+        "thirdColor": "rgb(255, 255, 255)",
         "thirdDescription": ""
     },
     "structure": {

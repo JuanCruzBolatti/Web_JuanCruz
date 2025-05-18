@@ -62,7 +62,8 @@
         "description": {
             "acercandonos": "Piattaforma per la Lettura di Libri Digitali con Menu di Accessibilità",
             "golang": "Modello di Sistema Operativo sviluppato interamente con Go",
-            "ridoButton": "Attualmente"
+            "alummia": "Piattaforma Educativa",
+            "currently": "Attualmente"
         }
     },
     "corner": {

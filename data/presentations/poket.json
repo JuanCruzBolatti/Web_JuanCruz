@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "255, 0, 0",
+        "colorGradient2": "150, 0, 0",
+        "mainColor": "255, 0, 0"
+    },
+    "hero": {
+        "contacts": "<p>Desarrolladores<p><a target='_BLANK' href='https://github.com/JuanCruzBolatti'>// Juan Cruz Bolatti<br></a><a target='_BLANK' href='https://github.com/Facundo-B'>// Facundo Blanco</a>",
+        "title": "Poket",
+        "subtitle": "Scraping, automatización y visualización de precios Pokémon TCG",
+        "text": "Herramienta que automatiza la recolección y análisis de precios de productos sellados Pokémon TCG en los mercados de Argentina y Chile, permitiendo comparar precios, analizar tendencias y tomar decisiones de compra o competencia de manera eficiente y transparente."
+    },
+    "concept": {
+        "year": "2025",
+        "focuses": "<li>Precios Pokémon</li><li>Scraping automático</li><li>Visualización datos</li>",
+        "text": "Poket nace como una solución automatizada para monitorear y analizar el mercado de productos sellados Pokémon TCG en Argentina y Chile. Utilizando scrapers desarrollados en Python, el sistema recopila diariamente información de precios desde diversas páginas web. Estos datos se almacenan y procesan en Google BigQuery, permitiendo su visualización interactiva en Looker Studio. Así, Poket facilita la toma de decisiones estratégicas, tanto para comparar precios de competencia en Argentina como para identificar oportunidades de compra en Chile, brindando una perspectiva clara y actualizada del mercado.",
+        "briefDescription": "Tecnologías",
+        "applications": "<li>Python</li><li>GitHub Actions (CI/CD)</li><li>BigQuery (GCloud)</li><li>Looker Studio</li>"
+    },
+    "color": {
+        "isPresent": false,
+        "text": "",
+        "mainColor": "",
+        "mainDescription": "",
+        "secondaryColor": "",
+        "secondaryDescription": "",
+        "thirdColor": "",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "Poket no solo automatiza la recolección de datos; transforma información dispersa en insights accionables para vendedores y compradores. Esto agiliza la toma de decisiones y aporta transparencia al mercado de Pokémon TCG en la región. La arquitectura modular de los scrapers permite agregar fácilmente nuevos mercados y productos, adaptándose al crecimiento del ecosistema Pokémon y a cambios en los sitios web. El uso de GitHub Actions y BigQuery no solo garantiza eficiencia, sino que optimiza recursos en la nube, reduciendo costos y el impacto de procesos repetitivos.",
+        "info1": "",
+        "info2": ""
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "",
+        "style": "",
+        "other": ""
+    }
+}

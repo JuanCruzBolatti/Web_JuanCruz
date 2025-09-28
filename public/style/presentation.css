@@ -1003,16 +1003,25 @@ p {
   width: 40%;
   background-color: #ffffff;
   padding: 2.3vh;
+  display: flex;
+  flex-direction: column;
 }
-.structure .structure-content h3 {
+.structure .structure-content div:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+.structure .structure-content div:first-of-type h3 {
   margin: 0;
   font-size: 4rem;
   color: #181717;
+  text-transform: capitalize;
 }
-.structure .structure-content p {
+.structure .structure-content div:first-of-type p {
   margin: 0;
   overflow-y: auto;
   white-space: normal;
+  box-sizing: border-box;
+  padding-right: 15px;
 }
 .structure .structure-info {
   width: 20%;
@@ -1294,16 +1303,14 @@ p {
   background-color: #fff;
   width: 2.5rem;
   height: 0.9vw;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
   transition: 0.3s ease-in-out;
   z-index: -1;
 }
 .contact .contact-content div a:hover::before {
   width: calc(100% + 6.5rem);
   background-color: rebeccapurple;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .contact .contact-content div #anchor-ig:hover::before {
   background-color: #ff214c;

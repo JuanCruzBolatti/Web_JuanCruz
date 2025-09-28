@@ -877,19 +877,28 @@ p {
     .structure-content {
         width: 40%;
         background-color: #ffffff;
-
         padding: 2.3vh;
+        display: flex;
+        flex-direction: column;
 
-        h3 {
-            margin: 0;
-            font-size: 4rem;
-            color: #181717;
-        }
+        div:first-of-type {
+            display: flex;
+            flex-direction: column;
 
-        p {
-            margin: 0;
-            overflow-y: auto; 
-            white-space: normal;
+            h3 {
+                margin: 0;
+                font-size: 4rem;
+                color: #181717;
+                text-transform: capitalize;
+            }
+
+            p {
+                margin: 0;
+                overflow-y: auto; 
+                white-space: normal;
+                box-sizing: border-box; 
+                padding-right: 15px;
+            }
         }
     }
 

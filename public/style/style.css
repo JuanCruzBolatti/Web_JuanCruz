@@ -135,7 +135,6 @@ h2 {
 .card {
   background: rgb(0, 0, 0);
   background: rgba(47, 47, 47, 0.502);
-  -webkit-backdrop-filter: saturate(280%) blur(150px);
   backdrop-filter: saturate(280%) blur(150px);
   border: 1px solid rgba(231, 231, 231, 0.1);
   border-radius: 13px;
@@ -146,7 +145,6 @@ h2 {
   .card {
     background: rgb(46, 46, 46);
     background: linear-gradient(129deg, rgba(53, 53, 53, 0.5) 0%, rgba(94, 94, 94, 0.5) 100%);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
     backdrop-filter: saturate(180%) blur(10px);
   }
 }
@@ -251,8 +249,7 @@ h2 {
   top: 0;
   left: 0;
   z-index: -20;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
 }
 
 @keyframes backgroundRotate {
@@ -276,9 +273,6 @@ h2 {
 /** Navbar **/
 .header {
   /* Logo */
-  /* Navbar */
-  /* Socials */
-  /* Corner */
 }
 .header .logo-container .logo {
   position: fixed;
@@ -297,6 +291,9 @@ h2 {
 }
 .header .logo-container .logo .logo-displayed {
   opacity: 0.9 !important;
+}
+.header {
+  /* Navbar */
 }
 .header .navbar {
   position: fixed;
@@ -317,12 +314,14 @@ h2 {
   letter-spacing: 1px;
   margin: 0;
   transition: opacity 0.3s ease-in-out;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
 }
 .header .navbar a:hover {
   opacity: 0.9;
+}
+.header .navbar a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 .header .navbar a::before, .header .navbar a::after {
   content: "";
@@ -348,6 +347,9 @@ h2 {
 .header .navbar a:hover span {
   transform: translate3d(200%, 0, 0);
 }
+.header {
+  /* Socials */
+}
 .header .socials {
   position: fixed;
   bottom: 4.2vh;
@@ -370,6 +372,9 @@ h2 {
 }
 .header .socials a:hover {
   opacity: 1;
+}
+.header {
+  /* Corner */
 }
 .header .corner {
   font-family: "spaceMonoRegular", "nunitoSans", Helvetica;
@@ -467,8 +472,8 @@ h2 {
 }
 /** Home **/
 .home {
-  height: 72vh;
-  margin-top: 28vh;
+  height: 62vh;
+  margin-top: 38vh;
   text-align: center;
   padding: 0 3vw;
 }
@@ -577,7 +582,6 @@ h2 {
   border-radius: 13px;
   transition: 0.3s ease-in-out;
   font-family: "spaceMonoRegular", Helvetica;
-  -webkit-backdrop-filter: saturate(280%) blur(150px);
   backdrop-filter: saturate(280%) blur(150px);
 }
 .about .about-content .column .card-button a:nth-of-type(1) {
@@ -792,15 +796,12 @@ h2 {
   gap: 2rem;
 }
 .knowledge .knowledge-content #knowledge-card-color-blue {
-  -webkit-backdrop-filter: hue-rotate(330deg);
   backdrop-filter: hue-rotate(330deg);
 }
 .knowledge .knowledge-content #knowledge-card-color-green {
-  -webkit-backdrop-filter: hue-rotate(300deg);
   backdrop-filter: hue-rotate(300deg);
 }
 .knowledge .knowledge-content #knowledge-card-color-red {
-  -webkit-backdrop-filter: hue-rotate(20deg);
   backdrop-filter: hue-rotate(20deg);
 }
 .knowledge .knowledge-content .knowledge-card {
@@ -953,7 +954,6 @@ h2 {
 .work .work-content .work-column .work-card-large .work-card-content a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1069,7 +1069,6 @@ h2 {
 .work .work-content .work-column .work-card-brand div a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1162,7 +1161,6 @@ h2 {
 .work .work-content .work-column .work-card-proyect .work-card-content a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1233,8 +1231,7 @@ h2 {
 }
 /** Contact **/
 .contact {
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
   background-color: #121111;
   padding: 4rem 0 3rem;
   margin-top: 10vh;

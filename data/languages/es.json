@@ -63,6 +63,8 @@
             "acercandonos": "Plataforma de Lectura de Libros Digitales con Menú de Accesibilidad",
             "golang": "Modelo de Sistema Operativo desarrollado integramente con Go",
             "alummia": "Plataforma Educativa",
+            "poket": "Scraping, automatización y visualización de precios Pokémon TCG",
+            "sibila": "Análisis y modelado de encuestas para predecir resultados electorales",
             "currently": "Actualmente"
         }
     },

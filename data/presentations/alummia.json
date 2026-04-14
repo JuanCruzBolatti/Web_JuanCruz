@@ -1,0 +1,49 @@
+{
+    "general": {
+        "colorGradient1": "175, 147, 206",
+        "colorGradient2": "34, 22, 43",
+        "mainColor": "175, 147, 206"
+    },
+    "hero": {
+        "contacts": "<p>Plataforma Educativa</p>",
+        "title": "Alummia",
+        "subtitle": "Desarrollo de Plataforma Educativa",
+        "text": "Plataforma educativa orientada a personas sin experiencia en el uso de computadoras."
+    },
+    "concept": {
+        "year": "2025",
+        "focuses": "<li>Accesibilidad</li><li>Simpleza</li><li>Animación</li>",
+        "text": "Plataforma educativa diseñada para personas sin experiencia en el uso de computadoras, que combina accesibilidad, simplicidad y un enfoque pedagógico claro. Ofrece guías interactivas paso a paso, ejercicios prácticos y asistencia visual que facilitan el aprendizaje desde cero, permitiendo a los usuarios adquirir habilidades digitales básicas de forma progresiva. Su diseño intuitivo y adaptable busca reducir barreras tecnológicas, promoviendo la inclusión digital y brindando una experiencia de aprendizaje accesible, amigable y alineada con las necesidades de quienes se inician en el entorno digital.",
+        "briefDescription": "Ramas",
+        "applications": "<li>Seguridad</li><li>Archivos</li><li>Navegación Web</li>"
+    },
+    "color": {
+        "isPresent": false,
+        "text": "Se actualizó la paleta de colores para hacerla más amigable con los medios digitales, mejorando la legibilidad y la comodidad visual, pero manteniendo la identidad de la marca que tanto la caracteriza.",
+        "mainColor": "rgb(155, 44, 44)",
+        "mainDescription": "",
+        "secondaryColor": "rgb(198, 60, 60)",
+        "secondaryDescription": "",
+        "thirdColor": "rgb(247, 212, 119)",
+        "thirdDescription": ""
+    },
+    "structure": {
+        "isPresent": true,
+        "title": "",
+        "text": "La estructura de la plataforma se organiza en diferentes ramas y recorridos de aprendizaje que permiten al usuario avanzar de manera progresiva según sus intereses y necesidades. Cada camino aborda áreas clave como seguridad digital, manejo de archivos, navegación web y otras habilidades esenciales, presentadas de forma clara y secuencial. Este enfoque modular facilita la exploración guiada, permitiendo construir conocimientos paso a paso dentro de un entorno intuitivo, accesible y pensado para acompañar a personas que se inician en el uso de computadoras.",
+        "info1": "Elementos de Contenido",
+        "info2": "Elementos de Uso"
+    },
+    "font": {
+        "isPresent": false
+    },
+    "applications": {
+        "isPresent": false
+    },
+    "tech": {
+        "isPresent": false,
+        "function": "<li><img src='../img/icons/27.png'></li><li><img src='../img/icons/28.png'></li><li><img src='../img/icons/17.png'></li>",
+        "style": "<li><img src='../img/icons/16.png'></li>",
+        "other": "<li><img src='../img/icons/14.png'></li><li><img src='../img/icons/29.png'></li>"
+    }
+}

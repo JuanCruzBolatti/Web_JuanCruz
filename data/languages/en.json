@@ -63,6 +63,8 @@
             "acercandonos": "Digital Book Reading Platform with Accessibility Menu",
             "golang": "Operating System Model entirely developed with Go",
             "alummia": "Educational Platform",
+            "poket": "Scraping, automation, and visualization of Pokémon TCG prices",
+            "sibila": "Analysis and modeling of polls to predict election outcomes",
             "currently": "Currently"
         }
     },

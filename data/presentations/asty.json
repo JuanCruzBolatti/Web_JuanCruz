@@ -1,0 +1,49 @@
+{
+  "general": {
+    "colorGradient1": "142, 120, 226",
+    "colorGradient2": "17, 16, 17",
+    "mainColor": "142, 120, 226"
+  },
+  "hero": {
+    "contacts": "<p>Como el wrapped de spotify!</p>",
+    "title": "Asty",
+    "subtitle": "Desarrollo de Página Web",
+    "text": "Espacio dedicado a explorar y visualizar los gastos municipales de forma clara, accesible y dinámica, transformando los datos públicos en un recorrido interactivo que permite conocer cómo, cuánto y en qué se utilizan los recursos de la ciudad."
+  },
+  "concept": {
+    "year": "2026",
+    "focuses": "<li>Transparencia</li><li>Accesibilidad</li><li>Participación</li>",
+    "text": "A través de esta plataforma, los usuarios pueden explorar de manera clara y dinámica cómo se distribuyen y utilizan los recursos municipales. La página transforma los datos de gastos públicos en una experiencia visual e interactiva, facilitando su comprensión y promoviendo una ciudadanía más informada, participativa y consciente sobre el uso de los recursos de la ciudad.",
+    "briefDescription": "Experiencia de Datos",
+    "applications": "<li>Acceso simple y directo a la información sobre los gastos municipales</li><li>Visualización dinámica que transforma datos complejos en una experiencia clara y fácil de comprender</li><li>Datos oficiales presentados de forma contextualizada para descubrir cómo se distribuyen los recursos públicos</li>"
+  },
+  "color": {
+    "isPresent": false,
+    "text": "Los colores provienen del diseño oficial de la presentación del 'Cancionero Patrio', pero teniendo un enfoque en las sombras para buscar reflejar la sonoridad de la música nacional. Esta paleta fue seleccionada para evocar la profundidad emocional y la riqueza cultural de las canciones patrióticas, creando una atmósfera visual que complementa la tradición musical argentina.",
+    "mainColor": "rgb(45, 46, 78)",
+    "mainDescription": "",
+    "secondaryColor": "rgb(114, 177, 226)",
+    "secondaryDescription": "",
+    "thirdColor": "rgb(230, 185, 118)",
+    "thirdDescription": ""
+  },
+  "structure": {
+    "isPresent": true,
+    "title": "",
+    "text": "La estructura toma como referencia el formato de los recaps anuales, convirtiendo los datos municipales en un recorrido visual, dinámico y entretenido. La plataforma combina información, diseño y pequeños toques de humor para presentar los gastos de la ciudad de una manera cercana y fácil de comprender. A través de cifras, comparaciones y datos destacados, la experiencia invita a recorrer y descubrir cómo se utilizan los recursos públicos.",
+    "info1": "Dinámica",
+    "info2": "Cercanía"
+  },
+  "font": {
+    "isPresent": false
+  },
+  "applications": {
+    "isPresent": false
+  },
+  "tech": {
+    "isPresent": false,
+    "function": "",
+    "style": "",
+    "other": ""
+  }
+}

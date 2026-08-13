@@ -213,7 +213,7 @@ sections.forEach(section => {
 // Toggle de Filter
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.card-filtrable');
+  const cards = document.querySelectorAll('.card-filtrable, .column-filtrable');
 
   function aplicarFiltro() {
     const activos = [...buttons]

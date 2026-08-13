@@ -58,6 +58,10 @@ app.get('/presentation/:id', function (req, res) {
     }
 });
 
+app.get('/design', (req, res) => {
+    res.redirect('/?filter=diseñador#Work');
+});
+
 app.get('/', function (req, res) {
     const lang = req.query.lang || 'es';
     const language = loadLanguage(lang);

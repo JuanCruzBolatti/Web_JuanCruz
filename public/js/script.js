@@ -233,5 +233,25 @@ document.addEventListener('DOMContentLoaded', () => {
       aplicarFiltro();
     });
   });
+
+  // --- Nuevo: aplicar filtro si viene por URL ---
+  const params = new URLSearchParams(window.location.search);
+  const filtroInicial = params.get('filter');
+
+  if (filtroInicial) {
+    const btnCorrespondiente = document.querySelector(`.filter-btn[data-filter="${filtroInicial}"]`);
+    if (btnCorrespondiente) {
+      btnCorrespondiente.classList.add('active');
+      aplicarFiltro();
+    }
+  }
+
+  // Scroll a la sección Work después de aplicar el filtro
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 });
 

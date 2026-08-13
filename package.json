@@ -14,5 +14,8 @@
     "express-handlebars": "^7.1.2",
     "handlebars": "^4.7.8",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
   }
 }

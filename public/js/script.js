@@ -3,7 +3,7 @@ const cursor = document.querySelector(".cursor-ball");
 const circle = document.querySelector("#circle");
 const smallHoverable = document.querySelectorAll(".navbar a, .contact a");
 const bigHoverable = document.querySelectorAll(".card");
-const hoverable = document.querySelectorAll("a");
+const hoverable = document.querySelectorAll("a, button");
 
 hoverable.forEach(item => {
   item.addEventListener("mouseenter", onMouseHover);
@@ -209,3 +209,29 @@ sections.forEach(section => {
     observerMobile.observe(section);
   }
 });
+
+// Toggle de Filter
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card-filtrable');
+
+  function aplicarFiltro() {
+    const activos = [...buttons]
+        .filter(b => b.classList.contains('active'))
+        .map(b => b.dataset.filter);
+
+    cards.forEach(card => {
+      const categoria = card.dataset.category;
+      const match = activos.length === 0 || activos.includes(categoria);
+      card.style.display = match ? '' : 'none';
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      aplicarFiltro();
+    });
+  });
+});
+

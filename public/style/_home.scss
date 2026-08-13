@@ -5,25 +5,49 @@
     text-align: center;
     padding: 0 3vw;
  
-    p {
+    h1 {
         width: 100%;
         font-size: 3.2vw;
         line-height: 3.2vw;
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 0.6vw;
-        margin: 0 0 1.2rem;
+        margin: 0;
+    }
+    .filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
-    div:first-of-type {
-        position: relative;
+    .filter-btn {
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: none;
 
-        h1 {
-            position: absolute;
-            width: 100%;
-            margin: 0 auto;
-            opacity: 0.9;
+        font-family: 'spaceMonoRegular', Helvetica;
+        font-weight: 400;
+        font-size: 4.4vw;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.5); // color apagado en estado normal
+
+        transition: color .3s ease-in-out;
+
+        &.active {
+            color: #ffffff; // o el color que quieras resaltar, ej: rgba(87, 107, 255, 1)
         }
+    }
+
+    .filters-divider {
+        font-family: 'spaceMonoRegular', Helvetica;
+        font-size: 4.4vw;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.3);
     }
 
     a {

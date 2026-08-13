@@ -1,9 +1,9 @@
 <section class="container home" id="Home">
-    <p>Juan Cruz Bolatti</p>
-    <div>
-        <h1>
-            {{{ language.title }}}
-        </h1>
+    <h1>Juan Cruz Bolatti</h1>
+    <div class="filters">
+        <button class="filter-btn" data-filter="desarrollador">Desarrollador</button>
+        <span class="filters-divider">/</span>
+        <button class="filter-btn" data-filter="diseñador">Diseñador</button>
     </div>
     <a href="#AboutMe">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.77 434.63">
@@ -63,11 +63,11 @@
     </div>
 </section>
 
-<section class="container work" id="Work">
+<section class="container work filtrable" id="Work">
     <h2>{{ language.workTitle }}</h2>
 
     <div class="work-data">
-        <div class="work-data-item">
+        <div class="work-data-item card-filtrable" data-category="desarrollador">
             <div class="work-card-content">
                 <h4>Poket</h4>
                 <p>{{ language.work.description.poket }}</p>
@@ -76,7 +76,7 @@
             <img src="/img/home/home-poket.webp" alt="Proyecto de Juan Bolatti">
         </div>
 
-        <div class="work-data-item">
+        <div class="work-data-item card-filtrable" data-category="desarrollador">
             <div class="work-card-content">
                 <h4>Asty</h4>
                 <a href="/presentation/asty">{{ language.work.visit }}</a>
@@ -89,7 +89,7 @@
 
         <div class="work-column">
 
-            <div class="work-card-large">
+            <div class="work-card-large card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>Alummia</h4>
                     <p>{{ language.work.description.alummia }}</p>
@@ -98,12 +98,12 @@
                 <img src="/img/home/home-alummia.svg" alt="Proyecto de Juan Bolatti">
             </div>
 
-            <div class="work-card-small violet">
+            <div class="work-card-small violet card-filtrable" data-category="desarrollador">
                 <h4>{{ language.work.card.advanceTitle }}</h4>
                 <p>{{ language.work.card.advanceDesc }}</p>
             </div>
 
-            <div class="work-card-large">
+            <div class="work-card-large card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>Acercándonos Cultura</h4>
                     <p>{{ language.work.description.acercandonos }}</p>
@@ -112,7 +112,7 @@
                 <img src="/img/home/home-acercandonos.webp" alt="Webs de Juan Bolatti">
             </div>
 
-            <div class="work-card-brand rido">
+            <div class="work-card-brand rido card-filtrable" data-category="diseñador">
                 <img src="/img/home/home-rido.webp" alt="Marca de Juan Bolatti">
                 <div>
                     <h4>Rido</h4>
@@ -124,7 +124,7 @@
 
         <div class="work-column">
 
-            <div class="work-card-proyect">
+            <div class="work-card-proyect card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>SO Golang</h4>
                     <p>{{ language.work.description.golang }}</p>
@@ -133,12 +133,12 @@
                 <img src="/img/home/home-golang.webp" alt="Proyecto de Juan Bolatti">
             </div>
 
-            <div class="work-card-small pink">
+            <div class="work-card-small pink card-filtrable" data-category="desarrollador">
                 <h4>{{ language.work.card.portfolioTitle }}</h4>
                 <p>{{ language.work.card.portfolioDesc }}</p>
             </div>
 
-            <div class="work-card-large">
+            <div class="work-card-large card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>Cancionero Patrio</h4>
                     <a href="/presentation/cancionero">{{ language.work.visit }}</a>
@@ -146,7 +146,7 @@
                 <img src="/img/home/home-cancionero.webp" alt="Webs de Juan Bolatti">
             </div>
 
-            <div class="work-card-brand nama">
+            <div class="work-card-brand nama card-filtrable" data-category="diseñador">
                 <img src="/img/home/home-nama.webp" alt="Marca de Juan Bolatti">
                 <div>
                     <h4>Nama</h4>
@@ -157,12 +157,12 @@
 
         <div class="work-column">
 
-            <div class="work-card-small blue">
+            <div class="work-card-small blue card-filtrable" data-category="desarrollador">
                 <h4>{{ language.work.card.incTitle }}</h4>
                 <p>{{ language.work.card.incDesc }}</p>
             </div>
 
-            <div class="work-card-large">
+            <div class="work-card-large card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>Stokear</h4>
                     <a href="/presentation/stokear">{{ language.work.visit }}</a>
@@ -170,12 +170,12 @@
                 <img src="/img/home/home-stokear.webp" alt="Webs de Juan Bolatti">
             </div>
 
-            <div class="work-card-small red">
+            <div class="work-card-small red card-filtrable" data-category="diseñador">
                 <h4>{{ language.work.card.brandTitle }}</h4>
                 <p>{{ language.work.card.brandDesc }}</p>
             </div>
 
-            <div class="work-card-large">
+            <div class="work-card-large card-filtrable" data-category="desarrollador">
                 <div class="work-card-content">
                     <h4>Moldemat</h4>
                     <a href="/presentation/moldemat">{{ language.work.visit }}</a>
@@ -183,7 +183,7 @@
                 <img src="/img/home/home-moldemat.webp" alt="Webs de Juan Bolatti">
             </div>
 
-            <div class="work-card-brand deportes">
+            <div class="work-card-brand deportes card-filtrable" data-category="diseñador">
                 <img src="/img/home/home-deportes.webp" alt="Marca de Juan Bolatti">
                 <div>
                     <h4>Canal de Deporte</h4>
@@ -197,143 +197,132 @@
 
 </section>
 
-<section class="container knowledge" id="Knowledge">
+<section class="container knowledge filtrable" id="Knowledge">
     <h2>{{ language.knowledgeTitle }}</h2>
 
     <div class="knowledge-content">
+
+        <!-- DISEÑO -->
         <div class="card knowledge-card">
-            <h4 class="subtitle">{{language.whatIDo.desing}} {{language.and}} {{language.whatIDo.production}}</h4>
+            <h4 class="subtitle">
+                {{language.whatIDo.desing}} {{language.and}} {{language.whatIDo.production}}
+            </h4>
 
             <ul>
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/01.png" alt="Icono Photoshop">
                     </div>
-
                     <p>Photoshop</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/02.png" alt="Icono Illustrator">
                     </div>
-
                     <p>Illustrator</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/03.png" alt="Icono Fable">
                     </div>
-
                     <p>Rive (Animation)</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/04.png" alt="Icono DaVinci Resolve">
                     </div>
-
                     <p>DaVinciResolve</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/05.png" alt="Icono Audacity">
                     </div>
-
                     <p>Audacity</p>
                 </li>
-
             </ul>
 
             <h5>{{language.whatIDo.basic}}</h5>
 
             <ul>
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/06.png" alt="Icono Premiere">
                     </div>
-
                     <p>Premiere</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="diseñador">
                     <div>
                         <img src="/img/icons/07.png" alt="Icono After Effects">
                     </div>
-
                     <p>After Effects</p>
                 </li>
             </ul>
-
         </div>
 
+
+        <!-- DESARROLLO WEB -->
         <div class="card knowledge-card" id="knowledge-card-color-blue">
-            <h4 class="subtitle"> {{ language.pageTitle }}</h4>
+            <h4 class="subtitle">{{ language.pageTitle }}</h4>
 
             <ul>
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/10.png" alt="Icono Javascript">
                     </div>
-
                     <p>Javascript</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/27.png" alt="Icono TypeScript">
                     </div>
-
                     <p>TypeScript</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/17.png" alt="Icono React">
                     </div>
-
                     <p>React</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/28.png" alt="Icono Next">
                     </div>
-
                     <p>Next.js</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/13.png" alt="Icono Handlebars">
                     </div>
-
                     <p>Handlebars</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/14.png" alt="Icono SCSS">
                     </div>
-
                     <p>SCSS</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/29.png" alt="Icono TailwindCSS">
                     </div>
-
                     <p>TailwindCSS</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/15.png" alt="Icono LottieJs">
                     </div>
-
                     <p>Lottie.js</p>
                 </li>
             </ul>
@@ -341,35 +330,31 @@
             <h5></h5>
 
             <ul>
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/11.png" alt="Icono NodeJs">
                     </div>
-
                     <p>Node.js</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/12.png" alt="Express">
                     </div>
-
                     <p>Express</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/25.png" alt="Icono PHP">
                     </div>
-
                     <p>PHP</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/26.png" alt="Icono XAJAX">
                     </div>
-
                     <p>Xajax</p>
                 </li>
             </ul>
@@ -377,50 +362,50 @@
             <h5></h5>
 
             <ul>
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/16.png" alt="Icono MongoDb">
                     </div>
-
                     <p>MongoDB</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/24.png" alt="Icono MySQL">
                     </div>
-
                     <p>MySQL</p>
                 </li>
 
-                <li>
+                <li class="card-filtrable" data-category="desarrollador">
                     <div>
                         <img src="/img/icons/30.png" alt="Icono Restful API">
                     </div>
-
                     <p>Restful APIs</p>
                 </li>
             </ul>
         </div>
 
+
+        <!-- PROGRAMACIÓN / TECNOLOGÍA -->
         <div style="display: flex; flex-direction: column; gap: 2rem;">
+
             <div class="card knowledge-card" id="knowledge-card-color-green">
-                <h4 class="subtitle">{{language.whatIDo.programming}} {{language.and}} {{language.whatIDo.tech}}</h4>
+                <h4 class="subtitle">
+                    {{language.whatIDo.programming}} {{language.and}} {{language.whatIDo.tech}}
+                </h4>
 
                 <ul>
-                    <li>
+                    <li class="card-filtrable" data-category="desarrollador">
                         <div>
                             <img src="/img/icons/18.png" alt="Icono Github">
                         </div>
-
                         <p>Github</p>
                     </li>
 
-                    <li>
+                    <li class="card-filtrable" data-category="desarrollador">
                         <div>
                             <img src="/img/icons/19.png" alt="Icono Ubuntu">
                         </div>
-
                         <p>Linux // Ubuntu</p>
                     </li>
                 </ul>
@@ -428,25 +413,24 @@
                 <h5>{{language.whatIDo.basic}}</h5>
 
                 <ul>
-                    <li>
+                    <li class="card-filtrable" data-category="desarrollador">
                         <div>
                             <img src="/img/icons/20.png" alt="Icono C">
                         </div>
-
                         <p>C // C++</p>
                     </li>
 
-                    <li>
+                    <li class="card-filtrable" data-category="desarrollador">
                         <div>
                             <img src="/img/icons/21.png" alt="Icono Golang">
                         </div>
-
                         <p>Golang</p>
                     </li>
                 </ul>
-
             </div>
 
+
+            <!-- OTROS / IDIOMAS -->
             <div class="card knowledge-card display-pc" id="knowledge-card-color-red">
                 <h4 class="subtitle">{{language.whatIDo.others}}</h4>
 
@@ -455,22 +439,22 @@
                         <div>
                             <img src="/img/icons/22.png" alt="Haskell">
                         </div>
-
                         <p>{{language.whatIDo.english}}</p>
                     </li>
                 </ul>
 
                 <h5>{{language.whatIDo.basic}}</h5>
+
                 <ul>
                     <li>
                         <div>
                             <img src="/img/icons/23.png" alt="Icono Prolog">
                         </div>
-
                         <p>{{language.whatIDo.italian}}</p>
                     </li>
                 </ul>
             </div>
+
         </div>
 
     </div>

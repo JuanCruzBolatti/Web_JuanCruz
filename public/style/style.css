@@ -39,10 +39,6 @@ body {
 }
 
 /* Selection */
-::-moz-selection {
-  color: #181717;
-  background: #edecf1;
-}
 ::selection {
   color: #181717;
   background: #edecf1;
@@ -135,6 +131,7 @@ h2 {
 .card {
   background: rgb(0, 0, 0);
   background: rgba(47, 47, 47, 0.502);
+  -webkit-backdrop-filter: saturate(280%) blur(150px);
   backdrop-filter: saturate(280%) blur(150px);
   border: 1px solid rgba(231, 231, 231, 0.1);
   border-radius: 13px;
@@ -145,6 +142,7 @@ h2 {
   .card {
     background: rgb(46, 46, 46);
     background: linear-gradient(129deg, rgba(53, 53, 53, 0.5) 0%, rgba(94, 94, 94, 0.5) 100%);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
     backdrop-filter: saturate(180%) blur(10px);
   }
 }
@@ -477,23 +475,44 @@ h2 {
   text-align: center;
   padding: 0 3vw;
 }
-.home p {
+.home h1 {
   width: 100%;
   font-size: 3.2vw;
   line-height: 3.2vw;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.6vw;
-  margin: 0 0 1.2rem;
+  margin: 0;
 }
-.home div:first-of-type {
-  position: relative;
+.home .filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-.home div:first-of-type h1 {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  opacity: 0.9;
+.home .filter-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: none;
+  font-family: "spaceMonoRegular", Helvetica;
+  font-weight: 400;
+  font-size: 4.4vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+.home .filter-btn.active {
+  color: #ffffff;
+}
+.home .filters-divider {
+  font-family: "spaceMonoRegular", Helvetica;
+  font-size: 4.4vw;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.3);
 }
 .home a {
   position: absolute;
@@ -582,6 +601,7 @@ h2 {
   border-radius: 13px;
   transition: 0.3s ease-in-out;
   font-family: "spaceMonoRegular", Helvetica;
+  -webkit-backdrop-filter: saturate(280%) blur(150px);
   backdrop-filter: saturate(280%) blur(150px);
 }
 .about .about-content .column .card-button a:nth-of-type(1) {
@@ -662,10 +682,8 @@ h2 {
 .about .about-content .column .about-image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 .about .about-content .column .about-image h4 {
   position: absolute;
@@ -796,12 +814,15 @@ h2 {
   gap: 2rem;
 }
 .knowledge .knowledge-content #knowledge-card-color-blue {
+  -webkit-backdrop-filter: hue-rotate(330deg);
   backdrop-filter: hue-rotate(330deg);
 }
 .knowledge .knowledge-content #knowledge-card-color-green {
+  -webkit-backdrop-filter: hue-rotate(300deg);
   backdrop-filter: hue-rotate(300deg);
 }
 .knowledge .knowledge-content #knowledge-card-color-red {
+  -webkit-backdrop-filter: hue-rotate(20deg);
   backdrop-filter: hue-rotate(20deg);
 }
 .knowledge .knowledge-content .knowledge-card {
@@ -831,8 +852,7 @@ h2 {
 .knowledge .knowledge-content .knowledge-card ul li div img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .knowledge .knowledge-content .knowledge-card ul li p {
   font-size: 0.9vw;
@@ -908,8 +928,7 @@ h2 {
 .work .work-content .work-column .work-card-large img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
 }
 .work .work-content .work-column .work-card-large .work-card-content {
@@ -954,6 +973,7 @@ h2 {
 .work .work-content .work-column .work-card-large .work-card-content a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1069,6 +1089,7 @@ h2 {
 .work .work-content .work-column .work-card-brand div a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1116,8 +1137,7 @@ h2 {
 .work .work-content .work-column .work-card-proyect img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
 }
 .work .work-content .work-column .work-card-proyect .work-card-content {
@@ -1161,6 +1181,7 @@ h2 {
 .work .work-content .work-column .work-card-proyect .work-card-content a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1204,8 +1225,7 @@ h2 {
 .work .work-data .work-data-item img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
 }
 .work .work-data .work-data-item .work-card-content {
@@ -1249,6 +1269,7 @@ h2 {
 .work .work-data .work-data-item .work-card-content a:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   outline: 3px solid rgba(64, 64, 170, 0.6);
 }
@@ -1429,4 +1450,6 @@ h2 {
   .contact .contact-content div:last-of-type a::before {
     width: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

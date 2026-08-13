@@ -1,9 +1,9 @@
 <section class="container home" id="Home">
     <h1>Juan Cruz Bolatti</h1>
     <div class="filters">
-        <button class="filter-btn" data-filter="desarrollador">Desarrollador</button>
+        <button class="filter-btn" data-filter="desarrollador">{{ language.titleA }}</button>
         <span class="filters-divider">/</span>
-        <button class="filter-btn" data-filter="diseñador">Diseñador</button>
+        <button class="filter-btn" data-filter="diseñador">{{ language.titleB }}</button>
     </div>
     <a href="#AboutMe">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 956.77 434.63">
@@ -110,6 +110,15 @@
                     <a href="/presentation/acercandonos">{{ language.work.visit }}</a>
                 </div>
                 <img src="/img/home/home-acercandonos.webp" alt="Webs de Juan Bolatti">
+            </div>
+
+            <div class="work-card-large card-filtrable" data-category="diseñador">
+                <div class="work-card-content">
+                    <h4>Fui Otra Historia</h4>
+                    <p>Identidad gráfica de una obra de teatro</p>
+                    <a href="/presentation/foh">{{ language.work.visit }}</a>
+                </div>
+                <img src="/img/home/home-foh.webp" alt="Diseño de Juan Bolatti">
             </div>
 
             <div class="work-card-brand rido card-filtrable" data-category="diseñador">

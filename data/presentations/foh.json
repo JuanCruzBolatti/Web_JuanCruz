@@ -1,44 +1,44 @@
 {
   "general": {
-    "colorGradient1": "105, 77, 117",
-    "colorGradient2": "51, 24, 50",
-    "mainColor": "105, 77, 117"
+    "colorGradient1": "157, 115, 88",
+    "colorGradient2": "18, 8, 1",
+    "mainColor": "157, 115, 88"
   },
   "hero": {
-    "contacts": "<p>Plataforma de gestión para PYMES</p>",
-    "title": "Rido",
-    "subtitle": "Identidad Visual y Branding",
-    "text": "Una herramienta de gestión pensada para pequeñas y medianas empresas. Rido combina simplicidad, accesibilidad y diseño para facilitar la administración diaria."
+    "contacts": "<p>Identidad visual de la obra</p>",
+    "title": "Fui Otra Historia",
+    "subtitle": "Identidad gráfica de la obra",
+    "text": "Diseño de identidad gráfica para una obra teatral de género dramático. El proyecto combina concepto, diseño y comunicación para desarrollar la cartelería, posters y materiales promocionales de la obra."
   },
   "concept": {
-    "year": "2025",
-    "focuses": "<li>Simplicidad</li><li>Accesibilidad</li><li>Gestión empresarial</li>",
-    "text": "Rido es una plataforma de gestión diseñada especialmente para PYMES. Su concepto nace del compromiso de simplificar tareas administrativas mediante una interfaz intuitiva. Inspirado en la frase 'I Do', su nombre transmite acción y control. La identidad visual busca destacar en el entorno digital y facilitar la adopción gracias a su curva de aprendizaje rápida.",
-    "briefDescription": "Plataforma de gestión accesible",
-    "applications": "<li>Gestión de tareas y procesos</li><li>Interfaz intuitiva</li><li>Diseñada para pequeñas y medianas empresas</li>"
+    "year": "2026",
+    "focuses": "<li>Memoria y percepción</li><li>Drama y disrupción</li><li>Identidades y versiones</li>",
+    "text": "La identidad gráfica de la obra nace de la relación entre sus tres personajes y de una historia en la que los recuerdos, las versiones y la percepción de lo ocurrido se encuentran en constante transformación. El concepto visual parte de una aparente armonía que progresivamente se deforma, revelando las tensiones y contradicciones que atraviesan la trama. La propuesta busca representar ese quiebre entre lo que parece ser y lo que realmente sucedió, utilizando la disrupción como recurso para construir una identidad que evoluciona junto con el drama.",
+    "briefDescription": "Identidad gráfica para una obra de drama y memoria",
+    "applications": "<li>Cartelería y posters</li><li>Materiales promocionales</li><li>Identidad visual de la obra</li>"
   },
   "color": {
     "isPresent": true,
-    "text": "Los tonos violetas fueron seleccionados para generar una identidad distintiva y contemporánea. El alto contraste y la claridad visual refuerzan la accesibilidad y funcionalidad del sistema, posicionando a Rido como una marca moderna y confiable.",
-    "mainColor": "rgb(143, 99, 159)",
+    "text": "La paleta parte de una gama de tonos sepia que aporta cercanía, calidez y, al mismo tiempo, una sensación de tensión y nostalgia. Estos colores también remiten a la arquitectura y los paisajes urbanos de Inglaterra, donde transcurre la obra. El celeste funciona como color complementario y establece un vínculo con Argentina, aportando una segunda referencia geográfica que adquiere significado dentro de la historia. El contraste entre ambas gamas acompaña la dualidad de la obra y refuerza la idea de dos realidades, recuerdos y versiones que conviven y se contradicen.",
+    "mainColor": "rgb(193, 109, 57)",
     "mainDescription": "",
-    "secondaryColor": "rgb(26, 26, 26)",
+    "secondaryColor": "rgb(157, 114, 87)",
     "secondaryDescription": "",
-    "thirdColor": "rgb(255, 255, 255)",
+    "thirdColor": "rgb(20, 8, 0)",
     "thirdDescription": ""
   },
   "structure": {
-    "isPresent": false,
+    "isPresent": true,
     "title": "",
-    "text": "",
-    "info1": "",
-    "info2": ""
+    "text": "La estructura visual parte de la presencia de tres personajes: dos que mantienen un orden estable y un tercero que irrumpe, atraviesa y altera ese equilibrio. Esta idea se traduce en tres pilares verticales, donde los extremos conservan una posición ordenada mientras el elemento central se encuentra desplazado y torcido, generando tensión y ruptura. Este recurso, junto con el uso de rectángulos, se mantiene a lo largo de toda la identidad visual para construir un sistema gráfico reconocible y coherente.",
+    "info1": "Orden y ruptura",
+    "info2": "Tres personajes"
   },
   "font": {
     "isPresent": false
   },
   "applications": {
-    "isPresent": false
+    "isPresent": true
   },
   "tech": {
     "isPresent": false,

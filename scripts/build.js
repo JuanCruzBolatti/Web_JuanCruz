@@ -56,7 +56,15 @@ async function build() {
         await waitForServer();
 
         // Página principal
-        await savePage("/?lang=es", "index.html");
+        const languages = ["es", "en", "it"];
+
+        for (const lang of languages) {
+            const output = lang === "es"
+                ? "index.html"
+                : `${lang}/index.html`;
+
+            await savePage(`/?lang=${lang}`, output);
+        }
 
         // Presentaciones definidas en archivos JSON
         const presentations = path.join(
